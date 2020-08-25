@@ -1,0 +1,1031 @@
+##gff-version 3
+##gvf-version 1.07
+##file-date 2017-11-18
+##genome-build ensembl GRCm38
+##species http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=10090
+##feature-ontology http://song.cvs.sourceforge.net/viewvc/song/ontology/so.obo?revision=1.283
+##data-source Source=ensembl;version=91;url=http://e91.ensembl.org/Mus_musculus
+##file-version 91
+##sequence-region   
+##sequence-region 10 1 130694993
+##sequence-region 15 1 104043685
+##sequence-region 11 1 122082543
+##sequence-region 1 1 195471971
+##sequence-region 14 1 124902244
+##sequence-region MT 1 16299
+##sequence-region 5 1 151834684
+##sequence-region 18 1 90702639
+##sequence-region 17 1 94987271
+##sequence-region 8 1 129401213
+##sequence-region 2 1 182113224
+##sequence-region 12 1 120129022
+##sequence-region 13 1 120421639
+##sequence-region 3 1 160039680
+##sequence-region Y 1 91744698
+##sequence-region X 1 171031299
+##sequence-region 16 1 98207768
+##sequence-region 9 1 124595110
+##sequence-region 7 1 145441459
+##sequence-region 19 1 61431566
+##sequence-region 4 1 156508116
+##sequence-region 6 1 149736546
+2	dbSNP	SNV	3097724	3097724	.	+	.	ID=1;Variant_seq=G;Dbxref=dbSNP_150:rs237450283;Reference_seq=A
+2	dbSNP	SNV	3077835	3077835	.	+	.	ID=2;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs581646932;Reference_seq=A
+2	dbSNP	SNV	3062419	3062419	.	+	.	ID=3;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586224282;Reference_seq=A
+2	dbSNP	SNV	3068519	3068519	.	+	.	ID=4;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584101733;Reference_seq=C
+2	dbSNP	insertion	3097706	3097706	.	+	.	ID=5;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs234843375;Reference_seq=-
+2	dbSNP	SNV	3052255	3052255	.	+	.	ID=6;Variant_seq=T;Dbxref=dbSNP_150:rs586759150;Reference_seq=A
+2	dbSNP	SNV	3052714	3052714	.	+	.	ID=7;Variant_seq=A;Dbxref=dbSNP_150:rs586291691;Reference_seq=G
+2	dbSNP	SNV	3051581	3051581	.	+	.	ID=8;Variant_seq=C;Dbxref=dbSNP_150:rs585601113;Reference_seq=T
+2	dbSNP	SNV	3050909	3050909	.	+	.	ID=9;Variant_seq=A,G;Dbxref=dbSNP_150:rs581629577;Reference_seq=C
+2	dbSNP	SNV	3099504	3099504	.	+	.	ID=10;Variant_seq=G;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096728;Reference_seq=A
+2	dbSNP	SNV	3097785	3097785	.	+	.	ID=11;Variant_seq=C;Dbxref=dbSNP_150:rs222402502;Reference_seq=T
+2	dbSNP	deletion	3100674	3100674	.	+	.	ID=12;Variant_seq=-;Dbxref=dbSNP_150:rs239954777;Reference_seq=T
+2	dbSNP	SNV	3053873	3053873	.	+	.	ID=13;Variant_seq=G;Dbxref=dbSNP_150:rs583647062;Reference_seq=A
+2	dbSNP	SNV	3098234	3098234	.	+	.	ID=14;Variant_seq=C;Dbxref=dbSNP_150:rs231471927;Reference_seq=T
+2	dbSNP	SNV	3061646	3061646	.	+	.	ID=15;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582620385;Reference_seq=G
+2	dbSNP	SNV	3093557	3093557	.	+	.	ID=16;Variant_seq=G;Dbxref=dbSNP_150:rs257588192;Reference_seq=A
+2	dbSNP	SNV	3075801	3075801	.	+	.	ID=17;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs584861545;Reference_seq=T
+2	dbSNP	SNV	3064912	3064912	.	+	.	ID=18;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587249551;Reference_seq=A
+2	dbSNP	SNV	3050150	3050150	.	+	.	ID=19;Variant_seq=C;Dbxref=dbSNP_150:rs1132028504;Reference_seq=T
+2	dbSNP	SNV	3092322	3092322	.	+	.	ID=20;Variant_seq=A;Dbxref=dbSNP_150:rs262144637;Reference_seq=G
+2	dbSNP	SNV	3054510	3054510	.	+	.	ID=21;Variant_seq=T;Dbxref=dbSNP_150:rs584520088;Reference_seq=C
+2	dbSNP	SNV	3102048	3102048	.	+	.	ID=22;Variant_seq=A;Dbxref=dbSNP_150:rs239115037;Reference_seq=G
+2	dbSNP	SNV	3094523	3094523	.	+	.	ID=23;Variant_seq=C;Dbxref=dbSNP_150:rs223607484;Reference_seq=T
+2	dbSNP	SNV	3063748	3063748	.	+	.	ID=24;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584989515;Reference_seq=A
+2	dbSNP	deletion	3091248	3091248	.	+	.	ID=25;Variant_seq=-;Dbxref=dbSNP_150:rs387778156;Reference_seq=G
+2	dbSNP	SNV	3075224	3075224	.	+	.	ID=26;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs580305663;Reference_seq=T
+2	dbSNP	SNV	3093692	3093692	.	+	.	ID=27;Variant_seq=G;Dbxref=dbSNP_150:rs245807640;Reference_seq=A
+2	dbSNP	SNV	3089431	3089431	.	+	.	ID=28;Variant_seq=T;Dbxref=dbSNP_150:rs260820392;Reference_seq=C
+2	dbSNP	SNV	3093521	3093521	.	+	.	ID=29;Variant_seq=T;Dbxref=dbSNP_150:rs251848299;Reference_seq=G
+2	dbSNP	SNV	3070464	3070464	.	+	.	ID=30;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970,upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582594394;Reference_seq=C
+2	dbSNP	SNV	3100533	3100533	.	+	.	ID=31;Variant_seq=A;Dbxref=dbSNP_150:rs235882171;Reference_seq=T
+2	dbSNP	SNV	3060595	3060595	.	+	.	ID=32;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579015387;Reference_seq=A
+2	dbSNP	SNV	3108090	3108090	.	+	.	ID=33;Variant_seq=A;Dbxref=dbSNP_150:rs236277550;Reference_seq=G
+2	dbSNP	SNV	3092121	3092121	.	+	.	ID=34;Variant_seq=T;Dbxref=dbSNP_150:rs255451448;Reference_seq=C
+2	dbSNP	SNV	3077734	3077734	.	+	.	ID=35;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs583102059;Reference_seq=G
+2	dbSNP	SNV	3052634	3052634	.	+	.	ID=36;Variant_seq=A;Dbxref=dbSNP_150:rs582059356;Reference_seq=G
+2	dbSNP	SNV	3105511	3105511	.	+	.	ID=37;Variant_seq=T;Dbxref=dbSNP_150:rs265176500;Reference_seq=C
+2	dbSNP	SNV	3104544	3104544	.	+	.	ID=38;Variant_seq=G;Dbxref=dbSNP_150:rs217133183;Reference_seq=A
+2	dbSNP	SNV	3084401	3084401	.	+	.	ID=39;Variant_seq=C;Dbxref=dbSNP_150:rs1132704218;Reference_seq=T
+2	dbSNP	SNV	3093721	3093721	.	+	.	ID=40;Variant_seq=T;Dbxref=dbSNP_150:rs1133989431;Reference_seq=A
+2	dbSNP	SNV	3076194	3076194	.	+	.	ID=41;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs583651852;Reference_seq=C
+2	dbSNP	SNV	3075462	3075462	.	+	.	ID=42;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs586799881;Reference_seq=C
+2	dbSNP	SNV	3078105	3078105	.	+	.	ID=43;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs581877928;Reference_seq=A
+2	dbSNP	SNV	3051190	3051190	.	+	.	ID=44;Variant_seq=A;Dbxref=dbSNP_150:rs585266498;Reference_seq=G
+2	dbSNP	deletion	3102301	3102304	.	+	.	ID=45;Variant_seq=-;Dbxref=dbSNP_150:rs265852990;Reference_seq=TTTT
+2	dbSNP	SNV	3065503	3065503	.	+	.	ID=46;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579056386;Reference_seq=T
+2	dbSNP	SNV	3052011	3052011	.	+	.	ID=47;Variant_seq=A;Dbxref=dbSNP_150:rs586830497;Reference_seq=C
+2	dbSNP	deletion	3099227	3099230	.	+	.	ID=48;Variant_seq=-;Dbxref=dbSNP_150:rs234938893;Reference_seq=TGTG
+2	dbSNP	SNV	3050313	3050313	.	+	.	ID=49;Variant_seq=G;Dbxref=dbSNP_150:rs1133287209;Reference_seq=A
+2	dbSNP	deletion	3097917	3097917	.	+	.	ID=50;Variant_seq=-;Dbxref=dbSNP_150:rs1132076727;Reference_seq=T
+2	dbSNP	SNV	3053540	3053540	.	+	.	ID=51;Variant_seq=A;Dbxref=dbSNP_150:rs585781436;Reference_seq=G
+2	dbSNP	SNV	3097810	3097810	.	+	.	ID=52;Variant_seq=C;Dbxref=dbSNP_150:rs242543942;Reference_seq=T
+2	dbSNP	deletion	3094378	3094378	.	+	.	ID=53;Variant_seq=-;Dbxref=dbSNP_150:rs242844424;Reference_seq=C
+2	dbSNP	SNV	3092822	3092822	.	+	.	ID=54;Variant_seq=G;Dbxref=dbSNP_150:rs236647324;Reference_seq=A
+2	dbSNP	SNV	3086953	3086953	.	+	.	ID=55;Variant_seq=T;Dbxref=dbSNP_150:rs585184330;Reference_seq=G
+2	dbSNP	SNV	3061037	3061037	.	+	.	ID=56;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581466324;Reference_seq=T
+2	dbSNP	SNV	3104520	3104520	.	+	.	ID=57;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs246500288;Reference_seq=C
+2	dbSNP	SNV	3099441	3099441	.	+	.	ID=58;Variant_seq=A;Dbxref=dbSNP_150:rs245554107;Reference_seq=G
+2	dbSNP	SNV	3094580	3094580	.	+	.	ID=59;Variant_seq=G;Dbxref=dbSNP_150:rs256394723;Reference_seq=A
+2	dbSNP	SNV	3067036	3067036	.	+	.	ID=60;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1133370775;Reference_seq=G
+2	dbSNP	SNV	3107495	3107495	.	+	.	ID=61;Variant_seq=C;Dbxref=dbSNP_150:rs259650803;Reference_seq=G
+2	dbSNP	SNV	3057793	3057793	.	+	.	ID=62;Variant_seq=G;Dbxref=dbSNP_150:rs586302013;Reference_seq=A
+2	dbSNP	SNV	3097596	3097596	.	+	.	ID=63;Variant_seq=A;Dbxref=dbSNP_150:rs220827873;Reference_seq=T
+2	dbSNP	SNV	3079718	3079718	.	+	.	ID=64;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs584789155;Reference_seq=C
+2	dbSNP	SNV	3067305	3067305	.	+	.	ID=65;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586615968;Reference_seq=G
+2	dbSNP	SNV	3086587	3086587	.	+	.	ID=66;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs587006515;Reference_seq=A
+2	dbSNP	deletion	3092263	3092265	.	+	.	ID=67;Variant_seq=-;Dbxref=dbSNP_150:rs256880730;Reference_seq=AGA
+2	dbSNP	SNV	3083112	3083112	.	+	.	ID=68;Variant_seq=G;Dbxref=dbSNP_150:rs582039975;Reference_seq=A
+2	dbSNP	SNV	3057935	3057935	.	+	.	ID=69;Variant_seq=C;Dbxref=dbSNP_150:rs580687210;Reference_seq=T
+2	dbSNP	SNV	3050200	3050200	.	+	.	ID=70;Variant_seq=T;Dbxref=dbSNP_150:rs1132198219;Reference_seq=C
+2	dbSNP	SNV	3066497	3066497	.	+	.	ID=71;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587189790;Reference_seq=T
+2	dbSNP	SNV	3087682	3087682	.	+	.	ID=72;Variant_seq=A;Dbxref=dbSNP_150:rs583864335;Reference_seq=G
+2	dbSNP	SNV	3065601	3065601	.	+	.	ID=73;Variant_seq=C;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;Dbxref=dbSNP_150:rs582446902;Reference_seq=T
+2	dbSNP	SNV	3067270	3067270	.	+	.	ID=74;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583479174;Reference_seq=A
+2	dbSNP	SNV	3096220	3096220	.	+	.	ID=75;Variant_seq=T;Dbxref=dbSNP_150:rs258167508;Reference_seq=C
+2	dbSNP	SNV	3087758	3087758	.	+	.	ID=76;Variant_seq=C;Dbxref=dbSNP_150:rs586047406;Reference_seq=G
+2	dbSNP	SNV	3051727	3051727	.	+	.	ID=77;Variant_seq=A;Dbxref=dbSNP_150:rs585090340;Reference_seq=C
+2	dbSNP	SNV	3050212	3050212	.	+	.	ID=78;Variant_seq=A;Dbxref=dbSNP_150:rs1133803021;Reference_seq=C
+2	dbSNP	SNV	3050223	3050223	.	+	.	ID=79;Variant_seq=A;Dbxref=dbSNP_150:rs1132837123;Reference_seq=C
+2	dbSNP	SNV	3053472	3053472	.	+	.	ID=80;Variant_seq=A;Dbxref=dbSNP_150:rs578462148;Reference_seq=C
+2	dbSNP	SNV	3080275	3080275	.	+	.	ID=81;Variant_seq=G;Dbxref=dbSNP_150:rs584462767;Reference_seq=T
+2	dbSNP	SNV	3050674	3050674	.	+	.	ID=82;Variant_seq=G;Dbxref=dbSNP_150:rs1133611387;Reference_seq=T
+2	dbSNP	SNV	3105505	3105505	.	+	.	ID=83;Variant_seq=A;Dbxref=dbSNP_150:rs246452859;Reference_seq=G
+2	dbSNP	SNV	3067515	3067515	.	+	.	ID=84;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584906047;Reference_seq=C
+2	dbSNP	SNV	3094432	3094432	.	+	.	ID=85;Variant_seq=C;Dbxref=dbSNP_150:rs584355925;Reference_seq=T
+2	dbSNP	insertion	3094331	3094331	.	+	.	ID=86;Variant_seq=TT;Dbxref=dbSNP_150:rs227675707;Reference_seq=-
+2	dbSNP	SNV	3088114	3088114	.	+	.	ID=87;Variant_seq=T;Dbxref=dbSNP_150:rs584461821;Reference_seq=C
+2	dbSNP	SNV	3062980	3062980	.	+	.	ID=88;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582066858;Reference_seq=T
+2	dbSNP	SNV	3050204	3050204	.	+	.	ID=89;Variant_seq=G;evidence_values=Frequency;Dbxref=dbSNP_150:rs33890293;Reference_seq=C
+2	dbSNP	SNV	3067640	3067640	.	+	.	ID=90;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582164853;Reference_seq=G
+2	dbSNP	SNV	3107508	3107508	.	+	.	ID=91;Variant_seq=C;Dbxref=dbSNP_150:rs226663281;Reference_seq=T
+2	dbSNP	deletion	3095347	3095348	.	+	.	ID=92;Variant_seq=-;Dbxref=dbSNP_150:rs221200542;Reference_seq=TA
+2	dbSNP	SNV	3067788	3067788	.	+	.	ID=93;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585174092;Reference_seq=G
+2	dbSNP	SNV	3097872	3097872	.	+	.	ID=94;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs221462568;Reference_seq=G
+2	dbSNP	SNV	3092808	3092808	.	+	.	ID=95;Variant_seq=T;Dbxref=dbSNP_150:rs213377329;Reference_seq=C
+2	dbSNP	SNV	3067057	3067057	.	+	.	ID=96;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580493472;Reference_seq=G
+2	dbSNP	SNV	3054898	3054898	.	+	.	ID=97;Variant_seq=A;Dbxref=dbSNP_150:rs583510463;Reference_seq=C
+2	dbSNP	SNV	3099944	3099944	.	+	.	ID=98;Variant_seq=A;Dbxref=dbSNP_150:rs237573091;Reference_seq=T
+2	dbSNP	SNV	3053530	3053530	.	+	.	ID=99;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs583392356;Reference_seq=A
+2	dbSNP	SNV	3082827	3082827	.	+	.	ID=100;Variant_seq=A;Dbxref=dbSNP_150:rs583992612;Reference_seq=C
+2	dbSNP	SNV	3052887	3052887	.	+	.	ID=101;Variant_seq=G;Dbxref=dbSNP_150:rs586794349;Reference_seq=T
+2	dbSNP	SNV	3051884	3051884	.	+	.	ID=102;Variant_seq=C,G;Dbxref=dbSNP_150:rs587240207;Reference_seq=A
+2	dbSNP	SNV	3088084	3088084	.	+	.	ID=103;Variant_seq=C;Dbxref=dbSNP_150:rs580962681;Reference_seq=T
+2	dbSNP	SNV	3086433	3086433	.	+	.	ID=104;Variant_seq=C;Dbxref=dbSNP_150:rs266172643;Reference_seq=T
+2	dbSNP	SNV	3081939	3081939	.	+	.	ID=105;Variant_seq=T;Dbxref=dbSNP_150:rs1131902586;Reference_seq=G
+2	dbSNP	SNV	3088882	3088882	.	+	.	ID=106;Variant_seq=C;Dbxref=dbSNP_150:rs586099213;Reference_seq=G
+2	dbSNP	SNV	3060657	3060657	.	+	.	ID=107;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582588414;Reference_seq=A
+2	dbSNP	SNV	3058258	3058258	.	+	.	ID=108;Variant_seq=T;Dbxref=dbSNP_150:rs578985705;Reference_seq=C
+2	dbSNP	SNV	3066707	3066707	.	+	.	ID=109;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579336445;Reference_seq=A
+2	dbSNP	SNV	3063943	3063943	.	+	.	ID=110;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs578943886;Reference_seq=C
+2	dbSNP	SNV	3068274	3068274	.	+	.	ID=111;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586083131;Reference_seq=T
+2	dbSNP	SNV	3050314	3050314	.	+	.	ID=112;Variant_seq=G;Dbxref=dbSNP_150:rs1132512387;Reference_seq=A
+2	dbSNP	SNV	3102150	3102150	.	+	.	ID=113;Variant_seq=A;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096725;Reference_seq=G
+2	dbSNP	SNV	3050094	3050094	.	+	.	ID=114;Variant_seq=A;Dbxref=dbSNP_150:rs1132171316;Reference_seq=G
+2	dbSNP	SNV	3090984	3090984	.	+	.	ID=115;Variant_seq=T;Dbxref=dbSNP_150:rs586734752;Reference_seq=C
+2	dbSNP	SNV	3103493	3103493	.	+	.	ID=116;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs236841473;Reference_seq=A
+2	dbSNP	SNV	3107681	3107681	.	+	.	ID=117;Variant_seq=A;Dbxref=dbSNP_150:rs249128411;Reference_seq=G
+2	dbSNP	SNV	3103972	3103972	.	+	.	ID=118;Variant_seq=A;Dbxref=dbSNP_150:rs587575906;Reference_seq=G
+2	dbSNP	SNV	3090267	3090267	.	+	.	ID=119;Variant_seq=C;Dbxref=dbSNP_150:rs213653361;Reference_seq=A
+2	dbSNP	SNV	3050634	3050634	.	+	.	ID=120;Variant_seq=C;Dbxref=dbSNP_150:rs584507487;Reference_seq=T
+2	dbSNP	deletion	3068245	3068245	.	+	.	ID=121;Variant_seq=-;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1132553886;Reference_seq=T
+2	dbSNP	SNV	3091991	3091991	.	+	.	ID=122;Variant_seq=C;Dbxref=dbSNP_150:rs220962991;Reference_seq=A
+2	dbSNP	SNV	3082301	3082301	.	+	.	ID=123;Variant_seq=T;Dbxref=dbSNP_150:rs1133360014;Reference_seq=C
+2	dbSNP	SNV	3050637	3050637	.	+	.	ID=124;Variant_seq=T;Dbxref=dbSNP_150:rs578415684;Reference_seq=A
+2	dbSNP	SNV	3084086	3084086	.	+	.	ID=125;Variant_seq=C;Dbxref=dbSNP_150:rs1133610382;Reference_seq=G
+2	dbSNP	SNV	3096032	3096032	.	+	.	ID=126;Variant_seq=T;Dbxref=dbSNP_150:rs235226708;Reference_seq=G
+2	dbSNP	SNV	3103453	3103453	.	+	.	ID=127;Variant_seq=A;Dbxref=dbSNP_150:rs259421787;Reference_seq=G
+2	dbSNP	SNV	3064649	3064649	.	+	.	ID=128;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585324308;Reference_seq=G
+2	dbSNP	SNV	3050589	3050589	.	+	.	ID=129;Variant_seq=A;Dbxref=dbSNP_150:rs1134742737;Reference_seq=G
+2	dbSNP	SNV	3078027	3078027	.	+	.	ID=130;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs578880352;Reference_seq=A
+2	dbSNP	SNV	3076750	3076750	.	+	.	ID=131;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs584883365;Reference_seq=A
+2	dbSNP	SNV	3066755	3066755	.	+	.	ID=132;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585086773;Reference_seq=C
+2	dbSNP	SNV	3099847	3099847	.	+	.	ID=133;Variant_seq=C;Dbxref=dbSNP_150:rs256313633;Reference_seq=T
+2	dbSNP	SNV	3051213	3051213	.	+	.	ID=134;Variant_seq=G;Dbxref=dbSNP_150:rs583767423;Reference_seq=T
+2	dbSNP	SNV	3076491	3076491	.	+	.	ID=135;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs581591215;Reference_seq=C
+2	dbSNP	SNV	3053635	3053635	.	+	.	ID=136;Variant_seq=T;Dbxref=dbSNP_150:rs583264782;Reference_seq=G
+2	dbSNP	SNV	3081399	3081399	.	+	.	ID=137;Variant_seq=C;Dbxref=dbSNP_150:rs586025450;Reference_seq=A
+2	dbSNP	SNV	3068609	3068609	.	+	.	ID=138;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581594436;Reference_seq=T
+2	dbSNP	SNV	3061873	3061873	.	+	.	ID=139;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587246591;Reference_seq=A
+2	dbSNP	SNV	3054397	3054397	.	+	.	ID=140;Variant_seq=A;Dbxref=dbSNP_150:rs585589393;Reference_seq=G
+2	dbSNP	SNV	3054662	3054662	.	+	.	ID=141;Variant_seq=A;Dbxref=dbSNP_150:rs585097225;Reference_seq=G
+2	dbSNP	SNV	3091757	3091757	.	+	.	ID=142;Variant_seq=G;Dbxref=dbSNP_150:rs239010660;Reference_seq=A
+2	dbSNP	SNV	3095357	3095357	.	+	.	ID=143;Variant_seq=C;Dbxref=dbSNP_150:rs243725509;Reference_seq=T
+2	dbSNP	SNV	3094988	3094988	.	+	.	ID=144;Variant_seq=A;Dbxref=dbSNP_150:rs221630840;Reference_seq=G
+2	dbSNP	SNV	3069972	3069972	.	+	.	ID=145;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs578296970;Reference_seq=T
+2	dbSNP	SNV	3100766	3100766	.	+	.	ID=146;Variant_seq=G;Dbxref=dbSNP_150:rs582143247;Reference_seq=T
+2	dbSNP	SNV	3064487	3064487	.	+	.	ID=147;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579424010;Reference_seq=T
+2	dbSNP	SNV	3081925	3081925	.	+	.	ID=148;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs584499306;Reference_seq=A
+2	dbSNP	SNV	3069835	3069835	.	+	.	ID=149;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs578797542;Reference_seq=A
+2	dbSNP	SNV	3106130	3106130	.	+	.	ID=150;Variant_seq=G;Dbxref=dbSNP_150:rs252772270;Reference_seq=A
+2	dbSNP	SNV	3073075	3073075	.	+	.	ID=151;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1133618798;Reference_seq=C
+2	dbSNP	SNV	3062527	3062527	.	+	.	ID=152;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581617793;Reference_seq=C
+2	dbSNP	SNV	3057808	3057808	.	+	.	ID=153;Variant_seq=G;Dbxref=dbSNP_150:rs583839175;Reference_seq=A
+2	dbSNP	SNV	3098096	3098096	.	+	.	ID=154;Variant_seq=A;Dbxref=dbSNP_150:rs259233710;Reference_seq=C
+2	dbSNP	SNV	3086141	3086141	.	+	.	ID=155;Variant_seq=T;Dbxref=dbSNP_150:rs247616642;Reference_seq=C
+2	dbSNP	SNV	3054612	3054612	.	+	.	ID=156;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs51139076;Reference_seq=G
+2	dbSNP	SNV	3051194	3051194	.	+	.	ID=157;Variant_seq=A;Dbxref=dbSNP_150:rs585041348;Reference_seq=G
+2	dbSNP	SNV	3079535	3079535	.	+	.	ID=158;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs587295853;Reference_seq=G
+2	dbSNP	SNV	3065790	3065790	.	+	.	ID=159;Variant_seq=C;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;Dbxref=dbSNP_150:rs580029929;Reference_seq=T
+2	dbSNP	SNV	3067368	3067368	.	+	.	ID=160;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581536724;Reference_seq=C
+2	dbSNP	SNV	3063481	3063481	.	+	.	ID=161;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583074931;Reference_seq=T
+2	dbSNP	SNV	3078257	3078257	.	+	.	ID=162;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs579771330;Reference_seq=G
+2	dbSNP	SNV	3050106	3050106	.	+	.	ID=163;Variant_seq=A;Dbxref=dbSNP_150:rs1134190802;Reference_seq=G
+2	dbSNP	SNV	3101305	3101305	.	+	.	ID=164;Variant_seq=G;Dbxref=dbSNP_150:rs584106483;Reference_seq=A
+2	dbSNP	SNV	3055233	3055233	.	+	.	ID=165;Variant_seq=G;Dbxref=dbSNP_150:rs581688793;Reference_seq=C
+2	dbSNP	SNV	3095193	3095193	.	+	.	ID=166;Variant_seq=A;Dbxref=dbSNP_150:rs265013109;Reference_seq=C
+2	dbSNP	insertion	3092766	3092766	.	+	.	ID=167;Variant_seq=A;Dbxref=dbSNP_150:rs386906598;Reference_seq=-
+2	dbSNP	SNV	3077641	3077641	.	+	.	ID=168;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs580556254;Reference_seq=T
+2	dbSNP	SNV	3069475	3069475	.	+	.	ID=169;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs28308350;Reference_seq=T
+2	dbSNP	SNV	3050389	3050389	.	+	.	ID=170;Variant_seq=C;Dbxref=dbSNP_150:rs580179891;Reference_seq=T
+2	dbSNP	SNV	3065439	3065439	.	+	.	ID=171;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582872768;Reference_seq=A
+2	dbSNP	SNV	3079717	3079717	.	+	.	ID=172;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs581132235;Reference_seq=C
+2	dbSNP	insertion	3063983	3063983	.	+	.	ID=173;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1133308479;Reference_seq=-
+2	dbSNP	insertion	3059590	3059590	.	+	.	ID=174;Variant_seq=ACAC;Dbxref=dbSNP_150:rs1132966691;Reference_seq=-
+2	dbSNP	insertion	3095599	3095599	.	+	.	ID=175;Variant_seq=GTGTGTGTGTGTGTGTGT;Dbxref=dbSNP_150:rs387304367;Reference_seq=-
+2	dbSNP	SNV	3067180	3067180	.	+	.	ID=176;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1133994808;Reference_seq=T
+2	dbSNP	SNV	3102617	3102617	.	+	.	ID=177;Variant_seq=T;Dbxref=dbSNP_150:rs265152109;Reference_seq=G
+2	dbSNP	SNV	3096681	3096681	.	+	.	ID=178;Variant_seq=A;Dbxref=dbSNP_150:rs582932993;Reference_seq=G
+2	dbSNP	SNV	3091992	3091992	.	+	.	ID=179;Variant_seq=C;Dbxref=dbSNP_150:rs247245573;Reference_seq=G
+2	dbSNP	SNV	3082283	3082283	.	+	.	ID=180;Variant_seq=A;Dbxref=dbSNP_150:rs1134516779;Reference_seq=T
+2	dbSNP	SNV	3068732	3068732	.	+	.	ID=181;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585071803;Reference_seq=T
+2	dbSNP	SNV	3076655	3076655	.	+	.	ID=182;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs584792579;Reference_seq=T
+2	dbSNP	SNV	3050292	3050292	.	+	.	ID=183;Variant_seq=T;Dbxref=dbSNP_150:rs1134208136;Reference_seq=A
+2	dbSNP	SNV	3105624	3105624	.	+	.	ID=184;Variant_seq=A;Dbxref=dbSNP_150:rs223797498;Reference_seq=C
+2	dbSNP	SNV	3052639	3052639	.	+	.	ID=185;Variant_seq=A;Dbxref=dbSNP_150:rs579456284;Reference_seq=C
+2	dbSNP	SNV	3054478	3054478	.	+	.	ID=186;Variant_seq=A;Dbxref=dbSNP_150:rs583810482;Reference_seq=C
+2	dbSNP	SNV	3053305	3053305	.	+	.	ID=187;Variant_seq=G;Dbxref=dbSNP_150:rs581460963;Reference_seq=A
+2	dbSNP	SNV	3096322	3096322	.	+	.	ID=188;Variant_seq=A;Dbxref=dbSNP_150:rs228375992;Reference_seq=C
+2	dbSNP	SNV	3098558	3098558	.	+	.	ID=189;Variant_seq=A;Dbxref=dbSNP_150:rs1132806410;Reference_seq=T
+2	dbSNP	SNV	3082294	3082294	.	+	.	ID=190;Variant_seq=C;Dbxref=dbSNP_150:rs1133311199;Reference_seq=A
+2	dbSNP	SNV	3086815	3086815	.	+	.	ID=191;Variant_seq=A;Dbxref=dbSNP_150:rs579057100;Reference_seq=G
+2	dbSNP	SNV	3054669	3054669	.	+	.	ID=192;Variant_seq=T;Dbxref=dbSNP_150:rs578882472;Reference_seq=C
+2	dbSNP	SNV	3068522	3068522	.	+	.	ID=193;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587582777;Reference_seq=C
+2	dbSNP	SNV	3088175	3088175	.	+	.	ID=194;Variant_seq=T;Dbxref=dbSNP_150:rs253084934;Reference_seq=C
+2	dbSNP	SNV	3081411	3081411	.	+	.	ID=195;Variant_seq=T;Dbxref=dbSNP_150:rs579916275;Reference_seq=C
+2	dbSNP	SNV	3061547	3061547	.	+	.	ID=196;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584001116;Reference_seq=G
+2	dbSNP	SNV	3078867	3078867	.	+	.	ID=197;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs586730131;Reference_seq=G
+2	dbSNP	SNV	3053953	3053953	.	+	.	ID=198;Variant_seq=A;Dbxref=dbSNP_150:rs587245684;Reference_seq=G
+2	dbSNP	SNV	3082646	3082646	.	+	.	ID=199;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs582755012;Reference_seq=G
+2	dbSNP	SNV	3065423	3065423	.	+	.	ID=200;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs578283171;Reference_seq=C
+2	dbSNP	SNV	3100739	3100739	.	+	.	ID=201;Variant_seq=G;Dbxref=dbSNP_150:rs222572070;Reference_seq=A
+2	dbSNP	SNV	3096034	3096034	.	+	.	ID=202;Variant_seq=T;Dbxref=dbSNP_150:rs251585826;Reference_seq=G
+2	dbSNP	SNV	3099148	3099148	.	+	.	ID=203;Variant_seq=G;Dbxref=dbSNP_150:rs221499898;Reference_seq=A
+2	dbSNP	SNV	3094880	3094880	.	+	.	ID=204;Variant_seq=G;Dbxref=dbSNP_150:rs578270871;Reference_seq=C
+2	dbSNP	SNV	3098650	3098650	.	+	.	ID=205;Variant_seq=G;Dbxref=dbSNP_150:rs235678397;Reference_seq=T
+2	dbSNP	deletion	3088901	3088901	.	+	.	ID=206;Variant_seq=-;Dbxref=dbSNP_150:rs230213835;Reference_seq=A
+2	dbSNP	SNV	3059433	3059433	.	+	.	ID=207;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs580057578;Reference_seq=G
+2	dbSNP	SNV	3050707	3050707	.	+	.	ID=208;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs582777318;Reference_seq=A
+2	dbSNP	SNV	3094085	3094085	.	+	.	ID=209;Variant_seq=A;Dbxref=dbSNP_150:rs248776995;Reference_seq=G
+2	dbSNP	SNV	3098575	3098575	.	+	.	ID=210;Variant_seq=A;Dbxref=dbSNP_150:rs1132543876;Reference_seq=T
+2	dbSNP	SNV	3102383	3102383	.	+	.	ID=211;Variant_seq=T;Dbxref=dbSNP_150:rs242023477;Reference_seq=A
+2	dbSNP	insertion	3102558	3102558	.	+	.	ID=212;Variant_seq=TGG;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs215083284;Reference_seq=-
+2	dbSNP	SNV	3081478	3081478	.	+	.	ID=213;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs584103758;Reference_seq=T
+2	dbSNP	SNV	3066066	3066066	.	+	.	ID=214;Variant_seq=C;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;evidence_values=Frequency;Dbxref=dbSNP_150:rs28308351;Reference_seq=A
+2	dbSNP	SNV	3065615	3065615	.	+	.	ID=215;Variant_seq=C;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;Dbxref=dbSNP_150:rs28308356;Reference_seq=G
+2	dbSNP	SNV	3096291	3096291	.	+	.	ID=216;Variant_seq=G;Dbxref=dbSNP_150:rs220428645;Reference_seq=A
+2	dbSNP	deletion	3094332	3094332	.	+	.	ID=217;Variant_seq=-;Dbxref=dbSNP_150:rs217515744;Reference_seq=T
+2	dbSNP	SNV	3062338	3062338	.	+	.	ID=218;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580881014;Reference_seq=T
+2	dbSNP	SNV	3059159	3059159	.	+	.	ID=219;Variant_seq=C;Dbxref=dbSNP_150:rs583258894;Reference_seq=T
+2	dbSNP	SNV	3050885	3050885	.	+	.	ID=220;Variant_seq=G;Dbxref=dbSNP_150:rs583254195;Reference_seq=C
+2	dbSNP	SNV	3081864	3081864	.	+	.	ID=221;Variant_seq=G;Dbxref=dbSNP_150:rs1134249768;Reference_seq=A
+2	dbSNP	SNV	3097559	3097559	.	+	.	ID=222;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs231794539;Reference_seq=G
+2	dbSNP	insertion	3102793	3102793	.	+	.	ID=223;Variant_seq=GT;Dbxref=dbSNP_150:rs264274914;Reference_seq=-
+2	dbSNP	SNV	3096612	3096612	.	+	.	ID=224;Variant_seq=C;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs33437261;Reference_seq=T
+2	dbSNP	SNV	3083111	3083111	.	+	.	ID=225;Variant_seq=A;Dbxref=dbSNP_150:rs579835824;Reference_seq=G
+2	dbSNP	SNV	3103521	3103521	.	+	.	ID=226;Variant_seq=G;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096724;Reference_seq=A
+2	dbSNP	SNV	3091140	3091140	.	+	.	ID=227;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs232565191;Reference_seq=A
+2	dbSNP	SNV	3096309	3096309	.	+	.	ID=228;Variant_seq=C;Dbxref=dbSNP_150:rs240936242;Reference_seq=A
+2	dbSNP	SNV	3080973	3080973	.	+	.	ID=229;Variant_seq=C,T;Dbxref=dbSNP_150:rs582927173;Reference_seq=G
+2	dbSNP	SNV	3098108	3098108	.	+	.	ID=230;Variant_seq=C;Dbxref=dbSNP_150:rs229423428;Reference_seq=T
+2	dbSNP	SNV	3060959	3060959	.	+	.	ID=231;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587394499;Reference_seq=G
+2	dbSNP	SNV	3075511	3075511	.	+	.	ID=232;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs580721712;Reference_seq=C
+2	dbSNP	SNV	3066025	3066025	.	+	.	ID=233;Variant_seq=T;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;Dbxref=dbSNP_150:rs583442621;Reference_seq=G
+2	dbSNP	SNV	3066051	3066051	.	+	.	ID=234;Variant_seq=A;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;Dbxref=dbSNP_150:rs579455714;Reference_seq=G
+2	dbSNP	SNV	3060243	3060243	.	+	.	ID=235;Variant_seq=C;Dbxref=dbSNP_150:rs578382113;Reference_seq=A
+2	dbSNP	SNV	3054409	3054409	.	+	.	ID=236;Variant_seq=T;Dbxref=dbSNP_150:rs584016749;Reference_seq=C
+2	dbSNP	SNV	3097837	3097837	.	+	.	ID=237;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs258827497;Reference_seq=A
+2	dbSNP	SNV	3089940	3089940	.	+	.	ID=238;Variant_seq=G;Dbxref=dbSNP_150:rs241307566;Reference_seq=C
+2	dbSNP	SNV	3088011	3088011	.	+	.	ID=239;Variant_seq=G;Dbxref=dbSNP_150:rs587577792;Reference_seq=A
+2	dbSNP	SNV	3082321	3082321	.	+	.	ID=240;Variant_seq=G;Dbxref=dbSNP_150:rs1133457795;Reference_seq=C
+2	dbSNP	SNV	3107832	3107832	.	+	.	ID=241;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs215045267;Reference_seq=T
+2	dbSNP	SNV	3101129	3101129	.	+	.	ID=242;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs228836377;Reference_seq=T
+2	dbSNP	SNV	3089710	3089710	.	+	.	ID=243;Variant_seq=G;evidence_values=Frequency;Dbxref=dbSNP_150:rs27096733;Reference_seq=A
+2	dbSNP	SNV	3069308	3069308	.	+	.	ID=244;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585729384;Reference_seq=C
+2	dbSNP	SNV	3098272	3098272	.	+	.	ID=245;Variant_seq=T;Dbxref=dbSNP_150:rs582578144;Reference_seq=A
+2	dbSNP	SNV	3097930	3097930	.	+	.	ID=246;Variant_seq=A;Dbxref=dbSNP_150:rs579212272;Reference_seq=G
+2	dbSNP	SNV	3051307	3051307	.	+	.	ID=247;Variant_seq=A,G;Dbxref=dbSNP_150:rs583816871;Reference_seq=C
+2	dbSNP	SNV	3100055	3100055	.	+	.	ID=248;Variant_seq=C;Dbxref=dbSNP_150:rs248353430;Reference_seq=T
+2	dbSNP	SNV	3050152	3050152	.	+	.	ID=249;Variant_seq=A;Dbxref=dbSNP_150:rs1132093352;Reference_seq=G
+2	dbSNP	SNV	3051468	3051468	.	+	.	ID=250;Variant_seq=T;Dbxref=dbSNP_150:rs578404954;Reference_seq=C
+2	dbSNP	SNV	3091658	3091658	.	+	.	ID=251;Variant_seq=T;Dbxref=dbSNP_150:rs251616672;Reference_seq=C
+2	dbSNP	SNV	3076598	3076598	.	+	.	ID=252;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs581602877;Reference_seq=G
+2	dbSNP	SNV	3050291	3050291	.	+	.	ID=253;Variant_seq=G;Dbxref=dbSNP_150:rs1131996111;Reference_seq=A
+2	dbSNP	SNV	3092878	3092878	.	+	.	ID=254;Variant_seq=A;Dbxref=dbSNP_150:rs241933788;Reference_seq=G
+2	dbSNP	deletion	3088902	3088903	.	+	.	ID=255;Variant_seq=-;Dbxref=dbSNP_150:rs239809843;Reference_seq=GG
+2	dbSNP	SNV	3098569	3098569	.	+	.	ID=256;Variant_seq=A;Dbxref=dbSNP_150:rs1134979989;Reference_seq=T
+2	dbSNP	SNV	3054694	3054694	.	+	.	ID=257;Variant_seq=G;Dbxref=dbSNP_150:rs582267120;Reference_seq=A
+2	dbSNP	SNV	3051254	3051254	.	+	.	ID=258;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs581465368;Reference_seq=T
+2	dbSNP	SNV	3050843	3050843	.	+	.	ID=259;Variant_seq=A;evidence_values=Frequency;Dbxref=dbSNP_150:rs33890228;Reference_seq=G
+2	dbSNP	SNV	3104417	3104417	.	+	.	ID=260;Variant_seq=A;Dbxref=dbSNP_150:rs264552688;Reference_seq=G
+2	dbSNP	SNV	3051912	3051912	.	+	.	ID=261;Variant_seq=C;Dbxref=dbSNP_150:rs580089144;Reference_seq=G
+2	dbSNP	SNV	3093720	3093720	.	+	.	ID=262;Variant_seq=C;Dbxref=dbSNP_150:rs1133455793;Reference_seq=T
+2	dbSNP	SNV	3054369	3054369	.	+	.	ID=263;Variant_seq=C;Dbxref=dbSNP_150:rs583432792;Reference_seq=T
+2	dbSNP	SNV	3092130	3092130	.	+	.	ID=264;Variant_seq=G;Dbxref=dbSNP_150:rs221126383;Reference_seq=A
+2	dbSNP	SNV	3068196	3068196	.	+	.	ID=265;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583812662;Reference_seq=A
+2	dbSNP	SNV	3093234	3093234	.	+	.	ID=266;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs251356766;Reference_seq=G
+2	dbSNP	deletion	3089864	3089867	.	+	.	ID=267;Variant_seq=-;Dbxref=dbSNP_150:rs252284758;Reference_seq=GGGC
+2	dbSNP	SNV	3050877	3050877	.	+	.	ID=268;Variant_seq=G;Dbxref=dbSNP_150:rs579607582;Reference_seq=C
+2	dbSNP	SNV	3053323	3053323	.	+	.	ID=269;Variant_seq=T;Dbxref=dbSNP_150:rs578941628;Reference_seq=C
+2	dbSNP	SNV	3089040	3089040	.	+	.	ID=270;Variant_seq=G;Dbxref=dbSNP_150:rs217123382;Reference_seq=A
+2	dbSNP	SNV	3107588	3107588	.	+	.	ID=271;Variant_seq=T;Dbxref=dbSNP_150:rs262228446;Reference_seq=G
+2	dbSNP	SNV	3083395	3083395	.	+	.	ID=272;Variant_seq=A;Dbxref=dbSNP_150:rs586835705;Reference_seq=T
+2	dbSNP	SNV	3104989	3104989	.	+	.	ID=273;Variant_seq=A;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096723;Reference_seq=C
+2	dbSNP	SNV	3095361	3095361	.	+	.	ID=274;Variant_seq=C;Dbxref=dbSNP_150:rs233655673;Reference_seq=T
+2	dbSNP	SNV	3086137	3086137	.	+	.	ID=275;Variant_seq=G;Dbxref=dbSNP_150:rs229398219;Reference_seq=A
+2	dbSNP	SNV	3077632	3077632	.	+	.	ID=276;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs583061445;Reference_seq=A
+2	dbSNP	SNV	3051555	3051555	.	+	.	ID=277;Variant_seq=G;Dbxref=dbSNP_150:rs582290243;Reference_seq=C
+2	dbSNP	SNV	3057853	3057853	.	+	.	ID=278;Variant_seq=G;Dbxref=dbSNP_150:rs586265123;Reference_seq=A
+2	dbSNP	SNV	3059782	3059782	.	+	.	ID=279;Variant_seq=A;Dbxref=dbSNP_150:rs586837809;Reference_seq=G
+2	dbSNP	SNV	3107005	3107005	.	+	.	ID=280;Variant_seq=G;Dbxref=dbSNP_150:rs235394576;Reference_seq=A
+2	dbSNP	SNV	3106838	3106838	.	+	.	ID=281;Variant_seq=C;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096722;Reference_seq=T
+2	dbSNP	SNV	3101140	3101140	.	+	.	ID=282;Variant_seq=G;Dbxref=dbSNP_150:rs248385348;Reference_seq=T
+2	dbSNP	insertion	3101163	3101163	.	+	.	ID=283;Variant_seq=T;Dbxref=dbSNP_150:rs234974205;Reference_seq=-
+2	dbSNP	SNV	3067077	3067077	.	+	.	ID=284;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587215929;Reference_seq=G
+2	dbSNP	SNV	3094284	3094284	.	+	.	ID=285;Variant_seq=C;Dbxref=dbSNP_150:rs215090219;Reference_seq=A
+2	dbSNP	insertion	3101139	3101139	.	+	.	ID=286;Variant_seq=T;Dbxref=dbSNP_150:rs258331314;Reference_seq=-
+2	dbSNP	SNV	3087538	3087538	.	+	.	ID=287;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs582697629;Reference_seq=A
+2	dbSNP	SNV	3067271	3067271	.	+	.	ID=288;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587028603;Reference_seq=A
+2	dbSNP	SNV	3066621	3066621	.	+	.	ID=289;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586700052;Reference_seq=A
+2	dbSNP	SNV	3101301	3101301	.	+	.	ID=290;Variant_seq=T;Dbxref=dbSNP_150:rs247471205;Reference_seq=C
+2	dbSNP	SNV	3050648	3050648	.	+	.	ID=291;Variant_seq=A;Dbxref=dbSNP_150:rs585455284;Reference_seq=C
+2	dbSNP	SNV	3051516	3051516	.	+	.	ID=292;Variant_seq=T;Dbxref=dbSNP_150:rs586303153;Reference_seq=C
+2	dbSNP	SNV	3054528	3054528	.	+	.	ID=293;Variant_seq=T;Dbxref=dbSNP_150:rs578431789;Reference_seq=C
+2	dbSNP	SNV	3067534	3067534	.	+	.	ID=294;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs578816755;Reference_seq=C
+2	dbSNP	SNV	3064320	3064320	.	+	.	ID=295;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs578492887;Reference_seq=C
+2	dbSNP	SNV	3103613	3103613	.	+	.	ID=296;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs242161377;Reference_seq=C
+2	dbSNP	SNV	3107728	3107728	.	+	.	ID=297;Variant_seq=A;Dbxref=dbSNP_150:rs228487948;Reference_seq=G
+2	dbSNP	SNV	3077836	3077836	.	+	.	ID=298;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs585073575;Reference_seq=A
+2	dbSNP	SNV	3067431	3067431	.	+	.	ID=299;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579072759;Reference_seq=G
+2	dbSNP	SNV	3051854	3051854	.	+	.	ID=300;Variant_seq=G;Dbxref=dbSNP_150:rs579615229;Reference_seq=T
+2	dbSNP	SNV	3052700	3052700	.	+	.	ID=301;Variant_seq=A;Dbxref=dbSNP_150:rs582877130;Reference_seq=T
+2	dbSNP	SNV	3050189	3050189	.	+	.	ID=302;Variant_seq=A;Dbxref=dbSNP_150:rs1134887978;Reference_seq=G
+2	dbSNP	SNV	3090445	3090445	.	+	.	ID=303;Variant_seq=C;Dbxref=dbSNP_150:rs233351003;Reference_seq=T
+2	dbSNP	SNV	3086696	3086696	.	+	.	ID=304;Variant_seq=G;Dbxref=dbSNP_150:rs581098324;Reference_seq=A
+2	dbSNP	SNV	3066750	3066750	.	+	.	ID=305;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs33890103;Reference_seq=A
+2	dbSNP	SNV	3102462	3102462	.	+	.	ID=306;Variant_seq=G;Dbxref=dbSNP_150:rs261566937;Reference_seq=C
+2	dbSNP	insertion	3094860	3094860	.	+	.	ID=307;Variant_seq=G;Dbxref=dbSNP_150:rs252534813;Reference_seq=-
+2	dbSNP	SNV	3053492	3053492	.	+	.	ID=308;Variant_seq=T;Dbxref=dbSNP_150:rs582632910;Reference_seq=C
+2	dbSNP	SNV	3069913	3069913	.	+	.	ID=309;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Frequency;Dbxref=dbSNP_150:rs27083188;Reference_seq=G
+2	dbSNP	SNV	3069615	3069615	.	+	.	ID=310;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs33890229;Reference_seq=A
+2	dbSNP	SNV	3081954	3081954	.	+	.	ID=311;Variant_seq=A;Dbxref=dbSNP_150:rs1134110867;Reference_seq=T
+2	dbSNP	SNV	3050232	3050232	.	+	.	ID=312;Variant_seq=T;Dbxref=dbSNP_150:rs1134995318;Reference_seq=A
+2	dbSNP	SNV	3050596	3050596	.	+	.	ID=313;Variant_seq=C;Dbxref=dbSNP_150:rs581545306;Reference_seq=T
+2	dbSNP	SNV	3050765	3050765	.	+	.	ID=314;Variant_seq=G;Dbxref=dbSNP_150:rs1131993808;Reference_seq=A
+2	dbSNP	SNV	3082083	3082083	.	+	.	ID=315;Variant_seq=C;Dbxref=dbSNP_150:rs1132498117;Reference_seq=T
+2	dbSNP	SNV	3101142	3101142	.	+	.	ID=316;Variant_seq=G;Dbxref=dbSNP_150:rs1135347232;Reference_seq=T
+2	dbSNP	SNV	3060692	3060692	.	+	.	ID=317;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580013959;Reference_seq=T
+2	dbSNP	SNV	3064807	3064807	.	+	.	ID=318;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583249836;Reference_seq=G
+2	dbSNP	SNV	3058287	3058287	.	+	.	ID=319;Variant_seq=G;Dbxref=dbSNP_150:rs580968608;Reference_seq=A
+2	dbSNP	insertion	3107986	3107986	.	+	.	ID=320;Variant_seq=C;Dbxref=dbSNP_150:rs232159225;Reference_seq=-
+2	dbSNP	SNV	3087893	3087893	.	+	.	ID=321;Variant_seq=T;Dbxref=dbSNP_150:rs582875573;Reference_seq=C
+2	dbSNP	SNV	3094861	3094861	.	+	.	ID=322;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs251552920;Reference_seq=G
+2	dbSNP	SNV	3092193	3092193	.	+	.	ID=323;Variant_seq=G;Dbxref=dbSNP_150:rs241342085;Reference_seq=A
+2	dbSNP	SNV	3065762	3065762	.	+	.	ID=324;Variant_seq=A;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;evidence_values=Frequency;Dbxref=dbSNP_150:rs28308353;Reference_seq=G
+2	dbSNP	SNV	3095663	3095663	.	+	.	ID=325;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs215125332;Reference_seq=A
+2	dbSNP	SNV	3085102	3085102	.	+	.	ID=326;Variant_seq=G;Dbxref=dbSNP_150:rs387645357;Reference_seq=A
+2	dbSNP	SNV	3098242	3098242	.	+	.	ID=327;Variant_seq=G;Dbxref=dbSNP_150:rs1133995312;Reference_seq=A
+2	dbSNP	SNV	3082981	3082981	.	+	.	ID=328;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs582329519;Reference_seq=T
+2	dbSNP	SNV	3065483	3065483	.	+	.	ID=329;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585895416;Reference_seq=G
+2	dbSNP	SNV	3107045	3107045	.	+	.	ID=330;Variant_seq=C;Dbxref=dbSNP_150:rs255435865;Reference_seq=A
+2	dbSNP	SNV	3081433	3081433	.	+	.	ID=331;Variant_seq=T;Dbxref=dbSNP_150:rs582132135;Reference_seq=G
+2	dbSNP	SNV	3096437	3096437	.	+	.	ID=332;Variant_seq=C;Dbxref=dbSNP_150:rs242436612;Reference_seq=G
+2	dbSNP	SNV	3062203	3062203	.	+	.	ID=333;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587037198;Reference_seq=T
+2	dbSNP	SNV	3086310	3086310	.	+	.	ID=334;Variant_seq=C;Dbxref=dbSNP_150:rs580121298;Reference_seq=T
+2	dbSNP	SNV	3088645	3088645	.	+	.	ID=335;Variant_seq=C;Dbxref=dbSNP_150:rs582744640;Reference_seq=T
+2	dbSNP	SNV	3069665	3069665	.	+	.	ID=336;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs33890505;Reference_seq=A
+2	dbSNP	SNV	3078138	3078138	.	+	.	ID=337;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs579430411;Reference_seq=G
+2	dbSNP	deletion	3091638	3091644	.	+	.	ID=338;Variant_seq=-;Dbxref=dbSNP_150:rs239094408;Reference_seq=TGACTAC
+2	dbSNP	SNV	3082178	3082178	.	+	.	ID=339;Variant_seq=C;Dbxref=dbSNP_150:rs1132808723;Reference_seq=T
+2	dbSNP	SNV	3051807	3051807	.	+	.	ID=340;Variant_seq=C;Dbxref=dbSNP_150:rs580664191;Reference_seq=T
+2	dbSNP	SNV	3097781	3097781	.	+	.	ID=341;Variant_seq=A;Dbxref=dbSNP_150:rs256074820;Reference_seq=C
+2	dbSNP	SNV	3078053	3078053	.	+	.	ID=342;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs584241888;Reference_seq=T
+2	dbSNP	SNV	3096795	3096795	.	+	.	ID=343;Variant_seq=A;Dbxref=dbSNP_150:rs255231202;Reference_seq=G
+2	dbSNP	deletion	3095566	3095569	.	+	.	ID=344;Variant_seq=-;Dbxref=dbSNP_150:rs223962372;Reference_seq=GTGT
+2	dbSNP	SNV	3085874	3085874	.	+	.	ID=345;Variant_seq=C;Dbxref=dbSNP_150:rs261625657;Reference_seq=G
+2	dbSNP	SNV	3078272	3078272	.	+	.	ID=346;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs583296018;Reference_seq=G
+2	dbSNP	SNV	3076878	3076878	.	+	.	ID=347;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs582040207;Reference_seq=A
+2	dbSNP	SNV	3066370	3066370	.	+	.	ID=348;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580358542;Reference_seq=G
+2	dbSNP	insertion	3100856	3100856	.	+	.	ID=349;Variant_seq=T;Dbxref=dbSNP_150:rs216124035;Reference_seq=-
+2	dbSNP	SNV	3098424	3098424	.	+	.	ID=350;Variant_seq=A;Dbxref=dbSNP_150:rs1134434775;Reference_seq=G
+2	dbSNP	SNV	3099638	3099638	.	+	.	ID=351;Variant_seq=C;Dbxref=dbSNP_150:rs258908995;Reference_seq=T
+2	dbSNP	SNV	3052092	3052092	.	+	.	ID=352;Variant_seq=T;Dbxref=dbSNP_150:rs580891353;Reference_seq=C
+2	dbSNP	SNV	3050679	3050679	.	+	.	ID=353;Variant_seq=A;Dbxref=dbSNP_150:rs1132584161;Reference_seq=G
+2	dbSNP	SNV	3051621	3051621	.	+	.	ID=354;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs581796158;Reference_seq=T
+2	dbSNP	SNV	3081476	3081476	.	+	.	ID=355;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs579517025;Reference_seq=A
+2	dbSNP	SNV	3077479	3077479	.	+	.	ID=356;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs579965565;Reference_seq=A
+2	dbSNP	insertion	3064115	3064115	.	+	.	ID=357;Variant_seq=TT;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1134261247;Reference_seq=-
+2	dbSNP	SNV	3108042	3108042	.	+	.	ID=358;Variant_seq=C;Dbxref=dbSNP_150:rs214883946;Reference_seq=A
+2	dbSNP	SNV	3105273	3105273	.	+	.	ID=359;Variant_seq=A;Dbxref=dbSNP_150:rs235750420;Reference_seq=G
+2	dbSNP	SNV	3104038	3104038	.	+	.	ID=360;Variant_seq=G;Dbxref=dbSNP_150:rs580361456;Reference_seq=A
+2	dbSNP	SNV	3085873	3085873	.	+	.	ID=361;Variant_seq=G;Dbxref=dbSNP_150:rs238231041;Reference_seq=C
+2	dbSNP	SNV	3057803	3057803	.	+	.	ID=362;Variant_seq=G;Dbxref=dbSNP_150:rs580278174;Reference_seq=A
+2	dbSNP	SNV	3097558	3097558	.	+	.	ID=363;Variant_seq=C;Dbxref=dbSNP_150:rs215990072;Reference_seq=T
+2	dbSNP	SNV	3083517	3083517	.	+	.	ID=364;Variant_seq=T;Dbxref=dbSNP_150:rs1132362857;Reference_seq=G
+2	dbSNP	SNV	3077638	3077638	.	+	.	ID=365;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs586699729;Reference_seq=A
+2	dbSNP	SNV	3069389	3069389	.	+	.	ID=366;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583260119;Reference_seq=T
+2	dbSNP	SNV	3052598	3052598	.	+	.	ID=367;Variant_seq=T;Dbxref=dbSNP_150:rs578823734;Reference_seq=C
+2	dbSNP	SNV	3054188	3054188	.	+	.	ID=368;Variant_seq=C;Dbxref=dbSNP_150:rs581041071;Reference_seq=T
+2	dbSNP	SNV	3057813	3057813	.	+	.	ID=369;Variant_seq=G;Dbxref=dbSNP_150:rs587173135;Reference_seq=A
+2	dbSNP	SNV	3082896	3082896	.	+	.	ID=370;Variant_seq=A;Dbxref=dbSNP_150:rs578872373;Reference_seq=G
+2	dbSNP	SNV	3050665	3050665	.	+	.	ID=371;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs580462241;Reference_seq=T
+2	dbSNP	SNV	3100981	3100981	.	+	.	ID=372;Variant_seq=A;Dbxref=dbSNP_150:rs244323944;Reference_seq=G
+2	dbSNP	SNV	3050516	3050516	.	+	.	ID=373;Variant_seq=T;Dbxref=dbSNP_150:rs587172816;Reference_seq=C
+2	dbSNP	SNV	3050191	3050191	.	+	.	ID=374;Variant_seq=A;Dbxref=dbSNP_150:rs1133390435;Reference_seq=G
+2	dbSNP	SNV	3050367	3050367	.	+	.	ID=375;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs582894936;Reference_seq=T
+2	dbSNP	SNV	3069669	3069669	.	+	.	ID=376;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1132544778;Reference_seq=A
+2	dbSNP	SNV	3101698	3101698	.	+	.	ID=377;Variant_seq=T;Dbxref=dbSNP_150:rs252628134;Reference_seq=C
+2	dbSNP	SNV	3099819	3099819	.	+	.	ID=378;Variant_seq=A;Dbxref=dbSNP_150:rs230086328;Reference_seq=G
+2	dbSNP	SNV	3086802	3086802	.	+	.	ID=379;Variant_seq=G;Dbxref=dbSNP_150:rs585051288;Reference_seq=T
+2	dbSNP	SNV	3064047	3064047	.	+	.	ID=380;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584189048;Reference_seq=T
+2	dbSNP	SNV	3103663	3103663	.	+	.	ID=381;Variant_seq=G;Dbxref=dbSNP_150:rs261364310;Reference_seq=A
+2	dbSNP	SNV	3091217	3091217	.	+	.	ID=382;Variant_seq=A;Dbxref=dbSNP_150:rs587392371;Reference_seq=G
+2	dbSNP	SNV	3075471	3075471	.	+	.	ID=383;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs586715479;Reference_seq=G
+2	dbSNP	SNV	3104998	3104998	.	+	.	ID=384;Variant_seq=G;Dbxref=dbSNP_150:rs238926090;Reference_seq=A
+2	dbSNP	SNV	3100262	3100262	.	+	.	ID=385;Variant_seq=C;Dbxref=dbSNP_150:rs215646409;Reference_seq=T
+2	dbSNP	SNV	3105653	3105653	.	+	.	ID=386;Variant_seq=A;Dbxref=dbSNP_150:rs583776093;Reference_seq=G
+2	dbSNP	SNV	3050128	3050128	.	+	.	ID=387;Variant_seq=G;Dbxref=dbSNP_150:rs585628659;Reference_seq=C
+2	dbSNP	SNV	3089959	3089959	.	+	.	ID=388;Variant_seq=A;Dbxref=dbSNP_150:rs257924218;Reference_seq=G
+2	dbSNP	SNV	3105640	3105640	.	+	.	ID=389;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs244470984;Reference_seq=A
+2	dbSNP	SNV	3053307	3053307	.	+	.	ID=390;Variant_seq=A;Dbxref=dbSNP_150:rs584980737;Reference_seq=C
+2	dbSNP	deletion	3099905	3099905	.	+	.	ID=391;Variant_seq=-;Dbxref=dbSNP_150:rs213765976;Reference_seq=A
+2	dbSNP	SNV	3063452	3063452	.	+	.	ID=392;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579947611;Reference_seq=G
+2	dbSNP	SNV	3100779	3100779	.	+	.	ID=393;Variant_seq=T;Dbxref=dbSNP_150:rs258295781;Reference_seq=C
+2	dbSNP	SNV	3069575	3069575	.	+	.	ID=394;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583247887;Reference_seq=A
+2	dbSNP	SNV	3050543	3050543	.	+	.	ID=395;Variant_seq=T;Dbxref=dbSNP_150:rs580640179;Reference_seq=C
+2	dbSNP	SNV	3050541	3050541	.	+	.	ID=396;Variant_seq=G;Dbxref=dbSNP_150:rs583347764;Reference_seq=C
+2	dbSNP	SNV	3097991	3097991	.	+	.	ID=397;Variant_seq=A;Dbxref=dbSNP_150:rs265269600;Reference_seq=G
+2	dbSNP	SNV	3099781	3099781	.	+	.	ID=398;Variant_seq=C;Dbxref=dbSNP_150:rs258257781;Reference_seq=T
+2	dbSNP	SNV	3086735	3086735	.	+	.	ID=399;Variant_seq=G;Dbxref=dbSNP_150:rs583028933;Reference_seq=A
+2	dbSNP	SNV	3050550	3050550	.	+	.	ID=400;Variant_seq=T;Dbxref=dbSNP_150:rs1134175521;Reference_seq=G
+2	dbSNP	SNV	3100563	3100563	.	+	.	ID=401;Variant_seq=T;Dbxref=dbSNP_150:rs219910455;Reference_seq=G
+2	dbSNP	SNV	3092441	3092441	.	+	.	ID=402;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs387714103;Reference_seq=G
+2	dbSNP	deletion	3104120	3104120	.	+	.	ID=403;Variant_seq=-;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs231312240;Reference_seq=T
+2	dbSNP	SNV	3098651	3098651	.	+	.	ID=404;Variant_seq=C;Dbxref=dbSNP_150:rs263898708;Reference_seq=T
+2	dbSNP	SNV	3078913	3078913	.	+	.	ID=405;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs581686240;Reference_seq=A
+2	dbSNP	SNV	3087427	3087427	.	+	.	ID=406;Variant_seq=T;Dbxref=dbSNP_150:rs247643416;Reference_seq=C
+2	dbSNP	SNV	3051051	3051051	.	+	.	ID=407;Variant_seq=A;Dbxref=dbSNP_150:rs582654058;Reference_seq=G
+2	dbSNP	SNV	3103362	3103362	.	+	.	ID=408;Variant_seq=C;Dbxref=dbSNP_150:rs217090743;Reference_seq=T
+2	dbSNP	SNV	3098130	3098130	.	+	.	ID=409;Variant_seq=A;Dbxref=dbSNP_150:rs245423555;Reference_seq=T
+2	dbSNP	SNV	3092763	3092763	.	+	.	ID=410;Variant_seq=T;Dbxref=dbSNP_150:rs226665525;Reference_seq=A
+2	dbSNP	SNV	3051924	3051924	.	+	.	ID=411;Variant_seq=C;Dbxref=dbSNP_150:rs583254547;Reference_seq=G
+2	dbSNP	SNV	3073834	3073834	.	+	.	ID=412;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1133999284;Reference_seq=C
+2	dbSNP	SNV	3097129	3097129	.	+	.	ID=413;Variant_seq=A;Dbxref=dbSNP_150:rs250086600;Reference_seq=G
+2	dbSNP	SNV	3107599	3107599	.	+	.	ID=414;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs230770301;Reference_seq=A
+2	dbSNP	SNV	3062932	3062932	.	+	.	ID=415;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584906243;Reference_seq=G
+2	dbSNP	SNV	3050621	3050621	.	+	.	ID=416;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs582175247;Reference_seq=A
+2	dbSNP	SNV	3050146	3050146	.	+	.	ID=417;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs579551127;Reference_seq=T
+2	dbSNP	SNV	3088281	3088281	.	+	.	ID=418;Variant_seq=T;Dbxref=dbSNP_150:rs581972209;Reference_seq=G
+2	dbSNP	SNV	3081317	3081317	.	+	.	ID=419;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs582415543;Reference_seq=G
+2	dbSNP	SNV	3050731	3050731	.	+	.	ID=420;Variant_seq=A;Dbxref=dbSNP_150:rs1131714768;Reference_seq=G
+2	dbSNP	SNV	3083944	3083944	.	+	.	ID=421;Variant_seq=C;Dbxref=dbSNP_150:rs254462265;Reference_seq=T
+2	dbSNP	SNV	3055524	3055524	.	+	.	ID=422;Variant_seq=A;Dbxref=dbSNP_150:rs1135048846;Reference_seq=G
+2	dbSNP	SNV	3051569	3051569	.	+	.	ID=423;Variant_seq=G;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs33890192;Reference_seq=T
+2	dbSNP	SNV	3058569	3058569	.	+	.	ID=424;Variant_seq=C;Dbxref=dbSNP_150:rs585459709;Reference_seq=T
+2	dbSNP	SNV	3105912	3105912	.	+	.	ID=425;Variant_seq=A;Dbxref=dbSNP_150:rs240627179;Reference_seq=T
+2	dbSNP	SNV	3051355	3051355	.	+	.	ID=426;Variant_seq=C;Dbxref=dbSNP_150:rs587203659;Reference_seq=G
+2	dbSNP	SNV	3103034	3103034	.	+	.	ID=427;Variant_seq=T;Dbxref=dbSNP_150:rs230427782;Reference_seq=C
+2	dbSNP	SNV	3102821	3102821	.	+	.	ID=428;Variant_seq=C;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs4137174;Reference_seq=T
+2	dbSNP	SNV	3060364	3060364	.	+	.	ID=429;Variant_seq=T;Dbxref=dbSNP_150:rs586246720;Reference_seq=C
+2	dbSNP	SNV	3061636	3061636	.	+	.	ID=430;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579380306;Reference_seq=C
+2	dbSNP	SNV	3069063	3069063	.	+	.	ID=431;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582089567;Reference_seq=G
+2	dbSNP	SNV	3054928	3054928	.	+	.	ID=432;Variant_seq=C;Dbxref=dbSNP_150:rs586458944;Reference_seq=A
+2	dbSNP	SNV	3053454	3053454	.	+	.	ID=433;Variant_seq=G;Dbxref=dbSNP_150:rs584180942;Reference_seq=A
+2	dbSNP	deletion	3102832	3102833	.	+	.	ID=434;Variant_seq=-;Dbxref=dbSNP_150:rs248180138;Reference_seq=GC
+2	dbSNP	SNV	3068473	3068473	.	+	.	ID=435;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586274206;Reference_seq=G
+2	dbSNP	SNV	3053013	3053013	.	+	.	ID=436;Variant_seq=C;Dbxref=dbSNP_150:rs580636263;Reference_seq=G
+2	dbSNP	SNV	3052733	3052733	.	+	.	ID=437;Variant_seq=A;Dbxref=dbSNP_150:rs580266202;Reference_seq=C
+2	dbSNP	SNV	3090936	3090936	.	+	.	ID=438;Variant_seq=A;Dbxref=dbSNP_150:rs585843775;Reference_seq=T
+2	dbSNP	SNV	3083121	3083121	.	+	.	ID=439;Variant_seq=G;Dbxref=dbSNP_150:rs580501159;Reference_seq=A
+2	dbSNP	SNV	3052474	3052474	.	+	.	ID=440;Variant_seq=T;Dbxref=dbSNP_150:rs579022565;Reference_seq=C
+2	dbSNP	SNV	3078174	3078174	.	+	.	ID=441;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs583416969;Reference_seq=T
+2	dbSNP	SNV	3050542	3050542	.	+	.	ID=442;Variant_seq=G;Dbxref=dbSNP_150:rs586796112;Reference_seq=A
+2	dbSNP	SNV	3074116	3074116	.	+	.	ID=443;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs579511101;Reference_seq=C
+2	dbSNP	SNV	3059790	3059790	.	+	.	ID=444;Variant_seq=A;Dbxref=dbSNP_150:rs581233252;Reference_seq=G
+2	dbSNP	SNV	3054055	3054055	.	+	.	ID=445;Variant_seq=T;Dbxref=dbSNP_150:rs584677245;Reference_seq=C
+2	dbSNP	SNV	3086863	3086863	.	+	.	ID=446;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs584885310;Reference_seq=G
+2	dbSNP	SNV	3104039	3104039	.	+	.	ID=447;Variant_seq=G;Dbxref=dbSNP_150:rs1132958145;Reference_seq=A
+2	dbSNP	SNV	3076191	3076191	.	+	.	ID=448;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs580538037;Reference_seq=C
+2	dbSNP	SNV	3090672	3090672	.	+	.	ID=449;Variant_seq=A;Dbxref=dbSNP_150:rs217147810;Reference_seq=T
+2	dbSNP	SNV	3087624	3087624	.	+	.	ID=450;Variant_seq=A;Dbxref=dbSNP_150:rs226857011;Reference_seq=G
+2	dbSNP	SNV	3075528	3075528	.	+	.	ID=451;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs584003096;Reference_seq=G
+2	dbSNP	SNV	3054190	3054190	.	+	.	ID=452;Variant_seq=T;Dbxref=dbSNP_150:rs584466874;Reference_seq=C
+2	dbSNP	SNV	3103724	3103724	.	+	.	ID=453;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs241641202;Reference_seq=G
+2	dbSNP	SNV	3087847	3087847	.	+	.	ID=454;Variant_seq=C;Dbxref=dbSNP_150:rs586318934;Reference_seq=T
+2	dbSNP	SNV	3054779	3054779	.	+	.	ID=455;Variant_seq=A;Dbxref=dbSNP_150:rs587250524;Reference_seq=G
+2	dbSNP	insertion	3096993	3096993	.	+	.	ID=456;Variant_seq=T;Dbxref=dbSNP_150:rs217323374;Reference_seq=-
+2	dbSNP	SNV	3099754	3099754	.	+	.	ID=457;Variant_seq=T;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096727;Reference_seq=C
+2	dbSNP	SNV	3054764	3054764	.	+	.	ID=458;Variant_seq=A;Dbxref=dbSNP_150:rs583995844;Reference_seq=G
+2	dbSNP	SNV	3081792	3081792	.	+	.	ID=459;Variant_seq=T;Dbxref=dbSNP_150:rs587219026;Reference_seq=C
+2	dbSNP	SNV	3050402	3050402	.	+	.	ID=460;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs864302427;Reference_seq=G
+2	dbSNP	SNV	3072643	3072643	.	+	.	ID=461;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs582131831;Reference_seq=T
+2	dbSNP	SNV	3095705	3095705	.	+	.	ID=462;Variant_seq=A;Dbxref=dbSNP_150:rs244837585;Reference_seq=C
+2	dbSNP	SNV	3079007	3079007	.	+	.	ID=463;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs583923422;Reference_seq=T
+2	dbSNP	SNV	3075466	3075466	.	+	.	ID=464;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs584500771;Reference_seq=T
+2	dbSNP	SNV	3067067	3067067	.	+	.	ID=465;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583838499;Reference_seq=C
+2	dbSNP	SNV	3061883	3061883	.	+	.	ID=466;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580097157;Reference_seq=A
+2	dbSNP	SNV	3053526	3053526	.	+	.	ID=467;Variant_seq=A;Dbxref=dbSNP_150:rs579976815;Reference_seq=G
+2	dbSNP	deletion	3104013	3104022	.	+	.	ID=468;Variant_seq=-;Dbxref=dbSNP_150:rs387650705;Reference_seq=GAGAGAGAGA
+2	dbSNP	deletion	3095294	3095294	.	+	.	ID=469;Variant_seq=-;Dbxref=dbSNP_150:rs253853473;Reference_seq=C
+2	dbSNP	SNV	3066941	3066941	.	+	.	ID=470;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582267295;Reference_seq=C
+2	dbSNP	deletion	3101684	3101684	.	+	.	ID=471;Variant_seq=-;Dbxref=dbSNP_150:rs238501348;Reference_seq=A
+2	dbSNP	SNV	3053057	3053057	.	+	.	ID=472;Variant_seq=C;Dbxref=dbSNP_150:rs587484658;Reference_seq=T
+2	dbSNP	SNV	3063980	3063980	.	+	.	ID=473;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581036907;Reference_seq=T
+2	dbSNP	SNV	3063711	3063711	.	+	.	ID=474;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1132488349;Reference_seq=C
+2	dbSNP	SNV	3061792	3061792	.	+	.	ID=475;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582004705;Reference_seq=G
+2	dbSNP	SNV	3076748	3076748	.	+	.	ID=476;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs581460257;Reference_seq=G
+2	dbSNP	SNV	3066182	3066182	.	+	.	ID=477;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584022932;Reference_seq=C
+2	dbSNP	SNV	3050603	3050603	.	+	.	ID=478;Variant_seq=A;Dbxref=dbSNP_150:rs584671483;Reference_seq=G
+2	dbSNP	SNV	3061461	3061461	.	+	.	ID=479;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584513638;Reference_seq=C
+2	dbSNP	SNV	3068961	3068961	.	+	.	ID=480;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580956536;Reference_seq=G
+2	dbSNP	SNV	3050201	3050201	.	+	.	ID=481;Variant_seq=A;Dbxref=dbSNP_150:rs1132976354;Reference_seq=T
+2	dbSNP	SNV	3090265	3090265	.	+	.	ID=482;Variant_seq=C;Dbxref=dbSNP_150:rs249462139;Reference_seq=A
+2	dbSNP	SNV	3096754	3096754	.	+	.	ID=483;Variant_seq=G;Dbxref=dbSNP_150:rs228100990;Reference_seq=A
+2	dbSNP	SNV	3063651	3063651	.	+	.	ID=484;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584106587;Reference_seq=G
+2	dbSNP	SNV	3105300	3105300	.	+	.	ID=485;Variant_seq=G;Dbxref=dbSNP_150:rs255424088;Reference_seq=A
+2	dbSNP	SNV	3067017	3067017	.	+	.	ID=486;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585428997;Reference_seq=A
+2	dbSNP	SNV	3066798	3066798	.	+	.	ID=487;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs578892625;Reference_seq=T
+2	dbSNP	SNV	3094720	3094720	.	+	.	ID=488;Variant_seq=G;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096731;Reference_seq=A
+2	dbSNP	deletion	3098384	3098387	.	+	.	ID=489;Variant_seq=-;Dbxref=dbSNP_150:rs239376262;Reference_seq=TCTC
+2	dbSNP	SNV	3088683	3088683	.	+	.	ID=490;Variant_seq=C;Dbxref=dbSNP_150:rs237031782;Reference_seq=T
+2	dbSNP	SNV	3066059	3066059	.	+	.	ID=491;Variant_seq=C;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;evidence_values=Frequency;Dbxref=dbSNP_150:rs28308352;Reference_seq=T
+2	dbSNP	SNV	3054537	3054537	.	+	.	ID=492;Variant_seq=G;Dbxref=dbSNP_150:rs580585976;Reference_seq=A
+2	dbSNP	insertion	3103941	3103941	.	+	.	ID=493;Variant_seq=AG;Dbxref=dbSNP_150:rs233151926;Reference_seq=-
+2	dbSNP	SNV	3086871	3086871	.	+	.	ID=494;Variant_seq=A;Dbxref=dbSNP_150:rs578847107;Reference_seq=T
+2	dbSNP	SNV	3066460	3066460	.	+	.	ID=495;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583610211;Reference_seq=T
+2	dbSNP	SNV	3067708	3067708	.	+	.	ID=496;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs33889944;Reference_seq=G
+2	dbSNP	SNV	3071077	3071077	.	+	.	ID=497;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970,upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1131984026;Reference_seq=A
+2	dbSNP	SNV	3081962	3081962	.	+	.	ID=498;Variant_seq=G;Dbxref=dbSNP_150:rs1134896874;Reference_seq=A
+2	dbSNP	SNV	3077377	3077377	.	+	.	ID=499;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs586279456;Reference_seq=T
+2	dbSNP	SNV	3071773	3071773	.	+	.	ID=500;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs585641784;Reference_seq=G
+2	dbSNP	SNV	3098088	3098088	.	+	.	ID=501;Variant_seq=T;Dbxref=dbSNP_150:rs253923811;Reference_seq=G
+2	dbSNP	SNV	3050839	3050839	.	+	.	ID=502;Variant_seq=A;Dbxref=dbSNP_150:rs585785438;Reference_seq=G
+2	dbSNP	SNV	3058071	3058071	.	+	.	ID=503;Variant_seq=T;Dbxref=dbSNP_150:rs587581479;Reference_seq=A
+2	dbSNP	SNV	3050957	3050957	.	+	.	ID=504;Variant_seq=G;Dbxref=dbSNP_150:rs584472829;Reference_seq=C
+2	dbSNP	SNV	3080119	3080119	.	+	.	ID=505;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs586635168;Reference_seq=C
+2	dbSNP	SNV	3101373	3101373	.	+	.	ID=506;Variant_seq=T;Dbxref=dbSNP_150:rs237838207;Reference_seq=C
+2	dbSNP	SNV	3050105	3050105	.	+	.	ID=507;Variant_seq=A;Dbxref=dbSNP_150:rs1132040041;Reference_seq=G
+2	dbSNP	SNV	3092838	3092838	.	+	.	ID=508;Variant_seq=G;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096732;Reference_seq=C
+2	dbSNP	SNV	3070000	3070000	.	+	.	ID=509;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582886624;Reference_seq=C
+2	dbSNP	SNV	3052568	3052568	.	+	.	ID=510;Variant_seq=G;Dbxref=dbSNP_150:rs584369473;Reference_seq=A
+2	dbSNP	SNV	3058210	3058210	.	+	.	ID=511;Variant_seq=G;Dbxref=dbSNP_150:rs584723304;Reference_seq=C
+2	dbSNP	SNV	3058139	3058139	.	+	.	ID=512;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs581583725;Reference_seq=A
+2	dbSNP	insertion	3063564	3063564	.	+	.	ID=513;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1134542395;Reference_seq=-
+2	dbSNP	SNV	3105860	3105860	.	+	.	ID=514;Variant_seq=C;Dbxref=dbSNP_150:rs228743699;Reference_seq=A
+2	dbSNP	SNV	3062591	3062591	.	+	.	ID=515;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585109316;Reference_seq=T
+2	dbSNP	SNV	3078165	3078165	.	+	.	ID=516;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs580001957;Reference_seq=C
+2	dbSNP	SNV	3068962	3068962	.	+	.	ID=517;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs33889846;Reference_seq=C
+2	dbSNP	SNV	3050917	3050917	.	+	.	ID=518;Variant_seq=G;Dbxref=dbSNP_150:rs582799624;Reference_seq=C
+2	dbSNP	SNV	3096171	3096171	.	+	.	ID=519;Variant_seq=C;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096729;Reference_seq=T
+2	dbSNP	SNV	3095149	3095149	.	+	.	ID=520;Variant_seq=G;Dbxref=dbSNP_150:rs237829630;Reference_seq=A
+2	dbSNP	SNV	3069370	3069370	.	+	.	ID=521;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580007568;Reference_seq=C
+2	dbSNP	SNV	3054144	3054144	.	+	.	ID=522;Variant_seq=C;Dbxref=dbSNP_150:rs578783787;Reference_seq=T
+2	dbSNP	SNV	3061400	3061400	.	+	.	ID=523;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581234224;Reference_seq=A
+2	dbSNP	SNV	3066675	3066675	.	+	.	ID=524;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584194301;Reference_seq=A
+2	dbSNP	SNV	3061713	3061713	.	+	.	ID=525;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582261151;Reference_seq=A
+2	dbSNP	SNV	3081050	3081050	.	+	.	ID=526;Variant_seq=A;Dbxref=dbSNP_150:rs585101745;Reference_seq=C
+2	dbSNP	SNV	3065725	3065725	.	+	.	ID=527;Variant_seq=T;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;Dbxref=dbSNP_150:rs585974505;Reference_seq=C
+2	dbSNP	SNV	3076962	3076962	.	+	.	ID=528;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs578274092;Reference_seq=A
+2	dbSNP	SNV	3092356	3092356	.	+	.	ID=529;Variant_seq=T;Dbxref=dbSNP_150:rs259643123;Reference_seq=C
+2	dbSNP	deletion	3068900	3068900	.	+	.	ID=530;Variant_seq=-;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1132666360;Reference_seq=T
+2	dbSNP	deletion	3086561	3086563	.	+	.	ID=531;Variant_seq=-;Dbxref=dbSNP_150:rs245506803;Reference_seq=AAA
+2	dbSNP	SNV	3093497	3093497	.	+	.	ID=532;Variant_seq=T;Dbxref=dbSNP_150:rs226135257;Reference_seq=G
+2	dbSNP	SNV	3101366	3101366	.	+	.	ID=533;Variant_seq=G;Dbxref=dbSNP_150:rs214131792;Reference_seq=A
+2	dbSNP	SNV	3050766	3050766	.	+	.	ID=534;Variant_seq=A;Dbxref=dbSNP_150:rs1134202673;Reference_seq=G
+2	dbSNP	SNV	3060859	3060859	.	+	.	ID=535;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579447809;Reference_seq=C
+2	dbSNP	SNV	3050221	3050221	.	+	.	ID=536;Variant_seq=A;Dbxref=dbSNP_150:rs1132491176;Reference_seq=G
+2	dbSNP	SNV	3050509	3050509	.	+	.	ID=537;Variant_seq=A;Dbxref=dbSNP_150:rs583579992;Reference_seq=C
+2	dbSNP	SNV	3065107	3065107	.	+	.	ID=538;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs581104911;Reference_seq=T
+2	dbSNP	SNV	3050616	3050616	.	+	.	ID=539;Variant_seq=T;Dbxref=dbSNP_150:rs579002768;Reference_seq=A
+2	dbSNP	SNV	3066708	3066708	.	+	.	ID=540;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582779339;Reference_seq=A
+2	dbSNP	SNV	3083113	3083113	.	+	.	ID=541;Variant_seq=T;Dbxref=dbSNP_150:rs585439744;Reference_seq=A
+2	dbSNP	SNV	3062559	3062559	.	+	.	ID=542;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1134140684;Reference_seq=G
+2	dbSNP	SNV	3093770	3093770	.	+	.	ID=543;Variant_seq=G;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs6220868;Reference_seq=C
+2	dbSNP	SNV	3091666	3091666	.	+	.	ID=544;Variant_seq=T;Dbxref=dbSNP_150:rs213339519;Reference_seq=G
+2	dbSNP	SNV	3087859	3087859	.	+	.	ID=545;Variant_seq=C;Dbxref=dbSNP_150:rs580621069;Reference_seq=T
+2	dbSNP	SNV	3101718	3101718	.	+	.	ID=546;Variant_seq=T;Dbxref=dbSNP_150:rs222612408;Reference_seq=G
+2	dbSNP	SNV	3089542	3089542	.	+	.	ID=547;Variant_seq=T;Dbxref=dbSNP_150:rs250409561;Reference_seq=C
+2	dbSNP	SNV	3077427	3077427	.	+	.	ID=548;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs583826670;Reference_seq=G
+2	dbSNP	SNV	3064812	3064812	.	+	.	ID=549;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586761579;Reference_seq=T
+2	dbSNP	SNV	3059826	3059826	.	+	.	ID=550;Variant_seq=A;Dbxref=dbSNP_150:rs584373451;Reference_seq=G
+2	dbSNP	SNV	3051391	3051391	.	+	.	ID=551;Variant_seq=A;Dbxref=dbSNP_150:rs584505565;Reference_seq=G
+2	dbSNP	SNV	3054860	3054860	.	+	.	ID=552;Variant_seq=A;Dbxref=dbSNP_150:rs580102320;Reference_seq=T
+2	dbSNP	SNV	3091238	3091238	.	+	.	ID=553;Variant_seq=A;Dbxref=dbSNP_150:rs581212856;Reference_seq=G
+2	dbSNP	SNV	3090020	3090020	.	+	.	ID=554;Variant_seq=C;Dbxref=dbSNP_150:rs226905134;Reference_seq=T
+2	dbSNP	SNV	3099500	3099500	.	+	.	ID=555;Variant_seq=A;Dbxref=dbSNP_150:rs220016171;Reference_seq=G
+2	dbSNP	SNV	3103515	3103515	.	+	.	ID=556;Variant_seq=G;Dbxref=dbSNP_150:rs261035802;Reference_seq=C
+2	dbSNP	SNV	3103735	3103735	.	+	.	ID=557;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs262547122;Reference_seq=A
+2	dbSNP	SNV	3097014	3097014	.	+	.	ID=558;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs227967346;Reference_seq=T
+2	dbSNP	SNV	3067015	3067015	.	+	.	ID=559;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581881833;Reference_seq=C
+2	dbSNP	insertion	3101319	3101319	.	+	.	ID=560;Variant_seq=TTGT;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs221787443;Reference_seq=-
+2	dbSNP	SNV	3050645	3050645	.	+	.	ID=561;Variant_seq=A;Dbxref=dbSNP_150:rs1132478974;Reference_seq=C
+2	dbSNP	SNV	3053871	3053871	.	+	.	ID=562;Variant_seq=A;Dbxref=dbSNP_150:rs581719388;Reference_seq=G
+2	dbSNP	SNV	3063234	3063234	.	+	.	ID=563;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580474878;Reference_seq=C
+2	dbSNP	SNV	3094081	3094081	.	+	.	ID=564;Variant_seq=T;Dbxref=dbSNP_150:rs239507659;Reference_seq=C
+2	dbSNP	SNV	3051084	3051084	.	+	.	ID=565;Variant_seq=T;Dbxref=dbSNP_150:rs586120134;Reference_seq=G
+2	dbSNP	SNV	3099848	3099848	.	+	.	ID=566;Variant_seq=A;Dbxref=dbSNP_150:rs212408077;Reference_seq=G
+2	dbSNP	SNV	3079475	3079475	.	+	.	ID=567;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1132912509;Reference_seq=T
+2	dbSNP	SNV	3059673	3059673	.	+	.	ID=568;Variant_seq=C;Dbxref=dbSNP_150:rs583830568;Reference_seq=T
+2	dbSNP	SNV	3093694	3093694	.	+	.	ID=569;Variant_seq=C;Dbxref=dbSNP_150:rs255118359;Reference_seq=G
+2	dbSNP	SNV	3054756	3054756	.	+	.	ID=570;Variant_seq=C;Dbxref=dbSNP_150:rs580502825;Reference_seq=T
+2	dbSNP	SNV	3063360	3063360	.	+	.	ID=571;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586811610;Reference_seq=A
+2	dbSNP	SNV	3067590	3067590	.	+	.	ID=572;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1132246232;Reference_seq=G
+2	dbSNP	SNV	3105022	3105022	.	+	.	ID=573;Variant_seq=G;Dbxref=dbSNP_150:rs255415431;Reference_seq=A
+2	dbSNP	SNV	3066560	3066560	.	+	.	ID=574;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581139355;Reference_seq=T
+2	dbSNP	SNV	3088116	3088116	.	+	.	ID=575;Variant_seq=A;Dbxref=dbSNP_150:rs578642391;Reference_seq=G
+2	dbSNP	SNV	3062845	3062845	.	+	.	ID=576;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs582463160;Reference_seq=T
+2	dbSNP	SNV	3073334	3073334	.	+	.	ID=577;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs585568925;Reference_seq=A
+2	dbSNP	SNV	3098065	3098065	.	+	.	ID=578;Variant_seq=T;Dbxref=dbSNP_150:rs227527883;Reference_seq=A
+2	dbSNP	SNV	3090959	3090959	.	+	.	ID=579;Variant_seq=A;Dbxref=dbSNP_150:rs579751257;Reference_seq=T
+2	dbSNP	SNV	3050088	3050088	.	+	.	ID=580;Variant_seq=G;Dbxref=dbSNP_150:rs1132884346;Reference_seq=A
+2	dbSNP	SNV	3069059	3069059	.	+	.	ID=581;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs578444780;Reference_seq=A
+2	dbSNP	SNV	3065619	3065619	.	+	.	ID=582;Variant_seq=T;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;evidence_values=Frequency;Dbxref=dbSNP_150:rs28308355;Reference_seq=A
+2	dbSNP	SNV	3089505	3089505	.	+	.	ID=583;Variant_seq=T;Dbxref=dbSNP_150:rs221315954;Reference_seq=C
+2	dbSNP	SNV	3050613	3050613	.	+	.	ID=584;Variant_seq=A;Dbxref=dbSNP_150:rs1134524136;Reference_seq=G
+2	dbSNP	SNV	3057936	3057936	.	+	.	ID=585;Variant_seq=G;Dbxref=dbSNP_150:rs585291347;Reference_seq=T
+2	dbSNP	SNV	3081576	3081576	.	+	.	ID=586;Variant_seq=G;Dbxref=dbSNP_150:rs580362572;Reference_seq=T
+2	dbSNP	SNV	3076597	3076597	.	+	.	ID=587;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs586236056;Reference_seq=T
+2	dbSNP	SNV	3086556	3086556	.	+	.	ID=588;Variant_seq=G;Dbxref=dbSNP_150:rs583682483;Reference_seq=A
+2	dbSNP	SNV	3099266	3099266	.	+	.	ID=589;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs585688438;Reference_seq=A
+2	dbSNP	SNV	3060145	3060145	.	+	.	ID=590;Variant_seq=A;Dbxref=dbSNP_150:rs584479126;Reference_seq=G
+2	dbSNP	SNV	3052227	3052227	.	+	.	ID=591;Variant_seq=T;Dbxref=dbSNP_150:rs584336702;Reference_seq=G
+2	dbSNP	insertion	3099264	3099264	.	+	.	ID=592;Variant_seq=TGTGTGTG;Dbxref=dbSNP_150:rs387095189;Reference_seq=-
+2	dbSNP	SNV	3051057	3051057	.	+	.	ID=593;Variant_seq=A;Dbxref=dbSNP_150:rs579027401;Reference_seq=T
+2	dbSNP	SNV	3098747	3098747	.	+	.	ID=594;Variant_seq=C;Dbxref=dbSNP_150:rs223706220;Reference_seq=T
+2	dbSNP	SNV	3087668	3087668	.	+	.	ID=595;Variant_seq=C;Dbxref=dbSNP_150:rs580457150;Reference_seq=T
+2	dbSNP	SNV	3093738	3093738	.	+	.	ID=596;Variant_seq=C;evidence_values=Multiple_observations,Frequency,Cited;Dbxref=dbSNP_150:rs6220817;Reference_seq=T
+2	dbSNP	insertion	3086576	3086576	.	+	.	ID=597;Variant_seq=AAAAA;Dbxref=dbSNP_150:rs387251136;Reference_seq=-
+2	dbSNP	SNV	3054648	3054648	.	+	.	ID=598;Variant_seq=C;Dbxref=dbSNP_150:rs582790682;Reference_seq=T
+2	dbSNP	SNV	3100089	3100089	.	+	.	ID=599;Variant_seq=C;Dbxref=dbSNP_150:rs234222735;Reference_seq=T
+2	dbSNP	insertion	3089788	3089788	.	+	.	ID=600;Variant_seq=TATATA;Dbxref=dbSNP_150:rs246049541;Reference_seq=-
+2	dbSNP	SNV	3087610	3087610	.	+	.	ID=601;Variant_seq=T;Dbxref=dbSNP_150:rs213972531;Reference_seq=C
+2	dbSNP	SNV	3066326	3066326	.	+	.	ID=602;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587009902;Reference_seq=G
+2	dbSNP	SNV	3069737	3069737	.	+	.	ID=603;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586728171;Reference_seq=G
+2	dbSNP	SNV	3070422	3070422	.	+	.	ID=604;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970,upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579017191;Reference_seq=C
+2	dbSNP	SNV	3082037	3082037	.	+	.	ID=605;Variant_seq=T;Dbxref=dbSNP_150:rs1133346653;Reference_seq=C
+2	dbSNP	SNV	3102229	3102229	.	+	.	ID=606;Variant_seq=C;Dbxref=dbSNP_150:rs261606157;Reference_seq=T
+2	dbSNP	SNV	3051218	3051218	.	+	.	ID=607;Variant_seq=A;Dbxref=dbSNP_150:rs587402329;Reference_seq=C
+2	dbSNP	SNV	3085368	3085368	.	+	.	ID=608;Variant_seq=A;Dbxref=dbSNP_150:rs1135072643;Reference_seq=C
+2	dbSNP	SNV	3092343	3092343	.	+	.	ID=609;Variant_seq=A;Dbxref=dbSNP_150:rs234415946;Reference_seq=G
+2	dbSNP	SNV	3083150	3083150	.	+	.	ID=610;Variant_seq=C;Dbxref=dbSNP_150:rs583844617;Reference_seq=A
+2	dbSNP	SNV	3064898	3064898	.	+	.	ID=611;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583649990;Reference_seq=T
+2	dbSNP	SNV	3103025	3103025	.	+	.	ID=612;Variant_seq=A;Dbxref=dbSNP_150:rs211814672;Reference_seq=G
+2	dbSNP	SNV	3086480	3086480	.	+	.	ID=613;Variant_seq=G;Dbxref=dbSNP_150:rs227385499;Reference_seq=A
+2	dbSNP	SNV	3054431	3054431	.	+	.	ID=614;Variant_seq=G;Dbxref=dbSNP_150:rs586994990;Reference_seq=A
+2	dbSNP	SNV	3062751	3062751	.	+	.	ID=615;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579064524;Reference_seq=A
+2	dbSNP	SNV	3060753	3060753	.	+	.	ID=616;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583428876;Reference_seq=G
+2	dbSNP	deletion	3103579	3103579	.	+	.	ID=617;Variant_seq=-;Dbxref=dbSNP_150:rs258380715;Reference_seq=T
+2	dbSNP	insertion	3099266	3099266	.	+	.	ID=618;Variant_seq=TG;Dbxref=dbSNP_150:rs237015396;Reference_seq=-
+2	dbSNP	SNV	3104661	3104661	.	+	.	ID=619;Variant_seq=A;Dbxref=dbSNP_150:rs1134144785;Reference_seq=G
+2	dbSNP	SNV	3050715	3050715	.	+	.	ID=620;Variant_seq=T;Dbxref=dbSNP_150:rs585814296;Reference_seq=G
+2	dbSNP	SNV	3064842	3064842	.	+	.	ID=621;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581791601;Reference_seq=T
+2	dbSNP	SNV	3103013	3103013	.	+	.	ID=622;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs256025466;Reference_seq=G
+2	dbSNP	SNV	3068018	3068018	.	+	.	ID=623;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586270030;Reference_seq=C
+2	dbSNP	SNV	3068471	3068471	.	+	.	ID=624;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583264307;Reference_seq=A
+2	dbSNP	SNV	3100780	3100780	.	+	.	ID=625;Variant_seq=G;Dbxref=dbSNP_150:rs230379214;Reference_seq=A
+2	dbSNP	SNV	3072366	3072366	.	+	.	ID=626;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs580024244;Reference_seq=G
+2	dbSNP	SNV	3074554	3074554	.	+	.	ID=627;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs583790972;Reference_seq=A
+2	dbSNP	SNV	3107046	3107046	.	+	.	ID=628;Variant_seq=A;Dbxref=dbSNP_150:rs215323070;Reference_seq=C
+2	dbSNP	SNV	3054217	3054217	.	+	.	ID=629;Variant_seq=T;Dbxref=dbSNP_150:rs585850609;Reference_seq=C
+2	dbSNP	SNV	3105999	3105999	.	+	.	ID=630;Variant_seq=T;Dbxref=dbSNP_150:rs226555147;Reference_seq=C
+2	dbSNP	SNV	3098162	3098162	.	+	.	ID=631;Variant_seq=T;Dbxref=dbSNP_150:rs216023763;Reference_seq=C
+2	dbSNP	SNV	3107413	3107413	.	+	.	ID=632;Variant_seq=G;Dbxref=dbSNP_150:rs249241433;Reference_seq=T
+2	dbSNP	SNV	3052863	3052863	.	+	.	ID=633;Variant_seq=A;Dbxref=dbSNP_150:rs583175871;Reference_seq=G
+2	dbSNP	SNV	3062066	3062066	.	+	.	ID=634;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583480942;Reference_seq=C
+2	dbSNP	SNV	3086798	3086798	.	+	.	ID=635;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs581510955;Reference_seq=T
+2	dbSNP	SNV	3075938	3075938	.	+	.	ID=636;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs581968516;Reference_seq=G
+2	dbSNP	SNV	3060834	3060834	.	+	.	ID=637;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585581313;Reference_seq=T
+2	dbSNP	SNV	3101180	3101180	.	+	.	ID=638;Variant_seq=G;Dbxref=dbSNP_150:rs217749669;Reference_seq=T
+2	dbSNP	SNV	3076550	3076550	.	+	.	ID=639;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs584389898;Reference_seq=A
+2	dbSNP	deletion	3107925	3107943	.	+	.	ID=640;Variant_seq=-;Dbxref=dbSNP_150:rs224071954;Reference_seq=TCTGAGAGAAAGACATTTG
+2	dbSNP	SNV	3102221	3102221	.	+	.	ID=641;Variant_seq=G;Dbxref=dbSNP_150:rs247114368;Reference_seq=A
+2	dbSNP	SNV	3068089	3068089	.	+	.	ID=642;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580472608;Reference_seq=G
+2	dbSNP	SNV	3093457	3093457	.	+	.	ID=643;Variant_seq=A;Dbxref=dbSNP_150:rs264959203;Reference_seq=G
+2	dbSNP	SNV	3068960	3068960	.	+	.	ID=644;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587223989;Reference_seq=C
+2	dbSNP	SNV	3069663	3069663	.	+	.	ID=645;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1133383938;Reference_seq=A
+2	dbSNP	SNV	3066943	3066943	.	+	.	ID=646;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585779193;Reference_seq=G
+2	dbSNP	SNV	3061784	3061784	.	+	.	ID=647;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579575703;Reference_seq=T
+2	dbSNP	SNV	3053420	3053420	.	+	.	ID=648;Variant_seq=G;Dbxref=dbSNP_150:rs582221300;Reference_seq=A
+2	dbSNP	SNV	3054281	3054281	.	+	.	ID=649;Variant_seq=T;Dbxref=dbSNP_150:rs579079900;Reference_seq=C
+2	dbSNP	SNV	3069742	3069742	.	+	.	ID=650;Variant_seq=A,T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098,upstream_gene_variant 1 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581686382;Reference_seq=C
+2	dbSNP	SNV	3063246	3063246	.	+	.	ID=651;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583818529;Reference_seq=G
+2	dbSNP	SNV	3069788	3069788	.	+	.	ID=652;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586879801;Reference_seq=A
+2	dbSNP	SNV	3061966	3061966	.	+	.	ID=653;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1132167688;Reference_seq=C
+2	dbSNP	SNV	3088052	3088052	.	+	.	ID=654;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs581651029;Reference_seq=G
+2	dbSNP	SNV	3082682	3082682	.	+	.	ID=655;Variant_seq=C;Dbxref=dbSNP_150:rs1133312384;Reference_seq=G
+2	dbSNP	SNV	3075898	3075898	.	+	.	ID=656;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs585758848;Reference_seq=C
+2	dbSNP	SNV	3100737	3100737	.	+	.	ID=657;Variant_seq=C;Dbxref=dbSNP_150:rs252605092;Reference_seq=T
+2	dbSNP	SNV	3097415	3097415	.	+	.	ID=658;Variant_seq=T;Dbxref=dbSNP_150:rs235269529;Reference_seq=G
+2	dbSNP	SNV	3092294	3092294	.	+	.	ID=659;Variant_seq=A;Dbxref=dbSNP_150:rs220344238;Reference_seq=G
+2	dbSNP	deletion	3079180	3079180	.	+	.	ID=660;Variant_seq=-;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1131999737;Reference_seq=T
+2	dbSNP	SNV	3088674	3088674	.	+	.	ID=661;Variant_seq=C;Dbxref=dbSNP_150:rs211849544;Reference_seq=T
+2	dbSNP	SNV	3050612	3050612	.	+	.	ID=662;Variant_seq=C;Dbxref=dbSNP_150:rs1133395917;Reference_seq=A
+2	dbSNP	SNV	3058312	3058312	.	+	.	ID=663;Variant_seq=C;Dbxref=dbSNP_150:rs584408643;Reference_seq=A
+2	dbSNP	SNV	3059453	3059453	.	+	.	ID=664;Variant_seq=C;Dbxref=dbSNP_150:rs581772717;Reference_seq=A
+2	dbSNP	SNV	3057742	3057742	.	+	.	ID=665;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs579466133;Reference_seq=A
+2	dbSNP	insertion	3105644	3105644	.	+	.	ID=666;Variant_seq=TGGAGG;Dbxref=dbSNP_150:rs244858403;Reference_seq=-
+2	dbSNP	insertion	3101173	3101173	.	+	.	ID=667;Variant_seq=GTTT;Dbxref=dbSNP_150:rs224418771;Reference_seq=-
+2	dbSNP	SNV	3063050	3063050	.	+	.	ID=668;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1134437408;Reference_seq=C
+2	dbSNP	SNV	3100097	3100097	.	+	.	ID=669;Variant_seq=C;Dbxref=dbSNP_150:rs252606052;Reference_seq=T
+2	dbSNP	SNV	3089052	3089052	.	+	.	ID=670;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs232531591;Reference_seq=T
+2	dbSNP	SNV	3064924	3064924	.	+	.	ID=671;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581152270;Reference_seq=T
+2	dbSNP	SNV	3102068	3102068	.	+	.	ID=672;Variant_seq=A;Dbxref=dbSNP_150:rs251882612;Reference_seq=G
+2	dbSNP	SNV	3101540	3101540	.	+	.	ID=673;Variant_seq=A;Dbxref=dbSNP_150:rs211822813;Reference_seq=C
+2	dbSNP	SNV	3089559	3089559	.	+	.	ID=674;Variant_seq=G;Dbxref=dbSNP_150:rs264502468;Reference_seq=A
+2	dbSNP	SNV	3063186	3063186	.	+	.	ID=675;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586275490;Reference_seq=C
+2	dbSNP	insertion	3100286	3100286	.	+	.	ID=676;Variant_seq=GTTTTGTTTT;Dbxref=dbSNP_150:rs227627951;Reference_seq=-
+2	dbSNP	SNV	3087813	3087813	.	+	.	ID=677;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs579968992;Reference_seq=G
+2	dbSNP	SNV	3069052	3069052	.	+	.	ID=678;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584445852;Reference_seq=T
+2	dbSNP	SNV	3105037	3105037	.	+	.	ID=679;Variant_seq=G;Dbxref=dbSNP_150:rs218731863;Reference_seq=A
+2	dbSNP	SNV	3097546	3097546	.	+	.	ID=680;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs251254874;Reference_seq=T
+2	dbSNP	SNV	3054618	3054618	.	+	.	ID=681;Variant_seq=G;Dbxref=dbSNP_150:rs585729944;Reference_seq=A
+2	dbSNP	SNV	3101187	3101187	.	+	.	ID=682;Variant_seq=G;Dbxref=dbSNP_150:rs579517171;Reference_seq=A
+2	dbSNP	SNV	3066567	3066567	.	+	.	ID=683;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584486966;Reference_seq=T
+2	dbSNP	SNV	3093317	3093317	.	+	.	ID=684;Variant_seq=G;Dbxref=dbSNP_150:rs241240271;Reference_seq=A
+2	dbSNP	deletion	3102311	3102312	.	+	.	ID=685;Variant_seq=-;Dbxref=dbSNP_150:rs387371434;Reference_seq=TT
+2	dbSNP	SNV	3056132	3056132	.	+	.	ID=686;Variant_seq=C;Dbxref=dbSNP_150:rs1131708053;Reference_seq=T
+2	dbSNP	SNV	3108140	3108140	.	+	.	ID=687;Variant_seq=G;Dbxref=dbSNP_150:rs222244940;Reference_seq=A
+2	dbSNP	SNV	3107047	3107047	.	+	.	ID=688;Variant_seq=G;Dbxref=dbSNP_150:rs241185900;Reference_seq=A
+2	dbSNP	SNV	3088073	3088073	.	+	.	ID=689;Variant_seq=G;Dbxref=dbSNP_150:rs585084984;Reference_seq=T
+2	dbSNP	SNV	3066953	3066953	.	+	.	ID=690;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1132345502;Reference_seq=T
+2	dbSNP	insertion	3102300	3102300	.	+	.	ID=691;Variant_seq=ATTTTT;Dbxref=dbSNP_150:rs235927867;Reference_seq=-
+2	dbSNP	SNV	3098801	3098801	.	+	.	ID=692;Variant_seq=T;Dbxref=dbSNP_150:rs236181778;Reference_seq=C
+2	dbSNP	SNV	3062954	3062954	.	+	.	ID=693;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs578811832;Reference_seq=C
+2	dbSNP	SNV	3093168	3093168	.	+	.	ID=694;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs235010299;Reference_seq=A
+2	dbSNP	SNV	3055288	3055288	.	+	.	ID=695;Variant_seq=C;Dbxref=dbSNP_150:rs579068229;Reference_seq=G
+2	dbSNP	SNV	3097567	3097567	.	+	.	ID=696;Variant_seq=A;Dbxref=dbSNP_150:rs262650500;Reference_seq=G
+2	dbSNP	insertion	3106380	3106380	.	+	.	ID=697;Variant_seq=ACAA;Dbxref=dbSNP_150:rs233056386;Reference_seq=-
+2	dbSNP	SNV	3096916	3096916	.	+	.	ID=698;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs45910394;Reference_seq=C
+2	dbSNP	SNV	3051060	3051060	.	+	.	ID=699;Variant_seq=C;Dbxref=dbSNP_150:rs1133969978;Reference_seq=A
+2	dbSNP	SNV	3098307	3098307	.	+	.	ID=700;Variant_seq=A;Dbxref=dbSNP_150:rs251886693;Reference_seq=G
+2	dbSNP	SNV	3060083	3060083	.	+	.	ID=701;Variant_seq=A;Dbxref=dbSNP_150:rs581056804;Reference_seq=T
+2	dbSNP	SNV	3064574	3064574	.	+	.	ID=702;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582839467;Reference_seq=A
+2	dbSNP	SNV	3102305	3102305	.	+	.	ID=703;Variant_seq=A;Dbxref=dbSNP_150:rs1132188327;Reference_seq=T
+2	dbSNP	SNV	3050491	3050491	.	+	.	ID=704;Variant_seq=G;Dbxref=dbSNP_150:rs1134885697;Reference_seq=A
+2	dbSNP	SNV	3107428	3107428	.	+	.	ID=705;Variant_seq=T;Dbxref=dbSNP_150:rs222191236;Reference_seq=C
+2	dbSNP	SNV	3065667	3065667	.	+	.	ID=706;Variant_seq=T;Variant_effect=non_coding_transcript_exon_variant 0 ncRNA ENSMUST00000192098;evidence_values=Frequency;Dbxref=dbSNP_150:rs28308354;Reference_seq=C
+2	dbSNP	SNV	3067234	3067234	.	+	.	ID=707;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580138038;Reference_seq=C
+2	dbSNP	SNV	3090968	3090968	.	+	.	ID=708;Variant_seq=T;Dbxref=dbSNP_150:rs583220797;Reference_seq=C
+2	dbSNP	SNV	3069816	3069816	.	+	.	ID=709;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581200171;Reference_seq=C
+2	dbSNP	SNV	3050593	3050593	.	+	.	ID=710;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs587478110;Reference_seq=T
+2	dbSNP	SNV	3089688	3089688	.	+	.	ID=711;Variant_seq=T;Dbxref=dbSNP_150:rs227432912;Reference_seq=C
+2	dbSNP	SNV	3076757	3076757	.	+	.	ID=712;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs578843544;Reference_seq=G
+2	dbSNP	SNV	3054197	3054197	.	+	.	ID=713;Variant_seq=C;Dbxref=dbSNP_150:rs578386241;Reference_seq=T
+2	dbSNP	SNV	3096940	3096940	.	+	.	ID=714;Variant_seq=C;Dbxref=dbSNP_150:rs51093211;Reference_seq=T
+2	dbSNP	SNV	3082284	3082284	.	+	.	ID=715;Variant_seq=T;Dbxref=dbSNP_150:rs580914846;Reference_seq=C
+2	dbSNP	SNV	3058915	3058915	.	+	.	ID=716;Variant_seq=G;Dbxref=dbSNP_150:rs582775034;Reference_seq=T
+2	dbSNP	SNV	3069138	3069138	.	+	.	ID=717;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579427913;Reference_seq=G
+2	dbSNP	SNV	3100058	3100058	.	+	.	ID=718;Variant_seq=T;Dbxref=dbSNP_150:rs217717149;Reference_seq=G
+2	dbSNP	SNV	3052386	3052386	.	+	.	ID=719;Variant_seq=G;Dbxref=dbSNP_150:rs585139907;Reference_seq=T
+2	dbSNP	SNV	3050115	3050115	.	+	.	ID=720;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs584579718;Reference_seq=T
+2	dbSNP	SNV	3082579	3082579	.	+	.	ID=721;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs579377165;Reference_seq=G
+2	dbSNP	SNV	3050374	3050374	.	+	.	ID=722;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs586241649;Reference_seq=T
+2	dbSNP	SNV	3071823	3071823	.	+	.	ID=723;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1134194520;Reference_seq=A
+2	dbSNP	SNV	3069845	3069845	.	+	.	ID=724;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581101404;Reference_seq=G
+2	dbSNP	SNV	3107998	3107998	.	+	.	ID=725;Variant_seq=G;Dbxref=dbSNP_150:rs238865545;Reference_seq=T
+2	dbSNP	SNV	3077274	3077274	.	+	.	ID=726;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs582846880;Reference_seq=T
+2	dbSNP	SNV	3061494	3061494	.	+	.	ID=727;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580614261;Reference_seq=C
+2	dbSNP	SNV	3091173	3091173	.	+	.	ID=728;Variant_seq=C;Dbxref=dbSNP_150:rs580505052;Reference_seq=A
+2	dbSNP	SNV	3076411	3076411	.	+	.	ID=729;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs580146325;Reference_seq=A
+2	dbSNP	SNV	3051500	3051500	.	+	.	ID=730;Variant_seq=A;Dbxref=dbSNP_150:rs579392192;Reference_seq=T
+2	dbSNP	SNV	3063026	3063026	.	+	.	ID=731;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585561960;Reference_seq=T
+2	dbSNP	SNV	3055058	3055058	.	+	.	ID=732;Variant_seq=T;Dbxref=dbSNP_150:rs586628294;Reference_seq=G
+2	dbSNP	SNV	3050748	3050748	.	+	.	ID=733;Variant_seq=A;Dbxref=dbSNP_150:rs1135399536;Reference_seq=T
+2	dbSNP	insertion	3095132	3095132	.	+	.	ID=734;Variant_seq=TC;Dbxref=dbSNP_150:rs263799377;Reference_seq=-
+2	dbSNP	SNV	3095750	3095750	.	+	.	ID=735;Variant_seq=A;Dbxref=dbSNP_150:rs234895782;Reference_seq=G
+2	dbSNP	SNV	3050965	3050965	.	+	.	ID=736;Variant_seq=G;Dbxref=dbSNP_150:rs578388759;Reference_seq=C
+2	dbSNP	SNV	3063656	3063656	.	+	.	ID=737;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs581600278;Reference_seq=C
+2	dbSNP	SNV	3078074	3078074	.	+	.	ID=738;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs578464830;Reference_seq=G
+2	dbSNP	SNV	3052855	3052855	.	+	.	ID=739;Variant_seq=G;Dbxref=dbSNP_150:rs579986785;Reference_seq=A
+2	dbSNP	SNV	3089196	3089196	.	+	.	ID=740;Variant_seq=T;Dbxref=dbSNP_150:rs219321079;Reference_seq=G
+2	dbSNP	SNV	3059123	3059123	.	+	.	ID=741;Variant_seq=T;Dbxref=dbSNP_150:rs585812572;Reference_seq=C
+2	dbSNP	SNV	3050769	3050769	.	+	.	ID=742;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs583480142;Reference_seq=C
+2	dbSNP	SNV	3054402	3054402	.	+	.	ID=743;Variant_seq=T;Dbxref=dbSNP_150:rs583122982;Reference_seq=C
+2	dbSNP	SNV	3108039	3108039	.	+	.	ID=744;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs262108589;Reference_seq=G
+2	dbSNP	SNV	3057790	3057790	.	+	.	ID=745;Variant_seq=G;Dbxref=dbSNP_150:rs582888526;Reference_seq=A
+2	dbSNP	SNV	3096316	3096316	.	+	.	ID=746;Variant_seq=T;Dbxref=dbSNP_150:rs264799418;Reference_seq=C
+2	dbSNP	SNV	3082444	3082444	.	+	.	ID=747;Variant_seq=A;Dbxref=dbSNP_150:rs1132808312;Reference_seq=C
+2	dbSNP	SNV	3090133	3090133	.	+	.	ID=748;Variant_seq=A;Dbxref=dbSNP_150:rs583238297;Reference_seq=G
+2	dbSNP	deletion	3101320	3101335	.	+	.	ID=749;Variant_seq=-;Dbxref=dbSNP_150:rs232777402;Reference_seq=TTGTTTGTTTGTTTGT
+2	dbSNP	SNV	3095766	3095766	.	+	.	ID=750;Variant_seq=A;Dbxref=dbSNP_150:rs218189531;Reference_seq=C
+2	dbSNP	SNV	3050121	3050121	.	+	.	ID=751;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs582124516;Reference_seq=T
+2	dbSNP	SNV	3050198	3050198	.	+	.	ID=752;Variant_seq=G;Dbxref=dbSNP_150:rs1133696485;Reference_seq=A
+2	dbSNP	SNV	3079503	3079503	.	+	.	ID=753;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1134415170;Reference_seq=T
+2	dbSNP	SNV	3076518	3076518	.	+	.	ID=754;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs581060967;Reference_seq=G
+2	dbSNP	SNV	3081055	3081055	.	+	.	ID=755;Variant_seq=A;Dbxref=dbSNP_150:rs579244680;Reference_seq=G
+2	dbSNP	SNV	3077791	3077791	.	+	.	ID=756;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs587577355;Reference_seq=G
+2	dbSNP	SNV	3085789	3085789	.	+	.	ID=757;Variant_seq=G;Dbxref=dbSNP_150:rs1132916076;Reference_seq=T
+2	dbSNP	SNV	3100534	3100534	.	+	.	ID=758;Variant_seq=G;Dbxref=dbSNP_150:rs262290853;Reference_seq=A
+2	dbSNP	SNV	3093010	3093010	.	+	.	ID=759;Variant_seq=T;Dbxref=dbSNP_150:rs255095821;Reference_seq=C
+2	dbSNP	SNV	3078046	3078046	.	+	.	ID=760;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs581021965;Reference_seq=C
+2	dbSNP	SNV	3052288	3052288	.	+	.	ID=761;Variant_seq=G;Dbxref=dbSNP_150:rs581789575;Reference_seq=A
+2	dbSNP	SNV	3075463	3075463	.	+	.	ID=762;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs581145859;Reference_seq=G
+2	dbSNP	SNV	3081919	3081919	.	+	.	ID=763;Variant_seq=A;Dbxref=dbSNP_150:rs581146956;Reference_seq=G
+2	dbSNP	SNV	3093728	3093728	.	+	.	ID=764;Variant_seq=G;Dbxref=dbSNP_150:rs230802852;Reference_seq=C
+2	dbSNP	SNV	3058520	3058520	.	+	.	ID=765;Variant_seq=T;Dbxref=dbSNP_150:rs581906397;Reference_seq=C
+2	dbSNP	SNV	3095360	3095360	.	+	.	ID=766;Variant_seq=C;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096730;Reference_seq=T
+2	dbSNP	SNV	3100288	3100288	.	+	.	ID=767;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs579956984;Reference_seq=T
+2	dbSNP	SNV	3086857	3086857	.	+	.	ID=768;Variant_seq=T;Dbxref=dbSNP_150:rs581464330;Reference_seq=C
+2	dbSNP	SNV	3075924	3075924	.	+	.	ID=769;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs579821078;Reference_seq=A
+2	dbSNP	SNV	3093156	3093156	.	+	.	ID=770;Variant_seq=A;Dbxref=dbSNP_150:rs587073555;Reference_seq=G
+2	dbSNP	deletion	3097627	3097629	.	+	.	ID=771;Variant_seq=-;Dbxref=dbSNP_150:rs222637442;Reference_seq=TGA
+2	dbSNP	SNV	3101612	3101612	.	+	.	ID=772;Variant_seq=T;Dbxref=dbSNP_150:rs235135760;Reference_seq=C
+2	dbSNP	SNV	3100676	3100676	.	+	.	ID=773;Variant_seq=G;Dbxref=dbSNP_150:rs245030508;Reference_seq=A
+2	dbSNP	insertion	3090881	3090881	.	+	.	ID=774;Variant_seq=G;Dbxref=dbSNP_150:rs253412346;Reference_seq=-
+2	dbSNP	SNV	3064395	3064395	.	+	.	ID=775;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585434303;Reference_seq=C
+2	dbSNP	SNV	3075834	3075834	.	+	.	ID=776;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs582323005;Reference_seq=C
+2	dbSNP	SNV	3100749	3100749	.	+	.	ID=777;Variant_seq=T;Dbxref=dbSNP_150:rs239075814;Reference_seq=A
+2	dbSNP	SNV	3081706	3081706	.	+	.	ID=778;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs583622670;Reference_seq=T
+2	dbSNP	SNV	3050949	3050949	.	+	.	ID=779;Variant_seq=G;Dbxref=dbSNP_150:rs581052711;Reference_seq=C
+2	dbSNP	SNV	3064594	3064594	.	+	.	ID=780;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586056568;Reference_seq=G
+2	dbSNP	SNV	3089552	3089552	.	+	.	ID=781;Variant_seq=C;Dbxref=dbSNP_150:rs1131915946;Reference_seq=A
+2	dbSNP	SNV	3078115	3078115	.	+	.	ID=782;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs585444404;Reference_seq=G
+2	dbSNP	deletion	3101140	3101141	.	+	.	ID=783;Variant_seq=-;Dbxref=dbSNP_150:rs1134152752;Reference_seq=TT
+2	dbSNP	SNV	3063177	3063177	.	+	.	ID=784;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579419556;Reference_seq=A
+2	dbSNP	SNV	3064961	3064961	.	+	.	ID=785;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs578771544;Reference_seq=A
+2	dbSNP	SNV	3067277	3067277	.	+	.	ID=786;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580952142;Reference_seq=C
+2	dbSNP	SNV	3063652	3063652	.	+	.	ID=787;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587583510;Reference_seq=C
+2	dbSNP	SNV	3092350	3092350	.	+	.	ID=788;Variant_seq=T;Dbxref=dbSNP_150:rs254923473;Reference_seq=C
+2	dbSNP	SNV	3066995	3066995	.	+	.	ID=789;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579616025;Reference_seq=C
+2	dbSNP	SNV	3050168	3050168	.	+	.	ID=790;Variant_seq=C;Dbxref=dbSNP_150:rs1134624112;Reference_seq=G
+2	dbSNP	SNV	3050098	3050098	.	+	.	ID=791;Variant_seq=A;Dbxref=dbSNP_150:rs1135375608;Reference_seq=G
+2	dbSNP	SNV	3061967	3061967	.	+	.	ID=792;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1132977783;Reference_seq=T
+2	dbSNP	SNV	3097201	3097201	.	+	.	ID=793;Variant_seq=C;Dbxref=dbSNP_150:rs218292087;Reference_seq=T
+2	dbSNP	SNV	3088075	3088075	.	+	.	ID=794;Variant_seq=C;Dbxref=dbSNP_150:rs578892868;Reference_seq=T
+2	dbSNP	SNV	3075529	3075529	.	+	.	ID=795;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs579384390;Reference_seq=A
+2	dbSNP	SNV	3105309	3105309	.	+	.	ID=796;Variant_seq=T;Dbxref=dbSNP_150:rs221091660;Reference_seq=C
+2	dbSNP	SNV	3071834	3071834	.	+	.	ID=797;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1134617590;Reference_seq=T
+2	dbSNP	SNV	3099684	3099684	.	+	.	ID=798;Variant_seq=G;Dbxref=dbSNP_150:rs229100907;Reference_seq=A
+2	dbSNP	SNV	3053639	3053639	.	+	.	ID=799;Variant_seq=G;Dbxref=dbSNP_150:rs586694802;Reference_seq=A
+2	dbSNP	SNV	3102896	3102896	.	+	.	ID=800;Variant_seq=G;Dbxref=dbSNP_150:rs231153045;Reference_seq=A
+2	dbSNP	SNV	3104391	3104391	.	+	.	ID=801;Variant_seq=C;Dbxref=dbSNP_150:rs249321754;Reference_seq=G
+2	dbSNP	SNV	3061852	3061852	.	+	.	ID=802;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580562141;Reference_seq=A
+2	dbSNP	SNV	3067278	3067278	.	+	.	ID=803;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584174002;Reference_seq=A
+2	dbSNP	SNV	3086610	3086610	.	+	.	ID=804;Variant_seq=G;Dbxref=dbSNP_150:rs1134005137;Reference_seq=A
+2	dbSNP	SNV	3066626	3066626	.	+	.	ID=805;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580558292;Reference_seq=T
+2	dbSNP	insertion	3106710	3106710	.	+	.	ID=806;Variant_seq=TCA;Dbxref=dbSNP_150:rs226670929;Reference_seq=-
+2	dbSNP	SNV	3068352	3068352	.	+	.	ID=807;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579924292;Reference_seq=C
+2	dbSNP	SNV	3058488	3058488	.	+	.	ID=808;Variant_seq=T;Dbxref=dbSNP_150:rs578475988;Reference_seq=A
+2	dbSNP	SNV	3050863	3050863	.	+	.	ID=809;Variant_seq=G;evidence_values=Frequency;Dbxref=dbSNP_150:rs33898128;Reference_seq=A
+2	dbSNP	SNV	3055298	3055298	.	+	.	ID=810;Variant_seq=G;Dbxref=dbSNP_150:rs582454936;Reference_seq=A
+2	dbSNP	SNV	3054355	3054355	.	+	.	ID=811;Variant_seq=A;Dbxref=dbSNP_150:rs579968099;Reference_seq=G
+2	dbSNP	SNV	3104985	3104985	.	+	.	ID=812;Variant_seq=G;Dbxref=dbSNP_150:rs258227175;Reference_seq=C
+2	dbSNP	SNV	3103705	3103705	.	+	.	ID=813;Variant_seq=T;Dbxref=dbSNP_150:rs221067685;Reference_seq=C
+2	dbSNP	SNV	3081491	3081491	.	+	.	ID=814;Variant_seq=C;Dbxref=dbSNP_150:rs587208174;Reference_seq=T
+2	dbSNP	SNV	3069121	3069121	.	+	.	ID=815;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585432433;Reference_seq=T
+2	dbSNP	SNV	3076660	3076660	.	+	.	ID=816;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs579048799;Reference_seq=T
+2	dbSNP	SNV	3064370	3064370	.	+	.	ID=817;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582093079;Reference_seq=A
+2	dbSNP	SNV	3051145	3051145	.	+	.	ID=818;Variant_seq=A,C;Dbxref=dbSNP_150:rs583462195;Reference_seq=T
+2	dbSNP	SNV	3064611	3064611	.	+	.	ID=819;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583435666;Reference_seq=C
+2	dbSNP	SNV	3107581	3107581	.	+	.	ID=820;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs248619106;Reference_seq=T
+2	dbSNP	SNV	3059887	3059887	.	+	.	ID=821;Variant_seq=A;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs33890105;Reference_seq=T
+2	dbSNP	SNV	3067370	3067370	.	+	.	ID=822;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585117456;Reference_seq=C
+2	dbSNP	SNV	3057849	3057849	.	+	.	ID=823;Variant_seq=C;Dbxref=dbSNP_150:rs583345595;Reference_seq=G
+2	dbSNP	SNV	3076909	3076909	.	+	.	ID=824;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs585472566;Reference_seq=T
+2	dbSNP	SNV	3107808	3107808	.	+	.	ID=825;Variant_seq=A;Dbxref=dbSNP_150:rs248635618;Reference_seq=G
+2	dbSNP	deletion	3096063	3096063	.	+	.	ID=826;Variant_seq=-;Dbxref=dbSNP_150:rs257334279;Reference_seq=T
+2	dbSNP	SNV	3064956	3064956	.	+	.	ID=827;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584785212;Reference_seq=A
+2	dbSNP	deletion	3094438	3094438	.	+	.	ID=828;Variant_seq=-;Dbxref=dbSNP_150:rs236714021;Reference_seq=C
+2	dbSNP	SNV	3054477	3054477	.	+	.	ID=829;Variant_seq=A;Dbxref=dbSNP_150:rs581547433;Reference_seq=G
+2	dbSNP	deletion	3102812	3102833	.	+	.	ID=830;Variant_seq=-;Dbxref=dbSNP_150:rs219425101;Reference_seq=GTGTGTGTGTGTGCGTGCGTGC
+2	dbSNP	SNV	3093085	3093085	.	+	.	ID=831;Variant_seq=G;Dbxref=dbSNP_150:rs220902899;Reference_seq=A
+2	dbSNP	SNV	3054746	3054746	.	+	.	ID=832;Variant_seq=T;Dbxref=dbSNP_150:rs581871556;Reference_seq=A
+2	dbSNP	SNV	3064760	3064760	.	+	.	ID=833;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579840181;Reference_seq=C
+2	dbSNP	SNV	3092867	3092867	.	+	.	ID=834;Variant_seq=C;Dbxref=dbSNP_150:rs212775936;Reference_seq=A
+2	dbSNP	deletion	3085815	3085815	.	+	.	ID=835;Variant_seq=-;Dbxref=dbSNP_150:rs387336474;Reference_seq=T
+2	dbSNP	SNV	3067447	3067447	.	+	.	ID=836;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582460901;Reference_seq=A
+2	dbSNP	SNV	3107396	3107396	.	+	.	ID=837;Variant_seq=A;Dbxref=dbSNP_150:rs241708023;Reference_seq=G
+2	dbSNP	SNV	3061660	3061660	.	+	.	ID=838;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585067723;Reference_seq=A
+2	dbSNP	SNV	3102609	3102609	.	+	.	ID=839;Variant_seq=C;Dbxref=dbSNP_150:rs247611095;Reference_seq=T
+2	dbSNP	SNV	3060951	3060951	.	+	.	ID=840;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583825268;Reference_seq=A
+2	dbSNP	SNV	3051116	3051116	.	+	.	ID=841;Variant_seq=A;Dbxref=dbSNP_150:rs579972460;Reference_seq=G
+2	dbSNP	SNV	3058603	3058603	.	+	.	ID=842;Variant_seq=T;Dbxref=dbSNP_150:rs579369402;Reference_seq=G
+2	dbSNP	SNV	3057646	3057646	.	+	.	ID=843;Variant_seq=A;Dbxref=dbSNP_150:rs582178324;Reference_seq=T
+2	dbSNP	SNV	3051509	3051509	.	+	.	ID=844;Variant_seq=T;Dbxref=dbSNP_150:rs582798179;Reference_seq=A
+2	dbSNP	SNV	3104136	3104136	.	+	.	ID=845;Variant_seq=A;Dbxref=dbSNP_150:rs231526524;Reference_seq=T
+2	dbSNP	SNV	3061681	3061681	.	+	.	ID=846;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs578880206;Reference_seq=A
+2	dbSNP	SNV	3071826	3071826	.	+	.	ID=847;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1132087890;Reference_seq=T
+2	dbSNP	SNV	3059227	3059227	.	+	.	ID=848;Variant_seq=T;Dbxref=dbSNP_150:rs585754880;Reference_seq=C
+2	dbSNP	SNV	3102350	3102350	.	+	.	ID=849;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs229348137;Reference_seq=T
+2	dbSNP	SNV	3062404	3062404	.	+	.	ID=850;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584381322;Reference_seq=G
+2	dbSNP	SNV	3077404	3077404	.	+	.	ID=851;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs580487146;Reference_seq=G
+2	dbSNP	SNV	3061313	3061313	.	+	.	ID=852;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs587209634;Reference_seq=C
+2	dbSNP	SNV	3080273	3080273	.	+	.	ID=853;Variant_seq=A;Dbxref=dbSNP_150:rs581112487;Reference_seq=T
+2	dbSNP	SNV	3095518	3095518	.	+	.	ID=854;Variant_seq=G;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs248818867;Reference_seq=A
+2	dbSNP	SNV	3106510	3106510	.	+	.	ID=855;Variant_seq=C;Dbxref=dbSNP_150:rs230900315;Reference_seq=T
+2	dbSNP	SNV	3092227	3092227	.	+	.	ID=856;Variant_seq=A;Dbxref=dbSNP_150:rs257656180;Reference_seq=C
+2	dbSNP	SNV	3108133	3108133	.	+	.	ID=857;Variant_seq=G;Dbxref=dbSNP_150:rs249302993;Reference_seq=A
+2	dbSNP	SNV	3101282	3101282	.	+	.	ID=858;Variant_seq=T;Dbxref=dbSNP_150:rs227644050;Reference_seq=C
+2	dbSNP	SNV	3053578	3053578	.	+	.	ID=859;Variant_seq=T;Dbxref=dbSNP_150:rs579616229;Reference_seq=C
+2	dbSNP	SNV	3103482	3103482	.	+	.	ID=860;Variant_seq=A;Dbxref=dbSNP_150:rs221975400;Reference_seq=G
+2	dbSNP	SNV	3086739	3086739	.	+	.	ID=861;Variant_seq=A;Dbxref=dbSNP_150:rs586509145;Reference_seq=T
+2	dbSNP	SNV	3050754	3050754	.	+	.	ID=862;Variant_seq=G;Dbxref=dbSNP_150:rs580021688;Reference_seq=T
+2	dbSNP	insertion	3101123	3101123	.	+	.	ID=863;Variant_seq=T;Dbxref=dbSNP_150:rs225551496;Reference_seq=-
+2	dbSNP	SNV	3056004	3056004	.	+	.	ID=864;Variant_seq=T;Dbxref=dbSNP_150:rs578765537;Reference_seq=C
+2	dbSNP	SNV	3050933	3050933	.	+	.	ID=865;Variant_seq=G;Dbxref=dbSNP_150:rs584704267;Reference_seq=C
+2	dbSNP	SNV	3098429	3098429	.	+	.	ID=866;Variant_seq=A;Dbxref=dbSNP_150:rs212688449;Reference_seq=T
+2	dbSNP	SNV	3088742	3088742	.	+	.	ID=867;Variant_seq=C;Dbxref=dbSNP_150:rs260038323;Reference_seq=T
+2	dbSNP	SNV	3053483	3053483	.	+	.	ID=868;Variant_seq=C;Dbxref=dbSNP_150:rs585445903;Reference_seq=A
+2	dbSNP	SNV	3098237	3098237	.	+	.	ID=869;Variant_seq=G;Dbxref=dbSNP_150:rs1133178535;Reference_seq=T
+2	dbSNP	SNV	3055024	3055024	.	+	.	ID=870;Variant_seq=C;Dbxref=dbSNP_150:rs584118131;Reference_seq=G
+2	dbSNP	SNV	3069516	3069516	.	+	.	ID=871;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579767732;Reference_seq=C
+2	dbSNP	SNV	3054486	3054486	.	+	.	ID=872;Variant_seq=G;Dbxref=dbSNP_150:rs581238027;Reference_seq=T
+2	dbSNP	SNV	3095217	3095217	.	+	.	ID=873;Variant_seq=C;Dbxref=dbSNP_150:rs230670705;Reference_seq=T
+2	dbSNP	SNV	3060325	3060325	.	+	.	ID=874;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs582660428;Reference_seq=G
+2	dbSNP	insertion	3102833	3102833	.	+	.	ID=875;Variant_seq=GT;Dbxref=dbSNP_150:rs233807767;Reference_seq=-
+2	dbSNP	SNV	3061947	3061947	.	+	.	ID=876;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1133351049;Reference_seq=G
+2	dbSNP	SNV	3069826	3069826	.	+	.	ID=877;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584551445;Reference_seq=T
+2	dbSNP	SNV	3054480	3054480	.	+	.	ID=878;Variant_seq=A;Dbxref=dbSNP_150:rs587200321;Reference_seq=C
+2	dbSNP	SNV	3052822	3052822	.	+	.	ID=879;Variant_seq=A;Dbxref=dbSNP_150:rs586755939;Reference_seq=G
+2	dbSNP	SNV	3076258	3076258	.	+	.	ID=880;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1135377217;Reference_seq=C
+2	dbSNP	SNV	3054749	3054749	.	+	.	ID=881;Variant_seq=A;Dbxref=dbSNP_150:rs585364866;Reference_seq=G
+2	dbSNP	SNV	3098243	3098243	.	+	.	ID=882;Variant_seq=C;Dbxref=dbSNP_150:rs1132457539;Reference_seq=T
+2	dbSNP	SNV	3092764	3092764	.	+	.	ID=883;Variant_seq=A;Dbxref=dbSNP_150:rs245775857;Reference_seq=T
+2	dbSNP	SNV	3102574	3102574	.	+	.	ID=884;Variant_seq=T;Dbxref=dbSNP_150:rs227764697;Reference_seq=G
+2	dbSNP	SNV	3069764	3069764	.	+	.	ID=885;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583918049;Reference_seq=A
+2	dbSNP	SNV	3059398	3059398	.	+	.	ID=886;Variant_seq=A;Dbxref=dbSNP_150:rs579831725;Reference_seq=G
+2	dbSNP	SNV	3095765	3095765	.	+	.	ID=887;Variant_seq=A;Dbxref=dbSNP_150:rs261647318;Reference_seq=T
+2	dbSNP	deletion	3097917	3097920	.	+	.	ID=888;Variant_seq=-;Dbxref=dbSNP_150:rs226949662;Reference_seq=TTTT
+2	dbSNP	SNV	3054051	3054051	.	+	.	ID=889;Variant_seq=G;Dbxref=dbSNP_150:rs581144134;Reference_seq=A
+2	dbSNP	SNV	3061798	3061798	.	+	.	ID=890;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585096932;Reference_seq=T
+2	dbSNP	SNV	3093280	3093280	.	+	.	ID=891;Variant_seq=G;Dbxref=dbSNP_150:rs223269808;Reference_seq=A
+2	dbSNP	SNV	3050901	3050901	.	+	.	ID=892;Variant_seq=G;Dbxref=dbSNP_150:rs586563360;Reference_seq=C
+2	dbSNP	SNV	3052490	3052490	.	+	.	ID=893;Variant_seq=T;Dbxref=dbSNP_150:rs582476959;Reference_seq=G
+2	dbSNP	SNV	3104462	3104462	.	+	.	ID=894;Variant_seq=A;Dbxref=dbSNP_150:rs224154627;Reference_seq=G
+2	dbSNP	SNV	3097006	3097006	.	+	.	ID=895;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs214653402;Reference_seq=T
+2	dbSNP	SNV	3077787	3077787	.	+	.	ID=896;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs33889873;Reference_seq=T
+2	dbSNP	SNV	3050530	3050530	.	+	.	ID=897;Variant_seq=G;Dbxref=dbSNP_150:rs579942509;Reference_seq=T
+2	dbSNP	SNV	3051536	3051536	.	+	.	ID=898;Variant_seq=A;Dbxref=dbSNP_150:rs578989302;Reference_seq=T
+2	dbSNP	SNV	3063593	3063593	.	+	.	ID=899;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs580681217;Reference_seq=C
+2	dbSNP	SNV	3107457	3107457	.	+	.	ID=900;Variant_seq=T;Dbxref=dbSNP_150:rs241795480;Reference_seq=C
+2	dbSNP	SNV	3094537	3094537	.	+	.	ID=901;Variant_seq=T;Dbxref=dbSNP_150:rs236353247;Reference_seq=G
+2	dbSNP	SNV	3069862	3069862	.	+	.	ID=902;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs29621010;Reference_seq=G
+2	dbSNP	SNV	3061726	3061726	.	+	.	ID=903;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585783548;Reference_seq=G
+2	dbSNP	SNV	3064601	3064601	.	+	.	ID=904;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs579950228;Reference_seq=G
+2	dbSNP	SNV	3069442	3069442	.	+	.	ID=905;Variant_seq=G;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585637898;Reference_seq=A
+2	dbSNP	SNV	3087203	3087203	.	+	.	ID=906;Variant_seq=T;Dbxref=dbSNP_150:rs578276547;Reference_seq=A
+2	dbSNP	SNV	3050727	3050727	.	+	.	ID=907;Variant_seq=C;Dbxref=dbSNP_150:rs1135066576;Reference_seq=T
+2	dbSNP	SNV	3103173	3103173	.	+	.	ID=908;Variant_seq=G;Dbxref=dbSNP_150:rs246371431;Reference_seq=T
+2	dbSNP	SNV	3094696	3094696	.	+	.	ID=909;Variant_seq=C;Dbxref=dbSNP_150:rs226265873;Reference_seq=T
+2	dbSNP	SNV	3084855	3084855	.	+	.	ID=910;Variant_seq=C;Dbxref=dbSNP_150:rs387463489;Reference_seq=A
+2	dbSNP	SNV	3107913	3107913	.	+	.	ID=911;Variant_seq=C;Dbxref=dbSNP_150:rs586705130;Reference_seq=T
+2	dbSNP	SNV	3089229	3089229	.	+	.	ID=912;Variant_seq=G;Dbxref=dbSNP_150:rs238265289;Reference_seq=A
+2	dbSNP	SNV	3106381	3106381	.	+	.	ID=913;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs213799698;Reference_seq=G
+2	dbSNP	SNV	3070025	3070025	.	+	.	ID=914;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs585064706;Reference_seq=T
+2	dbSNP	SNV	3095718	3095718	.	+	.	ID=915;Variant_seq=A;Dbxref=dbSNP_150:rs214977702;Reference_seq=C
+2	dbSNP	SNV	3050157	3050157	.	+	.	ID=916;Variant_seq=T;Dbxref=dbSNP_150:rs1134256764;Reference_seq=G
+2	dbSNP	SNV	3076247	3076247	.	+	.	ID=917;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs587231945;Reference_seq=C
+2	dbSNP	SNV	3059848	3059848	.	+	.	ID=918;Variant_seq=C;Dbxref=dbSNP_150:rs578796021;Reference_seq=T
+2	dbSNP	SNV	3075456	3075456	.	+	.	ID=919;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs583796809;Reference_seq=T
+2	dbSNP	SNV	3050735	3050735	.	+	.	ID=920;Variant_seq=G;Dbxref=dbSNP_150:rs1132713082;Reference_seq=T
+2	dbSNP	SNV	3101524	3101524	.	+	.	ID=921;Variant_seq=A;Dbxref=dbSNP_150:rs257621714;Reference_seq=G
+2	dbSNP	SNV	3053493	3053493	.	+	.	ID=922;Variant_seq=T;Dbxref=dbSNP_150:rs586161628;Reference_seq=C
+2	dbSNP	SNV	3050296	3050296	.	+	.	ID=923;Variant_seq=A;Dbxref=dbSNP_150:rs1134501304;Reference_seq=T
+2	dbSNP	SNV	3061108	3061108	.	+	.	ID=924;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs583753014;Reference_seq=A
+2	dbSNP	SNV	3090533	3090533	.	+	.	ID=925;Variant_seq=G;Dbxref=dbSNP_150:rs259000026;Reference_seq=T
+2	dbSNP	SNV	3050179	3050179	.	+	.	ID=926;Variant_seq=A;Dbxref=dbSNP_150:rs1133662132;Reference_seq=G
+2	dbSNP	SNV	3094295	3094295	.	+	.	ID=927;Variant_seq=A;Dbxref=dbSNP_150:rs234638632;Reference_seq=G
+2	dbSNP	SNV	3103398	3103398	.	+	.	ID=928;Variant_seq=A;Dbxref=dbSNP_150:rs232873809;Reference_seq=C
+2	dbSNP	SNV	3097983	3097983	.	+	.	ID=929;Variant_seq=A;Dbxref=dbSNP_150:rs243144790;Reference_seq=T
+2	dbSNP	deletion	3086581	3086584	.	+	.	ID=930;Variant_seq=-;Dbxref=dbSNP_150:rs239074432;Reference_seq=AAAT
+2	dbSNP	SNV	3053484	3053484	.	+	.	ID=931;Variant_seq=A;Dbxref=dbSNP_150:rs579357118;Reference_seq=G
+2	dbSNP	SNV	3105851	3105851	.	+	.	ID=932;Variant_seq=T;Dbxref=dbSNP_150:rs262098799;Reference_seq=C
+2	dbSNP	SNV	3077451	3077451	.	+	.	ID=933;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs586085104;Reference_seq=A
+2	dbSNP	insertion	3097712	3097712	.	+	.	ID=934;Variant_seq=T;Dbxref=dbSNP_150:rs387822948;Reference_seq=-
+2	dbSNP	SNV	3050925	3050925	.	+	.	ID=935;Variant_seq=G;Dbxref=dbSNP_150:rs581168421;Reference_seq=C
+2	dbSNP	SNV	3080651	3080651	.	+	.	ID=936;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs578295975;Reference_seq=T
+2	dbSNP	SNV	3078187	3078187	.	+	.	ID=937;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs585506377;Reference_seq=G
+2	dbSNP	SNV	3094352	3094352	.	+	.	ID=938;Variant_seq=T;Dbxref=dbSNP_150:rs251393090;Reference_seq=C
+2	dbSNP	SNV	3078140	3078140	.	+	.	ID=939;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs582845892;Reference_seq=C
+2	dbSNP	SNV	3082235	3082235	.	+	.	ID=940;Variant_seq=A;Dbxref=dbSNP_150:rs1133621496;Reference_seq=T
+2	dbSNP	SNV	3053048	3053048	.	+	.	ID=941;Variant_seq=A;Dbxref=dbSNP_150:rs585317347;Reference_seq=G
+2	dbSNP	SNV	3099031	3099031	.	+	.	ID=942;Variant_seq=C;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs252578944;Reference_seq=T
+2	dbSNP	SNV	3092305	3092305	.	+	.	ID=943;Variant_seq=C;Dbxref=dbSNP_150:rs244528045;Reference_seq=A
+2	dbSNP	SNV	3095698	3095698	.	+	.	ID=944;Variant_seq=T;Dbxref=dbSNP_150:rs228022602;Reference_seq=C
+2	dbSNP	deletion	3093171	3093171	.	+	.	ID=945;Variant_seq=-;Dbxref=dbSNP_150:rs262751270;Reference_seq=C
+2	dbSNP	SNV	3091798	3091798	.	+	.	ID=946;Variant_seq=G;Dbxref=dbSNP_150:rs255450620;Reference_seq=C
+2	dbSNP	SNV	3094427	3094427	.	+	.	ID=947;Variant_seq=C;Dbxref=dbSNP_150:rs580909592;Reference_seq=A
+2	dbSNP	SNV	3091187	3091187	.	+	.	ID=948;Variant_seq=T;Dbxref=dbSNP_150:rs583927499;Reference_seq=G
+2	dbSNP	SNV	3051485	3051485	.	+	.	ID=949;Variant_seq=G;Dbxref=dbSNP_150:rs584911090;Reference_seq=T
+2	dbSNP	SNV	3061964	3061964	.	+	.	ID=950;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1133715724;Reference_seq=C
+2	dbSNP	SNV	3096082	3096082	.	+	.	ID=951;Variant_seq=C;Dbxref=dbSNP_150:rs221653712;Reference_seq=A
+2	dbSNP	SNV	3104637	3104637	.	+	.	ID=952;Variant_seq=T;Dbxref=dbSNP_150:rs232529680;Reference_seq=A
+2	dbSNP	SNV	3081438	3081438	.	+	.	ID=953;Variant_seq=C;Dbxref=dbSNP_150:rs585568653;Reference_seq=G
+2	dbSNP	SNV	3050544	3050544	.	+	.	ID=954;Variant_seq=C;Dbxref=dbSNP_150:rs585323520;Reference_seq=A
+2	dbSNP	SNV	3051074	3051074	.	+	.	ID=955;Variant_seq=G;Dbxref=dbSNP_150:rs582448943;Reference_seq=T
+2	dbSNP	SNV	3055234	3055234	.	+	.	ID=956;Variant_seq=C;Dbxref=dbSNP_150:rs585114615;Reference_seq=G
+2	dbSNP	SNV	3054610	3054610	.	+	.	ID=957;Variant_seq=C;Dbxref=dbSNP_150:rs585189138;Reference_seq=G
+2	dbSNP	SNV	3089053	3089053	.	+	.	ID=958;Variant_seq=G;Dbxref=dbSNP_150:rs251938945;Reference_seq=A
+2	dbSNP	SNV	3101117	3101117	.	+	.	ID=959;Variant_seq=T;Dbxref=dbSNP_150:rs585579350;Reference_seq=A
+2	dbSNP	SNV	3057832	3057832	.	+	.	ID=960;Variant_seq=T;Dbxref=dbSNP_150:rs579940312;Reference_seq=G
+2	dbSNP	SNV	3054718	3054718	.	+	.	ID=961;Variant_seq=A;Dbxref=dbSNP_150:rs585342164;Reference_seq=G
+2	dbSNP	SNV	3076588	3076588	.	+	.	ID=962;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1134264027;Reference_seq=T
+2	dbSNP	SNV	3107349	3107349	.	+	.	ID=963;Variant_seq=T;Dbxref=dbSNP_150:rs223202839;Reference_seq=C
+2	dbSNP	SNV	3069187	3069187	.	+	.	ID=964;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs582847556;Reference_seq=C
+2	dbSNP	SNV	3059140	3059140	.	+	.	ID=965;Variant_seq=G;Dbxref=dbSNP_150:rs579994879;Reference_seq=A
+2	dbSNP	SNV	3061860	3061860	.	+	.	ID=966;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584005556;Reference_seq=T
+2	dbSNP	SNV	3107727	3107727	.	+	.	ID=967;Variant_seq=G;Dbxref=dbSNP_150:rs212797355;Reference_seq=A
+2	dbSNP	SNV	3054966	3054966	.	+	.	ID=968;Variant_seq=A;Dbxref=dbSNP_150:rs580970158;Reference_seq=G
+2	dbSNP	SNV	3063486	3063486	.	+	.	ID=969;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586645420;Reference_seq=T
+2	dbSNP	SNV	3088448	3088448	.	+	.	ID=970;Variant_seq=C;Dbxref=dbSNP_150:rs585486588;Reference_seq=T
+2	dbSNP	SNV	3075976	3075976	.	+	.	ID=971;Variant_seq=G;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs585136846;Reference_seq=T
+2	dbSNP	SNV	3054347	3054347	.	+	.	ID=972;Variant_seq=A;Dbxref=dbSNP_150:rs586112194;Reference_seq=G
+2	dbSNP	SNV	3082196	3082196	.	+	.	ID=973;Variant_seq=A;Dbxref=dbSNP_150:rs586679849;Reference_seq=G
+2	dbSNP	SNV	3073835	3073835	.	+	.	ID=974;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs1135051623;Reference_seq=G
+2	dbSNP	SNV	3088584	3088584	.	+	.	ID=975;Variant_seq=T;Dbxref=dbSNP_150:rs579393162;Reference_seq=G
+2	dbSNP	SNV	3061974	3061974	.	+	.	ID=976;Variant_seq=T;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1135366547;Reference_seq=A
+2	dbSNP	SNV	3065204	3065204	.	+	.	ID=977;Variant_seq=C;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs584456712;Reference_seq=T
+2	dbSNP	SNV	3075049	3075049	.	+	.	ID=978;Variant_seq=C;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs587534530;Reference_seq=T
+2	dbSNP	SNV	3101103	3101103	.	+	.	ID=979;Variant_seq=C;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs27096726;Reference_seq=T
+2	dbSNP	SNV	3050941	3050941	.	+	.	ID=980;Variant_seq=G;Dbxref=dbSNP_150:rs578790366;Reference_seq=C
+2	dbSNP	insertion	3092764	3092764	.	+	.	ID=981;Variant_seq=A;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs255076743;Reference_seq=-
+2	dbSNP	SNV	3054333	3054333	.	+	.	ID=982;Variant_seq=G;Dbxref=dbSNP_150:rs582250212;Reference_seq=A
+2	dbSNP	SNV	3051357	3051357	.	+	.	ID=983;Variant_seq=G;Dbxref=dbSNP_150:rs581227696;Reference_seq=C
+2	dbSNP	SNV	3052636	3052636	.	+	.	ID=984;Variant_seq=A;Dbxref=dbSNP_150:rs585559700;Reference_seq=G
+2	dbSNP	SNV	3106784	3106784	.	+	.	ID=985;Variant_seq=C;Dbxref=dbSNP_150:rs252528621;Reference_seq=T
+2	dbSNP	SNV	3050303	3050303	.	+	.	ID=986;Variant_seq=A;Dbxref=dbSNP_150:rs1133479000;Reference_seq=G
+2	dbSNP	SNV	3055983	3055983	.	+	.	ID=987;Variant_seq=T;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs584782964;Reference_seq=G
+2	dbSNP	SNV	3053473	3053473	.	+	.	ID=988;Variant_seq=A;Dbxref=dbSNP_150:rs581893751;Reference_seq=C
+2	dbSNP	SNV	3067826	3067826	.	+	.	ID=989;Variant_seq=A;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;evidence_values=Multiple_observations;Dbxref=dbSNP_150:rs583727074;Reference_seq=T
+2	dbSNP	SNV	3099446	3099446	.	+	.	ID=990;Variant_seq=T;Dbxref=dbSNP_150:rs262766981;Reference_seq=C
+2	dbSNP	SNV	3082246	3082246	.	+	.	ID=991;Variant_seq=G;Dbxref=dbSNP_150:rs1132708056;Reference_seq=A
+2	dbSNP	SNV	3050171	3050171	.	+	.	ID=992;Variant_seq=T;Dbxref=dbSNP_150:rs1133295335;Reference_seq=C
+2	dbSNP	SNV	3051590	3051590	.	+	.	ID=993;Variant_seq=C;Dbxref=dbSNP_150:rs579589692;Reference_seq=T
+2	dbSNP	SNV	3107186	3107186	.	+	.	ID=994;Variant_seq=A;Dbxref=dbSNP_150:rs257184407;Reference_seq=T
+2	dbSNP	SNV	3060683	3060683	.	+	.	ID=995;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs586089809;Reference_seq=G
+2	dbSNP	SNV	3093848	3093848	.	+	.	ID=996;Variant_seq=T;evidence_values=Multiple_observations,Frequency;Dbxref=dbSNP_150:rs6221344;Reference_seq=C
+2	dbSNP	SNV	3093577	3093577	.	+	.	ID=997;Variant_seq=A;Dbxref=dbSNP_150:rs227800665;Reference_seq=G
+2	dbSNP	SNV	3069667	3069667	.	+	.	ID=998;Variant_seq=T;Variant_effect=upstream_gene_variant 0 transcript ENSMUST00000192098;Dbxref=dbSNP_150:rs1132505844;Reference_seq=A
+2	dbSNP	SNV	3105977	3105977	.	+	.	ID=999;Variant_seq=A;Dbxref=dbSNP_150:rs259590395;Reference_seq=G
+2	dbSNP	SNV	3075588	3075588	.	+	.	ID=1000;Variant_seq=A;Variant_effect=downstream_gene_variant 0 transcript ENSMUST00000183970;Dbxref=dbSNP_150:rs582630249;Reference_seq=G
