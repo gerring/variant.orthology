@@ -250,6 +250,7 @@ public class OGMTest extends AbstractNeo4jTest {
 	 * Python (1 thread py2neo):  	88559 
 	 * Target:						1000
 	 * 
+	 * TODO Try: parallel()  transaction
 	 * 
 	 * @author Matthew Gerring
 	 *
