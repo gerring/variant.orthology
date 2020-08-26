@@ -1,9 +1,8 @@
 package org.jax.gweaver.variant.orthology;
 
-import java.util.Collections;
-import java.util.Map;
-
 import org.jax.gweaver.variant.orthology.domain.Gene;
+import org.jax.gweaver.variant.orthology.domain.Transcript;
+import org.jax.gweaver.variant.orthology.domain.Variant;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -42,12 +41,14 @@ public abstract class AbstractNeo4jTest {
 	@BeforeEach
 	public void createSession() {
 		session = sessionFactory.openSession();
+		clearSession();
 	}
 	
 	@AfterEach
 	public void clearSession() {
-		Map<String,Object> empty =  Collections.emptyMap();
-		session.query("MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n,r;", empty);
+		session.deleteAll(Gene.class);
+		session.deleteAll(Variant.class);
+		session.deleteAll(Transcript.class);
 		session.purgeDatabase();
 		session.clear();
 	}

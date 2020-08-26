@@ -4,14 +4,15 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.jax.gweaver.variant.orthology.AbstractNeo4jTest;
-import org.jax.gweaver.variant.orthology.domain.Gene;
+import org.jax.gweaver.variant.orthology.AbstractTransactionManager;
+import org.jax.gweaver.variant.orthology.MultiTransactionManager;
+import org.jax.gweaver.variant.orthology.SimpleTransactionManager;
 import org.jax.gweaver.variant.orthology.io.AbstractReader;
 import org.jax.gweaver.variant.orthology.io.GeneReader;
 import org.jax.gweaver.variant.orthology.io.RepeatedLineReader;
@@ -22,12 +23,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import org.neo4j.ogm.model.Result;
 import org.neo4j.ogm.session.Session;
+import org.neo4j.ogm.transaction.Transaction;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
 /**
  * 
  * @see https://medium.com/neo4j/testing-your-neo4j-based-java-application-34bef487cc3c
  * @see https://dzone.com/articles/improving-neo4j-ogm-performance
+ * @see https://dzone.com/articles/introduction-to-neo4j-ogm
  * 
  * @author Matthew Gerring
  *
@@ -35,12 +38,10 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 @Testcontainers
 public class OGMTest extends AbstractNeo4jTest {
 	
-	private int  nodeCount;
 	private long start;
 	
 	@BeforeEach
 	public void before() {
-		nodeCount = -1;
 		start = -1;
 	}
 	
@@ -209,48 +210,33 @@ public class OGMTest extends AbstractNeo4jTest {
 	public void variantZipRead1() throws Exception {
 		
 		AbstractReader<GeneticEntity> reader = new VariantReader<>("Homo sapiens", new File("src/test/resources/data/zip/hs_gvf/homo_sapiens_incl_consequences_1.gvf.zip"));
-		start = System.currentTimeMillis();
-		reader.setConsumer(node->time());
-		
-		long count = reader.stream().map(node->{session.save(node);return node;}).count();
-		assertEquals(872732, count);
-		assertEquals(872993, reader.linesProcessed());
+		test(reader, 872732, 872732);
 	}
 
 	@Test
 	public void variantZipRead2() throws Exception {
 		
 		AbstractReader<GeneticEntity> reader = new VariantReader<>("Mus musculus", new File("src/test/resources/data/zip/mm_gvf/mus_musculus_incl_consequences_1.gvf.zip"));
-		start = System.currentTimeMillis();
-		reader.setConsumer(node->time());
-		
-		long count = reader.stream().map(node->{session.save(node);return node;}).count();
-		assertEquals(1726211, count);
-		assertEquals(1726211, reader.linesProcessed());
+		test(reader, 1726211, 1726211);
 	}
 	
 	@Test
 	public void geneZipRead1() throws Exception {
 		
 		AbstractReader<GeneticEntity> reader = new GeneReader<>("Homo sapiens", new File("src/test/resources/data/zip/hs_gtf/hg38_1.gtf.zip"));
-		start = System.currentTimeMillis();
-		reader.setConsumer(node->time());
-		
-		long count = reader.stream().map(node->{session.save(node);return node;}).count();		
-		assertEquals(115709, count);
-		assertEquals(1173235, reader.linesProcessed());
+		test(reader, 115709, 1173235);
 	}
 
 	/**
 	 * 
 	 * Running mm10_1.gtf times every 10000 nodes approx. (NOTE 10000 nodes added not lines as not all are nodes)
 	 * 
-	 * (ms)
-	 * Java (1 thread):				48788
-	 * Python (1 thread py2neo):  	88559 
-	 * Target:						1000
-	 * 
-	 * TODO Try: parallel()  transaction
+	 * Item									Time(ms) 	Notes
+	 * Python (1 thread py2neo):  			88559 
+	 * Java (1 thread):						48788
+	 * Java (1 thread, commit/1000):		20772		Might get out of memory if commits not often enough
+	 * Java (parallel, commit/1000):		20333		Might get out of memory if commits not often enough
+	 * Target:								10000
 	 * 
 	 * @author Matthew Gerring
 	 *
@@ -259,27 +245,39 @@ public class OGMTest extends AbstractNeo4jTest {
 	public void geneZipRead2() throws Exception {
 		
 		AbstractReader<GeneticEntity> reader = new GeneReader<>("Mus musculus", new File("src/test/resources/data/zip/mm_gtf/mm10_1.gtf.zip"));
-		start = System.currentTimeMillis();
-		reader.setConsumer(node->time());
-		
-		long count = reader.stream().map(node->{session.save(node);return node;}).count();
-		assertEquals(95996, count);
-		assertEquals(899084, reader.linesProcessed());
+		test(reader, 95996, 899084);
 	}
 
-
-	private void time() {
+	private void test(AbstractReader<GeneticEntity> reader, int nodeCount, int lines) throws Exception {
 		
-		int increment = 10000;
-		if (nodeCount%increment == 0) {
-			long end = System.currentTimeMillis();
-			long dif = end-start;
-			start = end; 
-			String msg = String.format("Completed %d nodes. Time last %d in %d ms", this.nodeCount, increment, dif);
-			System.out.println(msg);
+	
+		this.start = System.currentTimeMillis();
+		
+		AbstractTransactionManager<GeneticEntity> man = new MultiTransactionManager<>(session, 5000);
+		try (man) { // We want to use man after it has closed.
+			
+			// Save add nodes committing every so often for speed reasons
+			reader.stream()
+				  .parallel()
+				  .mapToInt(node->man.save(node))
+				  .mapToLong(itrans->man.getTotalCount())
+				  .filter(total->total%10000 == 0)
+				  .forEach(total->time(total, 10000));
+			
 		}
 		
-		++nodeCount;
+		assertEquals(nodeCount, man.getTotalCount());
+		assertEquals(lines, reader.linesProcessed());
+
+	}
+	
+	private void time(long nodeCount, int increment) {
+		
+		long end = System.currentTimeMillis();
+		long dif = end-start;
+		start = end; 
+		String msg = String.format("Completed %d nodes. Time last %d in %d ms", nodeCount, increment, dif);
+		System.out.println(msg);
 	}
 
 }

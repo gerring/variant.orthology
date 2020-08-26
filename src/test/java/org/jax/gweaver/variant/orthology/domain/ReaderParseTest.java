@@ -24,6 +24,15 @@ import org.junit.jupiter.api.Test;
  */
 public class ReaderParseTest {
 	
+	/**
+	 * TODO
+	 * 1. Test more than one file in a directory
+	 * 2. Test directory of zip and unzipped files.
+	 * 3. Test more than one zip in a directory.
+	 * 4. Test more than one file in a zip
+	 * 5. Test directories in a zip (may fail)
+	 */
+	
 	
 	@Test
 	public void simpleGeneRead1() throws Exception {
@@ -157,6 +166,41 @@ public class ReaderParseTest {
 		
 		AbstractReader<GeneticEntity> reader = new GeneReader<>("Mus musculus", new File("src/test/resources/data/zip/mm_gtf/mm10_1.gtf.zip"));
 		long count = reader.stream().count();
+		assertEquals(95996, count);
+		assertEquals(899084, reader.linesProcessed());
+	}
+	@Test
+	public void parallelVariantZipRead1() throws Exception {
+		
+		AbstractReader<GeneticEntity> reader = new VariantReader<>("Homo sapiens", new File("src/test/resources/data/zip/hs_gvf/homo_sapiens_incl_consequences_1.gvf.zip"));
+		long count = reader.stream().parallel().count();
+		assertEquals(872732, count);
+		assertEquals(872993, reader.linesProcessed());
+	}
+
+	@Test
+	public void parallelVariantZipRead2() throws Exception {
+		
+		AbstractReader<GeneticEntity> reader = new VariantReader<>("Mus musculus", new File("src/test/resources/data/zip/mm_gvf/mus_musculus_incl_consequences_1.gvf.zip"));
+		long count = reader.stream().parallel().count();
+		assertEquals(1726211, count);
+		assertEquals(1726211, reader.linesProcessed());
+	}
+	
+	@Test
+	public void parallelGeneZipRead1() throws Exception {
+		
+		AbstractReader<GeneticEntity> reader = new GeneReader<>("Homo sapiens", new File("src/test/resources/data/zip/hs_gtf/hg38_1.gtf.zip"));
+		long count = reader.stream().parallel().count();
+		assertEquals(115709, count);
+		assertEquals(1173235, reader.linesProcessed());
+	}
+
+	@Test
+	public void parallelGeneZipRead2() throws Exception {
+		
+		AbstractReader<GeneticEntity> reader = new GeneReader<>("Mus musculus", new File("src/test/resources/data/zip/mm_gtf/mm10_1.gtf.zip"));
+		long count = reader.stream().parallel().count();
 		assertEquals(95996, count);
 		assertEquals(899084, reader.linesProcessed());
 	}

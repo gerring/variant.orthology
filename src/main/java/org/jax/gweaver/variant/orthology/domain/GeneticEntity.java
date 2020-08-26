@@ -25,6 +25,11 @@ public abstract class GeneticEntity {
 	private String seq_id;  // sequence ID stores chromosome
 	private String score;   // TODO Should this be number?
 
+	// This is just used for making the 
+	// writes parallel. It is not really a property
+	// required for the science.
+	private boolean lastInStream = false;
+
 	/**
 	 * @return the uid
 	 */
@@ -226,6 +231,20 @@ public abstract class GeneticEntity {
 	 */
 	public void setScore(String score) {
 		this.score = score;
+	}
+
+	/**
+	 * @return the lastInStream
+	 */
+	public boolean isLastInStream() {
+		return lastInStream;
+	}
+
+	/**
+	 * @param lastInStream the lastInStream to set
+	 */
+	public void setLastInStream(boolean lastInStream) {
+		this.lastInStream = lastInStream;
 	}
 
 }

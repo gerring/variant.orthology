@@ -22,29 +22,34 @@ public class ScannerInterator<T> implements Iterator<String> {
 
 	private Iterator<Scanner> scanners;
 	private Scanner current;
-	private Path expand;
+	private Expander expander;
 
 	public ScannerInterator(File zipOrDirOrFile) throws IOException {
 		this.scanners = createIterator(zipOrDirOrFile);
 	}
 
 	@Override
-	public boolean hasNext() {
+	public synchronized boolean hasNext() {
 		if (current==null) {
 			if (!scanners.hasNext()) {
 				clean();
 				return false;
 			}
-			current = scanners.next();
+		} else {
+			return current.hasNextLine();
 		}
-		boolean scannerNext = current.hasNextLine();
-		if (scannerNext) return true;
-		current = null;
-		return hasNext();
+		return true;
 	}
 
 	@Override
-	public String next() {
+	public synchronized String next() {
+		if (current != null && !current.hasNext()) {
+			current = null;
+		}
+		if (current==null) {
+			if (!scanners.hasNext()) return null;
+			current = scanners.next();
+		}
 		return current.nextLine();
 	}
 
@@ -57,8 +62,7 @@ public class ScannerInterator<T> implements Iterator<String> {
 				List<Scanner> scans = Arrays.asList(new Scanner(zdof));
 				return scans.iterator();
 			} else {
-				expand = Files.createTempDirectory("Scanner");
-				Expander expander = new Expander(expand);
+				this.expander = new Expander(Files.createTempDirectory("Scanner"));
 				List<Path> expanded = expander.expand(zdof.toPath());
 				
 				final List<Scanner> scans = expanded.stream().map(p->{
@@ -77,10 +81,10 @@ public class ScannerInterator<T> implements Iterator<String> {
 		
 	private void clean() {
 		try {
-			if (expand!=null) {
-				FileUtils.deleteDirectory(expand.toFile());
+			if (expander!=null) {
+				expander.close();
 			}
-		} catch (IOException e) {
+		} catch (Exception e) {
 			logger.error("Cannot delete temp zip dir!", e);
 		}
 	}

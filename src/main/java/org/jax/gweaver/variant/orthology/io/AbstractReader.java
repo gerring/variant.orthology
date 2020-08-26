@@ -4,19 +4,22 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Spliterator;
+import java.util.concurrent.Semaphore;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 import org.apache.commons.beanutils.BeanMap;
+import org.jax.gweaver.variant.orthology.domain.GeneticEntity;
 
 /**
  * Class for readers of lines to types.
@@ -45,16 +48,12 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 	
 	/**
 	 * Amount to wind forward when using multi-threading.
+	 * This is the maximum amount which one thread will tackle
+	 * in a single job.
 	 */
-	private int windForwardAmount = 89;
+	private int windForwardAmount = 1000;
 	
-	/**
-	 * An extra consumer which when set willbe called with each thing created.
-	 * This is useful for testing performance
-	 */
-	private Consumer<T> consumer;
-
-	private int count;
+	private volatile int count;
 
 	public AbstractReader(String species, File file) throws IOException {
 		// Iterate the file with a Scanner which does not load the file to memory
@@ -137,9 +136,17 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 		} catch (NullPointerException | ReaderException e) {
 			throw new IllegalArgumentException(e);
 		}
-		action.accept(made);
-		if (consumer!=null) consumer.accept(made);
+		accept(made, action, scanner.hasNext());
 		return true;
+	}
+	
+	// TODO Test how many threads neo4j client can take
+	//private Semaphore semaphore = new Semaphore(10);
+	private void accept(T made, Consumer<? super T> action, boolean isMore) {
+		if (made instanceof GeneticEntity) {
+			((GeneticEntity)made).setLastInStream(!isMore);
+		}	
+		action.accept(made);
 	}
 	
 	private synchronized String nextLine() {
@@ -178,7 +185,7 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 	}
 
 	@Override
-	public synchronized Spliterator<T> trySplit() {
+	public Spliterator<T> trySplit() {
 		try {
 			if (!scanner.hasNext()) {
 				return null;
@@ -210,9 +217,9 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
  		
 			private Iterator<String> lines;
 			private int size;
-			private synchronized void readForward() {
+			private void readForward() {
 				if (lines!=null) return;
-				List<String> ls = new ArrayList<>();
+				List<String> ls = Collections.synchronizedList(new LinkedList<>());
 				for (int i = 0; i < windForwardAmount; i++) {
 					String line = nextLine();
 					if (line==null) break; // First null line is always the end
@@ -239,13 +246,12 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 					throw new IllegalArgumentException(e);
 				}
 				if (made!=null) {
-					action.accept(made);
-					if (consumer!=null) consumer.accept(made);
+					accept(made, action, lines.hasNext());
 				}
 				return made!=null;
 			}
 	
-			private String nextLocalLine() {
+			private synchronized String nextLocalLine() {
 				if (!lines.hasNext()) return null;
 				return lines.next();
  			}
@@ -328,19 +334,5 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 		}
         return attributes;
     }
-
-	/**
-	 * @return the consumer
-	 */
-	public Consumer<T> getConsumer() {
-		return consumer;
-	}
-
-	/**
-	 * @param consumer the consumer to set
-	 */
-	public void setConsumer(Consumer<T> consumer) {
-		this.consumer = consumer;
-	}
 
 }

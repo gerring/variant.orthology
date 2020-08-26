@@ -3,6 +3,8 @@ package org.jax.gweaver.variant.orthology.io;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Iterator;
 
+import org.jax.gweaver.variant.orthology.domain.GeneticEntity;
+
 /**
  * This class repeats the same line a given number of times. 
  * It allows tests to be created, including in production, which
@@ -14,7 +16,7 @@ import java.util.Iterator;
  * @param <T>
  */
 @SuppressWarnings("all")
-public class RepeatedLineReader<T> extends AbstractReader<T> {
+public class RepeatedLineReader<T extends GeneticEntity> extends AbstractReader<T> {
 
 	private AbstractReader<T> reader;
 	
