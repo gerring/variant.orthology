@@ -59,7 +59,8 @@ public class MultiTransactionManager<T extends GeneticEntity> extends AbstractTr
 
 	@Override
 	protected Transaction beginTransaction() {
-		synchronized(session) {
+		if (transactions.containsKey(getId())) return getTransaction();
+		synchronized(this) {
 			if (transactions.containsKey(getId())) return getTransaction();
 			Transaction transaction = session.beginTransaction(Type.READ_WRITE);
 			transactions.put(getId(), transaction);
@@ -85,9 +86,9 @@ public class MultiTransactionManager<T extends GeneticEntity> extends AbstractTr
 	public int save(GeneticEntity node) {
 		
 		Transaction transaction = beginTransaction(); // This thread might not have one yet
+		session.save(node);
+		
 		synchronized(transaction) {
-
-			session.save(node);
 			
 			final int transCount = getTransactionCount()+1;		
 			transCounts.put(getId(), transCount);
