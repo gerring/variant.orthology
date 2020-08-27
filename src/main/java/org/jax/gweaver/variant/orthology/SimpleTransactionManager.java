@@ -11,14 +11,18 @@ import org.neo4j.ogm.transaction.Transaction.Type;
 /**
  * A manager to make working with transactions and 
  * the Transaction commits easy when using functional 
- * programming for instance
+ * programming for instance.
+ * 
+ * If this is used with a parallel stream as it is entirely
+ * synchronized and uses one transaction, no speed up will result.
+ * 
  * <code><pre>
  
- TransactionManager man = ...
+ AbstractTransactionManager<Object> man = new SimpleTransactionManager(...);
  reader.stream()
  	   .mapToInt(node->man.save(node)
 	   .count();
-  
+  </code></pre>
  * 
  * @author gerrim
  *
@@ -49,25 +53,25 @@ public class SimpleTransactionManager extends AbstractTransactionManager<Object>
 	}
 	
 	@Override
-	protected Transaction beginTransaction() {
+	protected synchronized Transaction beginTransaction() {
 		this.transaction = session.beginTransaction(Type.READ_WRITE);
 		transCount = 0;
 		return getTransaction();
 	}
 
 	@Override
-	protected Transaction getTransaction() {
+	protected synchronized Transaction getTransaction() {
 		return this.transaction;
 	}
 
 	@Override
-	protected Transaction removeTransaction() {
+	protected synchronized Transaction removeTransaction() {
 		Transaction ret = this.transaction;
 		this.transaction = null;
 		return ret;
 	}
 	
-	public int save(Object node) {
+	public synchronized int save(Object node) {
 		
 		session.save(node);
 
@@ -79,9 +83,10 @@ public class SimpleTransactionManager extends AbstractTransactionManager<Object>
 		return transCount;
 	}
 	
-	public void close() {
+	public synchronized void close() {
 		transaction.commit();
 		transaction.close();
 		session.clear(); // @see https://dzone.com/articles/improving-neo4j-ogm-performance
+		transaction = null;
 	}
 }

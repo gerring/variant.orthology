@@ -57,10 +57,12 @@ public class MultiTransactionManager<T extends GeneticEntity> extends AbstractTr
 		this.transCounts = Collections.synchronizedMap(new HashMap<>());
 	}
 
+	private final Object LOCK = new Object();
+
 	@Override
 	protected Transaction beginTransaction() {
 		if (transactions.containsKey(getId())) return getTransaction();
-		synchronized(this) {
+		synchronized(LOCK) {
 			if (transactions.containsKey(getId())) return getTransaction();
 			Transaction transaction = session.beginTransaction(Type.READ_WRITE);
 			transactions.put(getId(), transaction);
@@ -83,12 +85,12 @@ public class MultiTransactionManager<T extends GeneticEntity> extends AbstractTr
 		return transCounts.get(getId());
 	}
 
+	
 	public int save(GeneticEntity node) {
 		
-		Transaction transaction = beginTransaction(); // This thread might not have one yet
-		session.save(node);
-		
+		Transaction transaction = beginTransaction(); // This thread might not have one yet		
 		synchronized(transaction) {
+			session.save(node);
 			
 			final int transCount = getTransactionCount()+1;		
 			transCounts.put(getId(), transCount);
@@ -106,10 +108,13 @@ public class MultiTransactionManager<T extends GeneticEntity> extends AbstractTr
 
 	public void close() {
 		
-		if(transactions.size()>0) {
+		int size = 0;
+		while(transactions.size()>0) {
 			try {
 				Thread.sleep(1000);
 				System.out.println("Waiting for all transactions to stop. Size is "+transactions.size());
+				++size;
+				if (size>5) break;
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
