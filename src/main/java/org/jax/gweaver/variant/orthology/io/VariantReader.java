@@ -24,17 +24,11 @@ public class VariantReader<N extends GeneticEntity> extends AbstractReader<N>{
 	// TODO Are all invariant types a Variant or are some ignored?
 	private static final Collection<String> VARIANTS = Arrays.asList("snv", "deletion", "insertion", "indel", "substitution");
 
-	protected VariantReader(String species) {
-		super(species);
-	}
-
 
 	public VariantReader(String species, File file) throws IOException {
-		super(species, file);
+		super(species, file, 4096); // Variant every line in this file
 	}
 
-	volatile int iline;
-	
 	@SuppressWarnings("unchecked")
 	@Override
 	protected N create(String line) throws ReaderException {

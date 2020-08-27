@@ -35,7 +35,7 @@ public class RepeatedLineReader<T extends GeneticEntity> extends AbstractReader<
 	 * @throws SecurityException
 	 */
 	public RepeatedLineReader(String species, int size, Class<? extends AbstractReader> type) throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
-		super(species, createIterator(size, type));
+		super(species, createIterator(size, type), 1000);
 		this.reader = type.getDeclaredConstructor(String.class).newInstance(species);
 		
 		// We just start the counters somewhere representative.

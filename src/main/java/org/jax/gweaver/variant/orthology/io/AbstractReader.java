@@ -51,21 +51,39 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 	 * This is the maximum amount which one thread will tackle
 	 * in a single job.
 	 */
-	private int windForwardAmount = 1000;
+	private final int windForwardAmount;
 	
 	private volatile int count;
 
-	public AbstractReader(String species, File file) throws IOException {
+	/**
+	 * 
+	 * @param species
+	 * @param file
+	 * @param windForwardAmount  - Important to get right for speed. 
+	 * If 1000 genes every 10000 lines, make sure this is 10000 or larger.
+	 * If every line is an object then set lower to load the threads better.
+	 * @throws IOException
+	 */
+	public AbstractReader(String species, File file, int windForwardAmount) throws IOException {
 		// Iterate the file with a Scanner which does not load the file to memory
 		// and gives each line at a time.
-		this(species, new ScannerInterator<String>(file));
+		this(species, new ScannerInterator<String>(file), windForwardAmount);
 		this.file = file; // Used for estimation
 	}
 	
-	protected AbstractReader(String species, Iterator<String> iterator) {
+	/**
+	 * 
+	 * @param species
+	 * @param iterator
+	 * @param windForwardAmount  - Important to get right for speed. 
+	 * If 1000 genes every 10000 lines, make sure this is 10000 or larger.
+	 * If every line is an object then set lower to load the threads better.
+	 */
+	protected AbstractReader(String species, Iterator<String> iterator, int windForwardAmount) {
 		this.species = species;
 		this.scanner = iterator;
 		this.count = 0;
+		this.windForwardAmount = windForwardAmount;
 	}
 	
 	/**
@@ -73,14 +91,37 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 	 * @param species
 	 */
 	protected AbstractReader(String species) {
-		this(species, (Iterator<String>)null);
+		this(species, (Iterator<String>)null, 1000);
 	}
 
-	
+	/**
+	 * This stream must not be used in parallel stream programming.
+	 * Use forkJoinStream() instead.
+	 * @return
+	 */
 	public Stream<T> stream() {
 		return StreamSupport.stream(this, false);
 	}
-
+	
+	/**
+	 * If using parallel be sure to use an MultiTranactionManager
+	 * and to close the transaction using the same pool with which
+	 * you run the parallel stream.
+	 * 
+	 * @return
+	 */
+	public Stream<T> parallelStream() {
+		return StreamSupport.stream(this, true);
+	}
+	
+	/**
+	 * Iterator of the stream of objects
+	 * @return
+	 */
+	public Iterator<T> iterator() {
+		return stream().iterator();
+	}
+	
 	private static long generateBuildNumber() {
 		LocalDateTime now = LocalDateTime.now();
 		String format = now.format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss", Locale.ENGLISH));
@@ -136,17 +177,8 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 		} catch (NullPointerException | ReaderException e) {
 			throw new IllegalArgumentException(e);
 		}
-		accept(made, action, scanner.hasNext());
-		return true;
-	}
-	
-	// TODO Test how many threads neo4j client can take
-	//private Semaphore semaphore = new Semaphore(10);
-	private void accept(T made, Consumer<? super T> action, boolean isMore) {
-		if (made instanceof GeneticEntity) {
-			((GeneticEntity)made).setLastInStream(!isMore);
-		}	
 		action.accept(made);
+		return true;
 	}
 	
 	private synchronized String nextLine() {
@@ -193,21 +225,32 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 		} catch (IndexOutOfBoundsException | IllegalStateException | IllegalArgumentException i) {
 			return null;
 		}
-		Spliterator<String> split = split(windForwardAmount);
+		Spliterator<String> split = wind(windForwardAmount).spliterator();
 		Spliterator<T> wrapper = new LineWrapper(split);
 		return wrapper;
 	}
 	
-	private Spliterator<String> split(int amount) {
+	public Stream<T> wind() {
+		List<String> items = wind(windForwardAmount);
+		if (items==null || items.isEmpty()) return null;
+		Spliterator<String> split = items.spliterator();
+		Spliterator<T> wrapper = new LineWrapper(split);
+		return  StreamSupport.stream(wrapper, false);
+	}
+	
+	private List<String> wind(int amount) {
 		List<String> ls = new LinkedList<>(); // linked list is fast to iterate
 		for (int i = 0; i < amount; i++) {
 			String line = nextLine();
 			if (line==null) break; // First null line is always the end
 			ls.add(line);
 		}
-		return ls.spliterator();
+		return ls;
 	}
-
+	
+	public boolean isEmpty() {
+		return !scanner.hasNext();
+	}
 
 	@Override
 	public long estimateSize() {
@@ -237,20 +280,22 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 			return lines.tryAdvance(line->{
 				try {
 					T bean = create(line);
-					if (bean!=null) action.accept(bean);
+					if (bean!=null) {
+						action.accept(bean);
+					}
 				} catch (ReaderException e) {
 					throw new RuntimeException(e);
 				}
 			});
 		}
-
+		
 		@Override
 		public Spliterator<T> trySplit() {
 			Spliterator<String> split = lines.trySplit();
 			if (split==null) return null;
 			return new LineWrapper(split);
 		}
-
+		
 		@Override
 		public long estimateSize() {
 			return lines.estimateSize();
@@ -268,13 +313,6 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 	 */
 	public int getWindForwardAmount() {
 		return windForwardAmount;
-	}
-
-	/**
-	 * @param windForwardAmount the windForwardAmount to set
-	 */
-	public void setWindForwardAmount(int windForwardAmount) {
-		this.windForwardAmount = windForwardAmount;
 	}
 	
 	/**

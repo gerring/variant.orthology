@@ -1,5 +1,12 @@
 package org.jax.gweaver.variant.orthology;
 
+import static org.junit.jupiter.api.Assertions.fail;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+import org.apache.commons.io.FileUtils;
 import org.jax.gweaver.variant.orthology.domain.Gene;
 import org.jax.gweaver.variant.orthology.domain.Transcript;
 import org.jax.gweaver.variant.orthology.domain.Variant;
@@ -22,15 +29,31 @@ public abstract class AbstractNeo4jTest {
 	protected static SessionFactory sessionFactory;
 	
 	@BeforeAll
-	public static void prepareSessionFactory() {
+	public static void prepareSessionFactory() throws IOException {
 		
 		Configuration testConfiguration = new Configuration.Builder()
 	        .uri(databaseServer.getBoltUrl())
 	        .credentials("neo4j", databaseServer.getAdminPassword())
 	        .build();
 	    sessionFactory = new SessionFactory(testConfiguration, Gene.class.getPackageName());
+	    
+	    clearScannerTemporaryDirectories();
 	}
 	
+	private static void clearScannerTemporaryDirectories() throws IOException {
+		Path tmp = Files.createTempDirectory("Scanner_gweaver").getParent();
+		Files.list(tmp)
+			.filter(p->p.getFileName().startsWith("Scanner_gweaver"))
+			.filter(p->Files.isDirectory(p))
+			.forEach(p->{
+				try {
+					FileUtils.deleteDirectory(p.toFile());
+				} catch (IOException e) {
+					fail(e);
+				}
+			});
+	}
+
 	@AfterAll
 	public static void close() {
 		sessionFactory.close();

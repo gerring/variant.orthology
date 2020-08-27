@@ -44,6 +44,7 @@ public class ScannerInterator<T> implements Iterator<String> {
 	@Override
 	public synchronized String next() {
 		if (current != null && !current.hasNext()) {
+			current.close();
 			current = null;
 		}
 		if (current==null) {
@@ -62,7 +63,7 @@ public class ScannerInterator<T> implements Iterator<String> {
 				List<Scanner> scans = Arrays.asList(new Scanner(zdof));
 				return scans.iterator();
 			} else {
-				this.expander = new Expander(Files.createTempDirectory("Scanner"));
+				this.expander = new Expander(Files.createTempDirectory("Scanner_gweaver"));
 				List<Path> expanded = expander.expand(zdof.toPath());
 				
 				final List<Scanner> scans = expanded.stream().map(p->{
@@ -80,6 +81,13 @@ public class ScannerInterator<T> implements Iterator<String> {
 	}
 		
 	private void clean() {
+		try {
+			if (current!=null) {
+				current.close();
+			}
+		} catch (Exception e) {
+			logger.error("Cannot close last scanner!", e);
+		}
 		try {
 			if (expander!=null) {
 				expander.close();

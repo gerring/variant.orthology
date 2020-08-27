@@ -34,6 +34,16 @@ public class NodeManager {
 		return call("MATCH (n) RETURN distinct labels(n);", "labels(n)");
 	}
 
+	public long countAllNodes() {
+		
+		String query = "MATCH (n) RETURN count(n) as count";
+		Map<String,Object> empty =  Collections.emptyMap();
+		Result res = session.query(query, empty);
+		Iterator<Map<String,Object>> it = res.iterator();
+		if (!it.hasNext()) return 0;
+		Map<String,Object> next = it.next();
+		return Long.parseLong(next.get("count").toString());
+	}
 	
 	public <T> List<T> getAllNodes() {
 		

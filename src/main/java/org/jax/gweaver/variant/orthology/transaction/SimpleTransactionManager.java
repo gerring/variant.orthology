@@ -1,10 +1,10 @@
-package org.jax.gweaver.variant.orthology;
+package org.jax.gweaver.variant.orthology.transaction;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Consumer;
+import java.util.function.Function;
 
+import org.jax.gweaver.variant.orthology.io.AbstractReader;
 import org.neo4j.ogm.session.Session;
-import org.neo4j.ogm.session.SessionFactory;
 import org.neo4j.ogm.transaction.Transaction;
 import org.neo4j.ogm.transaction.Transaction.Type;
 
@@ -27,9 +27,12 @@ import org.neo4j.ogm.transaction.Transaction.Type;
  * @author gerrim
  *
  */
-public class SimpleTransactionManager extends AbstractTransactionManager<Object> {
+public class SimpleTransactionManager<T> extends AbstractTransactionManager<T> {
 
 	
+	protected final int transactionCommitInterval;
+
+	protected volatile long totalCount = 0; // Count of saves made.
 	private Transaction transaction;
 	private volatile int transCount;
 	
@@ -47,24 +50,35 @@ public class SimpleTransactionManager extends AbstractTransactionManager<Object>
 	 * @param transactionCommitInterval
 	 */
 	public SimpleTransactionManager(Session session, int transactionCommitInterval) {
-		super(session, transactionCommitInterval);
+		super(session);
+		this.transactionCommitInterval = transactionCommitInterval;
 		this.transCount = 0;
 		beginTransaction();
 	}
 	
 	@Override
+	public long run(AbstractReader<T> reader, Consumer<T> lines, Consumer<TimeInfo> overallTime) throws InterruptedException {
+		TimeInfo info = new TimeInfo();
+		long count = reader.stream()
+				.map(node->{lines.accept(node); return node;})
+				.mapToInt(this::save)
+				.mapToLong(info::increment)
+				.count();
+		info.stop();
+		overallTime.accept(info);
+		return count;
+	}
+	
 	protected synchronized Transaction beginTransaction() {
 		this.transaction = session.beginTransaction(Type.READ_WRITE);
 		transCount = 0;
 		return getTransaction();
 	}
 
-	@Override
 	protected synchronized Transaction getTransaction() {
 		return this.transaction;
 	}
 
-	@Override
 	protected synchronized Transaction removeTransaction() {
 		Transaction ret = this.transaction;
 		this.transaction = null;
@@ -89,4 +103,29 @@ public class SimpleTransactionManager extends AbstractTransactionManager<Object>
 		session.clear(); // @see https://dzone.com/articles/improving-neo4j-ogm-performance
 		transaction = null;
 	}
+	
+	public long commit(int unused) {
+		return commit(getTransaction(), true);
+	}
+	
+	public long commit() {
+		return commit(getTransaction(), true);
+	}
+	
+	protected long commit(Transaction transaction, boolean beginNew) {
+		if (transaction==null) return -1;
+		if (transaction.canCommit()) {
+			transaction.commit();
+			transaction.close();
+		}
+		session.clear(); // @see https://dzone.com/articles/improving-neo4j-ogm-performance
+		if (beginNew) beginTransaction();
+		return totalCount;
+	}
+	
+
+	public long getTotalCount() {
+		return totalCount;
+	}
+
 }

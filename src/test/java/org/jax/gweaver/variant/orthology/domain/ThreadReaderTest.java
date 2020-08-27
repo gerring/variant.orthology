@@ -8,11 +8,11 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 import org.jax.gweaver.variant.orthology.AbstractNeo4jTest;
-import org.jax.gweaver.variant.orthology.AbstractTransactionManager;
-import org.jax.gweaver.variant.orthology.SimpleTransactionManager;
 import org.jax.gweaver.variant.orthology.io.AbstractReader;
 import org.jax.gweaver.variant.orthology.io.RepeatedLineReader;
 import org.jax.gweaver.variant.orthology.io.VariantReader;
+import org.jax.gweaver.variant.orthology.transaction.AbstractTransactionManager;
+import org.jax.gweaver.variant.orthology.transaction.SimpleTransactionManager;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.neo4j.ogm.session.Session;
@@ -57,13 +57,12 @@ public class ThreadReaderTest extends AbstractNeo4jTest{
 			AbstractReader<GeneticEntity> reader = new RepeatedLineReader<>("Homo sapiens", linesInFile, VariantReader.class);
 			readers.add(reader);
 			Thread thread = new Thread(()->{
-				// 1 transaction per thread!
-				try (AbstractTransactionManager<Object> man = new SimpleTransactionManager(session)) {
+				// 1 transaction at a time.
+				try (AbstractTransactionManager<Object> man = new SimpleTransactionManager<>(session, 100)) {
 					// Save nodes, every 100 
 					reader.stream()
 						.mapToInt(man::save)
-						.filter(count -> count%(linesInFile/100) == 0)
-						.forEach(man::commit);
+						.count();
 					
 				} catch (RuntimeException ne) {
 					//System.out.println("Thread "+threadIndex+" ERROR");
