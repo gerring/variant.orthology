@@ -193,8 +193,21 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 		} catch (IndexOutOfBoundsException | IllegalStateException | IllegalArgumentException i) {
 			return null;
 		}
-		return chunk();
+		Spliterator<String> split = split(windForwardAmount);
+		Spliterator<T> wrapper = new LineWrapper(split);
+		return wrapper;
 	}
+	
+	private Spliterator<String> split(int amount) {
+		List<String> ls = new LinkedList<>(); // linked list is fast to iterate
+		for (int i = 0; i < amount; i++) {
+			String line = nextLine();
+			if (line==null) break; // First null line is always the end
+			ls.add(line);
+		}
+		return ls.spliterator();
+	}
+
 
 	@Override
 	public long estimateSize() {
@@ -211,74 +224,43 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 		return Spliterator.IMMUTABLE | Spliterator.ORDERED;
 	}
 
-	private Spliterator<T> chunk() {
+	private class LineWrapper implements Spliterator<T> {
 		
-		return new Spliterator<T>() {
- 		
-			private Iterator<String> lines;
-			private int size;
-			private void readForward() {
-				if (lines!=null) return;
-				List<String> ls = Collections.synchronizedList(new LinkedList<>());
-				for (int i = 0; i < windForwardAmount; i++) {
-					String line = nextLine();
-					if (line==null) break; // First null line is always the end
-					ls.add(line);
-				}
-				lines = ls.iterator();
-				size = ls.size();
-			}
-	
-			@Override
-			public boolean tryAdvance(Consumer<? super T> action) {
-				if (lines==null) readForward();
-				if (!lines.hasNext()) return false;
-				
-				String line = nextLocalLine();
-				if (line == null || line.isEmpty()) return false;
-				T made;
-				try {
-					while ((made = create(line)) == null) {
-						line = nextLocalLine();
-						if (line == null || line.isEmpty()) return false;
-					}
-				} catch (ReaderException e) {
-					throw new IllegalArgumentException(e);
-				}
-				if (made!=null) {
-					accept(made, action, lines.hasNext());
-				}
-				return made!=null;
-			}
-	
-			private synchronized String nextLocalLine() {
-				if (!lines.hasNext()) return null;
-				return lines.next();
- 			}
+		private Spliterator<String> lines;
 
-			@Override
-			public Spliterator<T> trySplit() {
-				return null;
-			}
-	
-			@Override
-			public long estimateSize() {
-				if (lines==null) readForward();
-				return size;
-			}
-	
-			@Override
-			public long getExactSizeIfKnown() {
-				if (lines==null) readForward();
-				return size;
-		    }
-			
-			@Override
-			public int characteristics() {
-				return Spliterator.ORDERED | Spliterator.SIZED | Spliterator.IMMUTABLE;
-			}
-			
-		};
+		LineWrapper(Spliterator<String> lines) {
+			this.lines = lines;
+		}
+
+		@Override
+		public boolean tryAdvance(Consumer<? super T> action) {
+			return lines.tryAdvance(line->{
+				try {
+					T bean = create(line);
+					if (bean!=null) action.accept(bean);
+				} catch (ReaderException e) {
+					throw new RuntimeException(e);
+				}
+			});
+		}
+
+		@Override
+		public Spliterator<T> trySplit() {
+			Spliterator<String> split = lines.trySplit();
+			if (split==null) return null;
+			return new LineWrapper(split);
+		}
+
+		@Override
+		public long estimateSize() {
+			return lines.estimateSize();
+		}
+
+		@Override
+		public int characteristics() {
+			return lines.characteristics();
+		}
+		
 	}
 
 	/**
