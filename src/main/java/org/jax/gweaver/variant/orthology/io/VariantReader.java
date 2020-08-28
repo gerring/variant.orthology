@@ -1,7 +1,6 @@
 package org.jax.gweaver.variant.orthology.io;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
@@ -25,6 +24,11 @@ public class VariantReader<N extends GeneticEntity> extends AbstractReader<N>{
 	private static final Collection<String> VARIANTS = Arrays.asList("snv", "deletion", "insertion", "indel", "substitution");
 
 
+	// Used in RepeatedLineReader, do not delete.
+	protected VariantReader(String species) {
+		super(species);
+	}
+
 	public VariantReader(String species, File file) throws IOException {
 		super(species, file, 4096); // Variant every line in this file
 	}
@@ -42,6 +46,16 @@ public class VariantReader<N extends GeneticEntity> extends AbstractReader<N>{
         	// TODO Should we throw exceptions or ignore these cases. Examples cds, start_codon
         	return null;
         }
+        
+// TODO Not finished. The connection is not made (:Variant) <-[:HAS_A]- (:Transcript)
+//        # in the variant file (gvf) we have data about both variants
+//        # and transcripts. In the GVF file a variant is followed by
+//        # some number of transcripts that it connects to. We could make
+//        # the relationship connection here, but first we need to index
+//        # the variants on their rs_id, and the transcripts on
+//        # transcript_id. Then, we'll scan through this file again with
+//        # another script to make the relation:
+//        # (:Variant) <-[:HAS_A]- (:Transcript)
 		
         try {
 			BeanMap d = new BeanMap(bean);

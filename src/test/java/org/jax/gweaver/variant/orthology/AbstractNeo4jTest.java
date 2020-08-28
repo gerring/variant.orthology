@@ -69,10 +69,6 @@ public abstract class AbstractNeo4jTest {
 	
 	@AfterEach
 	public void clearSession() {
-		session.deleteAll(Gene.class);
-		session.deleteAll(Variant.class);
-		session.deleteAll(Transcript.class);
-		session.purgeDatabase();
 		session.clear();
 	}
 }

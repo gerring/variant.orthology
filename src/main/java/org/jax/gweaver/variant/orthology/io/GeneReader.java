@@ -1,10 +1,7 @@
 package org.jax.gweaver.variant.orthology.io;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.commons.beanutils.BeanMap;
@@ -23,6 +20,7 @@ import org.jax.gweaver.variant.orthology.domain.Transcript;
 public class GeneReader<N extends GeneticEntity> extends AbstractReader<N>{
 
 
+	// Used in RepeatedLineReader, do not delete.
 	protected GeneReader(String species) {
 		super(species);
 	}

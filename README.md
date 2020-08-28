@@ -1,8 +1,8 @@
 
 ## Variant Orthology
 The purpose of this project is to be a self contained and reproducible mechanism for
-importing orthology graphs in to Neo4j. See the 'doc' folder for an explanation of the
-intended architecture on the cloud. This component in the diagram is the import 
+importing orthology graphs to Neo4j. See the 'doc' folder for an explanation of the
+intended architecture on the cloud. This is the component in the diagram which is the import 
 mechanism. We want to import data in the hundreds of Gb range therefore 500Mb files
 have been added to the tests here to get the fastest local mechanism practically 
 possible. This then should be deployed as an import pipeline in the cloud.
@@ -14,6 +14,7 @@ Run on Macbook pro, 16Gb RAM various test up to 1.7 million nodes. Time in ms/no
 * Java (1 thread):											4.9
 * Java (1 thread, multi-transaction commit/1000):			2.1
 * Java (parallel, commit/1000):								0.6
+
 
 This means that the python script running in the cloud without parallel processing 
 in the cloud for 170Gb of data which is node count 33 - 578 million will take hours
@@ -29,7 +30,7 @@ read new gtf and gvf files as they are  uploaded.
 This project covers only the data engineer part of the architecture.
 
 # Getting Started
-* JDK 11 LTS
+1. JDK 11 LTS
 * Install maven, e.g. on MacOs `brew install maven`
 * If using Eclipse the pom.xml will resolve neo4j libraries.
 * install docker, e.g. on MacOS:  https://docs.docker.com/docker-for-mac/install/
@@ -39,3 +40,7 @@ This project covers only the data engineer part of the architecture.
 # TODO
 * apoc library and 4.1.1 is possible but no docker container.
 * apoc writer to replace shell script in original version.
+
+# Build 
+
+`mvn install` This will run tests, code coverage and source code compliance.

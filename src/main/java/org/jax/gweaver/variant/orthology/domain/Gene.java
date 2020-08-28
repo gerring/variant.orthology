@@ -17,11 +17,11 @@ public class Gene extends GeneticEntity {
 	
 	
 	@Index(unique=true)
-    private String gene_id;
+    private String geneId;
 	
 	@Index(unique=true)
-    private String gene_name;
-	private String gene_biotype;
+    private String geneName;
+	private String geneBiotype;
 	   	
 
     @Relationship(type = "PRODUCES", direction = Relationship.OUTGOING)
@@ -31,47 +31,47 @@ public class Gene extends GeneticEntity {
 	/**
 	 * @return the gene_id
 	 */
-	public String getGene_id() {
-		return gene_id;
+	public String getGeneId() {
+		return geneId;
 	}
 
 
 	/**
 	 * @param gene_id the gene_id to set
 	 */
-	public void setGene_id(String gene_id) {
-		this.gene_id = gene_id;
+	public void setGeneId(String gene_id) {
+		this.geneId = gene_id;
 	}
 
 
 	/**
 	 * @return the gene_name
 	 */
-	public String getGene_name() {
-		return gene_name;
+	public String getGeneName() {
+		return geneName;
 	}
 
 
 	/**
 	 * @param gene_name the gene_name to set
 	 */
-	public void setGene_name(String gene_name) {
-		this.gene_name = gene_name;
+	public void setGeneName(String gene_name) {
+		this.geneName = gene_name;
 	}
 
 	/**
 	 * @return the gene_biotype
 	 */
-	public String getGene_biotype() {
-		return gene_biotype;
+	public String getGeneBiotype() {
+		return geneBiotype;
 	}
 
 
 	/**
 	 * @param gene_biotype the gene_biotype to set
 	 */
-	public void setGene_biotype(String gene_biotype) {
-		this.gene_biotype = gene_biotype;
+	public void setGeneBiotype(String gene_biotype) {
+		this.geneBiotype = gene_biotype;
 	}
 
 
@@ -95,7 +95,7 @@ public class Gene extends GeneticEntity {
 	public int hashCode() {
 		final int prime = 31;
 		int result = super.hashCode();
-		result = prime * result + Objects.hash(gene_biotype, gene_id, gene_name, transcript);
+		result = prime * result + Objects.hash(geneBiotype, geneId, geneName, transcript);
 		return result;
 	}
 
@@ -109,8 +109,8 @@ public class Gene extends GeneticEntity {
 		if (!(obj instanceof Gene))
 			return false;
 		Gene other = (Gene) obj;
-		return Objects.equals(gene_biotype, other.gene_biotype) && Objects.equals(gene_id, other.gene_id)
-				&& Objects.equals(gene_name, other.gene_name) && Objects.equals(transcript, other.transcript);
+		return Objects.equals(geneBiotype, other.geneBiotype) && Objects.equals(geneId, other.geneId)
+				&& Objects.equals(geneName, other.geneName) && Objects.equals(transcript, other.transcript);
 	}
 
     // Auto-generated stuff

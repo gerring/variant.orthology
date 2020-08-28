@@ -22,7 +22,7 @@ public abstract class GeneticEntity {
     private String species;
     private Integer start = 0;
     private Integer end = 0;
-	private String seq_id;  // sequence ID stores chromosome
+	private String sequenceId;  // sequence ID stores chromosome
 	private String score;   // TODO Should this be number?
 
 	/**
@@ -83,7 +83,7 @@ public abstract class GeneticEntity {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(active, build, chr, end, phase, score, seq_id, source, species, start, strand, type, uid);
+		return Objects.hash(active, build, chr, end, phase, score, sequenceId, source, species, start, strand, type, uid);
 	}
 
 	@Override
@@ -96,7 +96,7 @@ public abstract class GeneticEntity {
 		return Objects.equals(active, other.active) && Objects.equals(build, other.build)
 				&& Objects.equals(chr, other.chr) && Objects.equals(end, other.end)
 				&& Objects.equals(phase, other.phase) && Objects.equals(score, other.score)
-				&& Objects.equals(seq_id, other.seq_id) && Objects.equals(source, other.source)
+				&& Objects.equals(sequenceId, other.sequenceId) && Objects.equals(source, other.source)
 				&& Objects.equals(species, other.species) && Objects.equals(start, other.start)
 				&& Objects.equals(strand, other.strand) && Objects.equals(type, other.type)
 				&& Objects.equals(uid, other.uid);
@@ -203,15 +203,15 @@ public abstract class GeneticEntity {
 	/**
 	 * @return the seq_id
 	 */
-	public String getSeq_id() {
-		return seq_id;
+	public String getSequenceId() {
+		return sequenceId;
 	}
 
 	/**
 	 * @param seq_id the seq_id to set
 	 */
-	public void setSeq_id(String seq_id) {
-		this.seq_id = seq_id;
+	public void setSequenceId(String seq_id) {
+		this.sequenceId = seq_id;
 	}
 
 	/**

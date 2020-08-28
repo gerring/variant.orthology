@@ -2,8 +2,6 @@ package org.jax.gweaver.variant.orthology.domain;
 
 import java.util.Objects;
 
-import org.neo4j.ogm.annotation.GeneratedValue;
-import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.Index;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
@@ -12,15 +10,15 @@ import org.neo4j.ogm.annotation.Relationship;
 public class Variant extends GeneticEntity {
 
 	@Index(unique=true)
-	private String rs_id;
+	private String rsId;
 	
 	@Index(unique=true)
 	private String id;
     
-	private String ref_allele;
-	private String alt_allele;
-	private Float alt_allele_freq = 0F;
-    private String variant_effect;
+	private String refAllele;
+	private String altAllele;
+	private Float altAlleleFreq = 0F;
+    private String variantEffect;
     private String biotype;
 
 
@@ -32,79 +30,79 @@ public class Variant extends GeneticEntity {
 	/**
 	 * @return the rs_id
 	 */
-	public String getRs_id() {
-		return rs_id;
+	public String getRsId() {
+		return rsId;
 	}
 
 
 	/**
 	 * @param rs_id the rs_id to set
 	 */
-	public void setRs_id(String rs_id) {
-		this.rs_id = rs_id;
+	public void setRsId(String rs_id) {
+		this.rsId = rs_id;
 	}
 
 
 	/**
 	 * @return the ref_allele
 	 */
-	public String getRef_allele() {
-		return ref_allele;
+	public String getRefAllele() {
+		return refAllele;
 	}
 
 
 	/**
 	 * @param ref_allele the ref_allele to set
 	 */
-	public void setRef_allele(String ref_allele) {
-		this.ref_allele = ref_allele;
+	public void setRefAllele(String ref_allele) {
+		this.refAllele = ref_allele;
 	}
 
 
 	/**
 	 * @return the alt_allele
 	 */
-	public String getAlt_allele() {
-		return alt_allele;
+	public String getAltAllele() {
+		return altAllele;
 	}
 
 
 	/**
 	 * @param alt_allele the alt_allele to set
 	 */
-	public void setAlt_allele(String alt_allele) {
-		this.alt_allele = alt_allele;
+	public void setAltAllele(String alt_allele) {
+		this.altAllele = alt_allele;
 	}
 
 
 	/**
 	 * @return the alt_allele_freq
 	 */
-	public Float getAlt_allele_freq() {
-		return alt_allele_freq;
+	public Float getAltAlleleFreq() {
+		return altAlleleFreq;
 	}
 
 
 	/**
 	 * @param alt_allele_freq the alt_allele_freq to set
 	 */
-	public void setAlt_allele_freq(Float alt_allele_freq) {
-		this.alt_allele_freq = alt_allele_freq;
+	public void setAltAlleleFreq(Float alt_allele_freq) {
+		this.altAlleleFreq = alt_allele_freq;
 	}
 
 	/**
 	 * @return the variant_effect
 	 */
-	public String getVariant_effect() {
-		return variant_effect;
+	public String getVariantEffect() {
+		return variantEffect;
 	}
 
 
 	/**
 	 * @param variant_effect the variant_effect to set
 	 */
-	public void setVariant_effect(String variant_effect) {
-		this.variant_effect = variant_effect;
+	public void setVariantEffect(String variant_effect) {
+		this.variantEffect = variant_effect;
 	}
 
 
@@ -145,7 +143,7 @@ public class Variant extends GeneticEntity {
 		final int prime = 31;
 		int result = super.hashCode();
 		result = prime * result
-				+ Objects.hash(alt_allele, alt_allele_freq, biotype, id, ref_allele, rs_id, transcript, variant_effect);
+				+ Objects.hash(altAllele, altAlleleFreq, biotype, id, refAllele, rsId, transcript, variantEffect);
 		return result;
 	}
 
@@ -159,10 +157,10 @@ public class Variant extends GeneticEntity {
 		if (!(obj instanceof Variant))
 			return false;
 		Variant other = (Variant) obj;
-		return Objects.equals(alt_allele, other.alt_allele) && Objects.equals(alt_allele_freq, other.alt_allele_freq)
+		return Objects.equals(altAllele, other.altAllele) && Objects.equals(altAlleleFreq, other.altAlleleFreq)
 				&& Objects.equals(biotype, other.biotype) && Objects.equals(id, other.id)
-				&& Objects.equals(ref_allele, other.ref_allele) && Objects.equals(rs_id, other.rs_id)
-				&& Objects.equals(transcript, other.transcript) && Objects.equals(variant_effect, other.variant_effect);
+				&& Objects.equals(refAllele, other.refAllele) && Objects.equals(rsId, other.rsId)
+				&& Objects.equals(transcript, other.transcript) && Objects.equals(variantEffect, other.variantEffect);
 	}
 
 

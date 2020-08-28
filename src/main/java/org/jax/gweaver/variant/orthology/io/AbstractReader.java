@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -13,13 +12,11 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Spliterator;
-import java.util.concurrent.Semaphore;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 import org.apache.commons.beanutils.BeanMap;
-import org.jax.gweaver.variant.orthology.domain.GeneticEntity;
 
 /**
  * Class for readers of lines to types.

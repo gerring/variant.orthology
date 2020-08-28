@@ -1,7 +1,6 @@
 package org.jax.gweaver.variant.orthology.transaction;
 
 import java.util.function.Consumer;
-import java.util.function.Function;
 
 import org.jax.gweaver.variant.orthology.io.AbstractReader;
 import org.neo4j.ogm.session.Session;
