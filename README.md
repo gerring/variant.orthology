@@ -6,16 +6,15 @@ intended architecture on the cloud. This component in the diagram is the import
 mechanism. We want to import data in the hundreds of Gb range therefore 500Mb files
 have been added to the tests here to get the fastest local mechanism practically 
 possible. This then should be deployed as an import pipeline in the cloud.
-<br/>
-<br/>
+
+
 Current timings per node for importing and creating the graph are as follows:
-Run on Macbook pro, 16Gb RAM various test up to 1.7 million nodes. Time in ms/node<br/>
+Run on Macbook pro, 16Gb RAM various test up to 1.7 million nodes. Time in ms/node
 * Python (1 thread py2neo):  								8.8
 * Java (1 thread):											4.9
 * Java (1 thread, multi-transaction commit/1000):			2.1
 * Java (parallel, commit/1000):								0.6
-<br/>
-<br/>
+
 This means that the python script running in the cloud without parallel processing 
 in the cloud for 170Gb of data which is node count 33 - 578 million will take hours
 80 - 1412 unless multi-processed in the cloud using DASK. The Java parallel will take
