@@ -321,7 +321,7 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 	}
 
 	protected void populate(BeanMap d, String[] rec) {
-        d.put("seq_id", rec[0]);
+        d.put("sequenceId", rec[0]);
         d.put("source", rec[1]);
         d.put("type", rec[2]);
         d.put("start", rec[3]);

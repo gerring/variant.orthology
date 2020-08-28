@@ -63,9 +63,9 @@ public class VariantReader<N extends GeneticEntity> extends AbstractReader<N>{
 			
 	        Map<String,Object> attributes = parseAttributes(rec[8]);
 	        d.put("id", attributes.get("ID"));
-	        d.put("rs_id", attributes.get("Dbxref").toString().split(":")[0]);
-	        d.put("alt_allele", attributes.get("Variant_seq"));
-	        d.put("ref_allele", attributes.get("Reference_seq"));
+	        d.put("rsId", attributes.get("Dbxref").toString().split(":")[0]);
+	        d.put("altAllele", attributes.get("Variant_seq"));
+	        d.put("refAllele", attributes.get("Reference_seq"));
 	        
         } catch (IllegalArgumentException ne) {
         	throw new ReaderException("The line "+line+" of bean type "+bean.getClass().getSimpleName()+" cannot be parsed ", ne);

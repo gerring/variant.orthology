@@ -54,12 +54,12 @@ public class GeneReader<N extends GeneticEntity> extends AbstractReader<N>{
 	        d.put("phase", rec[7]);
 	        
 	        Map<String,Object> attributes = parseAttributes(rec[8]);
-	        d.put("gene_id", attributes.get("gene_id").toString().split(":")[0]);
-	        d.put("gene_name", attributes.get("gene_name"));
-	        d.put("gene_biotype", attributes.get("gene_biotype"));
- 	        transfer("transcript_id", attributes, d);
-	        transfer("transcript_biotype", attributes, d);
-	        transfer("transcript_name", attributes, d);
+	        d.put("geneId", attributes.get("gene_id").toString().split(":")[0]);
+	        d.put("geneName", attributes.get("gene_name"));
+	        d.put("geneBiotype", attributes.get("gene_biotype"));
+ 	        transfer("transcriptId", attributes, d);
+	        transfer("transcriptBiotype", attributes, d);
+	        transfer("transcriptName", attributes, d);
 	        
         } catch (IllegalArgumentException ne) {
         	throw new ReaderException("The line "+line+" of bean type "+bean.getClass().getSimpleName()+" cannot be parsed ", ne);
