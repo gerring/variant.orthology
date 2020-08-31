@@ -26,7 +26,7 @@ public class GeneReader<N extends GeneticEntity> extends AbstractReader<N>{
 	}
 	
 	public GeneReader(String species, File file) throws IOException {
-		super(species, file, 4096); // Genes are not that dense maybe one gene / 10 lines
+		super(species, file); // Genes are not that dense maybe one gene / 10 lines
 	}
 
 	@SuppressWarnings("unchecked")

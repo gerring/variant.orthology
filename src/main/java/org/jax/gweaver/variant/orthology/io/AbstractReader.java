@@ -48,8 +48,8 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 	 * This is the maximum amount which one thread will tackle
 	 * in a single job.
 	 */
-	private final int windForwardAmount;
-	
+	private int windForwardAmount = Integer.getInteger("org.jax.gweaver.variant.orthology.io.windForward", 4096);
+
 	private volatile int count;
 
 	/**
@@ -61,10 +61,10 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 	 * If every line is an object then set lower to load the threads better.
 	 * @throws IOException
 	 */
-	public AbstractReader(String species, File file, int windForwardAmount) throws IOException {
+	public AbstractReader(String species, File file) throws IOException {
 		// Iterate the file with a Scanner which does not load the file to memory
 		// and gives each line at a time.
-		this(species, new ScannerInterator<String>(file), windForwardAmount);
+		this(species, new ScannerInterator<String>(file));
 		this.file = file; // Used for estimation
 	}
 	
@@ -76,11 +76,10 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 	 * If 1000 genes every 10000 lines, make sure this is 10000 or larger.
 	 * If every line is an object then set lower to load the threads better.
 	 */
-	protected AbstractReader(String species, Iterator<String> iterator, int windForwardAmount) {
+	protected AbstractReader(String species, Iterator<String> iterator) {
 		this.species = species;
 		this.scanner = iterator;
 		this.count = 0;
-		this.windForwardAmount = windForwardAmount;
 	}
 	
 	/**
@@ -88,7 +87,7 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 	 * @param species
 	 */
 	protected AbstractReader(String species) {
-		this(species, (Iterator<String>)null, 1000);
+		this(species, (Iterator<String>)null);
 	}
 
 	/**
@@ -178,6 +177,19 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 		return true;
 	}
 	
+	/**
+	 * This method is synchronized and only allows one thread at a time
+	 * to hit the file and get the next line. When the reader is used with
+	 * writing nodes to Neo4j the line reading is such shorter than the
+	 * node save and also intermittent transaction.commit() slow the rate.
+	 * This means that synchronizing each file read line is not thought a
+	 * bottleneck. It would be possible to read more than one line per thread's
+	 * request using a lock. This may be faster. To try this change the wind()
+	 * method to grab a lock on the whole ScannerIterator and read a chunk
+	 * exclusively.
+	 * 
+	 * @return next line, thread safe.
+	 */
 	private synchronized String nextLine() {
 		
 		String line = null;
@@ -312,6 +324,16 @@ public abstract class AbstractReader<T> implements Spliterator<T> {
 		return windForwardAmount;
 	}
 	
+	/**
+	 * Set the amount each thread will attempt to wind forward for
+	 * its chunk. Adjusting this affects execution time for larhge runs.
+	 * 
+	 * @param windForwardAmount
+	 */
+	public void setWindForwardAmount(int windForwardAmount) {
+		this.windForwardAmount = windForwardAmount;
+	}
+
 	/**
 	 * All lines processed including those ignored.
 	 * @return

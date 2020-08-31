@@ -32,6 +32,15 @@ public class NodeManager {
 		
 		return call("MATCH (n) RETURN distinct labels(n);", "labels(n)");
 	}
+	
+	public void detachDelete(String propName, String propValue) {
+		
+		String query = "MATCH (n { %s: '%s' }) DETACH DELETE n";
+		query = String.format(query, propName, propValue);
+		
+		Map<String,Object> empty =  Collections.emptyMap();
+		session.query(query, empty);
+	}
 
 	public long countAllNodes() {
 		
@@ -72,4 +81,5 @@ public class NodeManager {
 		}
 		return ret;
 	}
+
 }

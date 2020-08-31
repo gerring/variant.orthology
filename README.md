@@ -17,7 +17,7 @@ Run on Macbook pro, 16Gb RAM various test up to 1.7 million nodes. Time in ms/no
 
 
 This means that the python script running in the cloud without parallel processing 
-in the cloud for 170Gb of data which is node count 33 - 578 million will take hours
+for 170Gb of data which is node count 33 - 578 million will take hours
 80 - 1412 unless multi-processed in the cloud using DASK. The Java parallel will take
 5.5 - 96. So parsing and adding the nodes of a 170Gb dataset of variant data will still
 take many days.
@@ -30,11 +30,11 @@ read new gtf and gvf files as they are  uploaded.
 This project covers only the data engineer part of the architecture.
 
 # Getting Started
-1. JDK 11 LTS
+* JDK 11 LTS
 * Install maven, e.g. on MacOs `brew install maven`
 * If using Eclipse the pom.xml will resolve neo4j libraries.
 * install docker, e.g. on MacOS:  https://docs.docker.com/docker-for-mac/install/
-* `docker pull neo4j:4.1.1`    (or your version)
+* `docker pull neo4j:4.1.1`    (or your version, if not using 4 pom.xml will need to be changed in this product)
 * You will need to set IDE to use JUnit 5 if 4 is its default.
 
 # TODO
@@ -44,3 +44,11 @@ This project covers only the data engineer part of the architecture.
 # Build 
 
 `mvn install` This will run tests, code coverage and source code compliance.
+
+
+# Recommended Eclipse Plugins
+If using Eclipse IDE, here is a list of recommended plugins:
+1. Maven
+2. Checkstyle
+3. EclEmma for Jacoco
+4. Pydev (if editing python fromv variant orthology V1.)

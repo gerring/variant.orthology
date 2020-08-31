@@ -21,7 +21,7 @@ import org.jax.gweaver.variant.orthology.domain.Variant;
 public class VariantReader<N extends GeneticEntity> extends AbstractReader<N>{
 	
 	// TODO Are all invariant types a Variant or are some ignored?
-	private static final Collection<String> VARIANTS = Arrays.asList("snv", "deletion", "insertion", "indel", "substitution");
+	public static final Collection<String> VARIANTS = Arrays.asList("snv", "deletion", "insertion", "indel", "substitution");
 
 
 	// Used in RepeatedLineReader, do not delete.
@@ -30,7 +30,7 @@ public class VariantReader<N extends GeneticEntity> extends AbstractReader<N>{
 	}
 
 	public VariantReader(String species, File file) throws IOException {
-		super(species, file, 4096); // Variant every line in this file
+		super(species, file); // Variant every line in this file
 	}
 
 	@SuppressWarnings("unchecked")

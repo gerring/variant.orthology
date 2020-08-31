@@ -1,4 +1,4 @@
-package org.jax.gweaver.variant.orthology.domain;
+package org.jax.gweaver.variant.orthology.io;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.glassfish.hk2.utilities.reflection.ParameterizedTypeImpl;
+import org.jax.gweaver.variant.orthology.domain.GeneticEntity;
 import org.jax.gweaver.variant.orthology.io.AbstractReader;
 import org.jax.gweaver.variant.orthology.io.GeneReader;
 import org.jax.gweaver.variant.orthology.io.RepeatedLineReader;
