@@ -8,6 +8,11 @@ image: maven:3.6.3
 pipelines:
   default:
     - step:
+        script:
+          - docker pull neo4j:4.1.1
+        services:
+          - docker
+    - step:
         caches:
           - maven
         script: # Modify the commands below to build your repository.
